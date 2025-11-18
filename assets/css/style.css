@@ -138,6 +138,9 @@ body {
   font-weight: var(--p-regular);
   position: relative;
   direction: rtl;
+
+
+  
   text-align: right;
   background-color: var(--color-background);
 
