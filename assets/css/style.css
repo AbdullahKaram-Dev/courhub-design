@@ -137,7 +137,6 @@ body {
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
-  overflow-x: hidden;
   direction: rtl;
   text-align: right;
   background-color: var(--color-background);
