@@ -1,0 +1,140 @@
+.form-group {
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #635d5d;
+  color: $white-color;
+  border: 0;
+  border-radius: 12px;
+  gap: 4px;
+  padding: 6px 12px;
+
+  &:has(input:focus),
+  &:has(input:-webkit-autofill) {
+    color: #495057;
+    background-color: #e8f0fe;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    background-color: #635d5d;
+    color: $white-color;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    &:focus {
+      color: #495057;
+      background-color: #e8f0fe;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      color: $white-color;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active,
+    &:-internal-autofill-selected {
+      background-color: #e8f0fe;
+    }
+  }
+
+  input[type="email"]::placeholder,
+  input[type="email"] {
+    text-align: right;
+  }
+
+  .toggle-password,
+  .toggle-confirm-password {
+    color: #888888;
+    cursor: pointer;
+
+    &.toggle-confirm-password {
+      color: #888888;
+    }
+  }
+
+  .info-input {
+    position: relative;
+
+    &:hover {
+      z-index: 10;
+
+      & > .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .tooltip-icon {
+      color: #888888;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      width: auto;
+      min-width: 200px;
+      width: fit-content;
+      background-color: $white-color;
+      color: $darker-color;
+      border-radius: 16px;
+      padding: 5px 10px;
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+
+      ul {
+        margin: 0;
+        padding-right: 1rem;
+
+        li {
+          list-style: disc;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+label {
+  color: $white-color;
+  margin-bottom: 0.5rem;
+}
+
+.filter-input {
+  input[type="date"],
+  select {
+    background-color: #635d5d;
+    color: $white-color;
+    border: 0;
+    border-radius: 12px;
+    padding: 6px 12px;
+
+    &:focus {
+      color: #495057;
+      background-color: $white-color;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      color: $white-color;
+    }
+  }
+}

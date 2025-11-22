@@ -1,0 +1,80 @@
+.containerew {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.base-certfi-style {
+  max-width: 80%;
+  /* Adjust maximum width as needed */
+  margin: 0 auto;
+  position: relative;
+  color: #2c5c8f;
+}
+
+.certifi-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info p {
+  font-size: 3vw;
+}
+
+.date-position {
+  position: absolute;
+  color: #2c5c8f;
+  bottom: 5%;
+  right: 5%;
+}
+
+.instructor-position {
+  position: absolute;
+  color: #2c5c8f;
+  bottom: 5%;
+  left: 5%;
+}
+
+.instructor-position p,
+.date-position p {
+  font-size: 2vw;
+  /* Adjust font size responsively */
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .info p {
+    font-size: 2.5vw;
+  }
+
+  .instructor-position p,
+  .date-position p {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Additional adjustments for larger screens */
+  .base-certfi-style {
+    max-width: 60%;
+    /* Adjust maximum width as needed */
+  }
+
+  .info p {
+    font-size: 1.8rem;
+    /* Adjust font size for larger screens */
+  }
+
+  .instructor-position p,
+  .date-position p {
+    font-size: 1.6rem;
+    /* Adjust font size for larger screens */
+  }
+}

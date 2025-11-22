@@ -1,0 +1,47 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/typo";
+
+// base
+@import "./base/base";
+@import "./base/reset";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// components
+@import "./components/inputs";
+@import "./components/buttons";
+@import "./components/empty-state.scss";
+@import "./components/loading";
+@import "./components/main-breadcrumb";
+@import "./components/alert-banner";
+@import "./components/products";
+@import "./components/certificate";
+@import "./components/filter";
+@import "./components/modal";
+@import "./components/custon-checkbox";
+@import "./components/list-items";
+@import "./components/accordion";
+@import "./components/donut-chart";
+@import "./components/main-carousel";
+@import "./components/categories-carousel";
+@import "./components/floating-whatsapp";
+@import "./components/testimonials";
+@import "./components/notificaiton";
+
+// pages
+@import "./pages/profile";
+@import "./pages/cart";
+@import "./pages/checkout";
+@import "./pages/package-details";
+@import "./pages/help-center";
+@import "./pages/login";
+@import "./pages/cource-details";
+@import "./pages/learning-page";
+@import "./pages/certfication";
+@import "./pages/error";
+@import "./pages/package_privew";
+

@@ -1,0 +1,240 @@
+#accordionCourseContent {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-left: 0.5rem;
+
+  &.packages {
+    max-height: unset;
+    overflow: unset;
+    padding: 0;
+
+    .accordion-item {
+      background: linear-gradient(180deg, #393434 0%, #252121 100%);
+      border-radius: 1.25rem;
+
+      .accordion-button {
+        background-color: transparent;
+        padding: 1.25rem;
+      }
+
+      .accordion-body {
+        padding: 1.25rem;
+      }
+    }
+  }
+
+  .accordion-item {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    margin-bottom: 0.5rem;
+    background-color: $darker-color;
+
+    .accordion-button {
+      background-color: #484343;
+      color: $white-color;
+      border-radius: 0.75rem;
+      padding: 12px;
+      gap: 12px;
+      flex-wrap: wrap;
+
+      &.active {
+        background-color: $red-color;
+      }
+
+      &:not(.collapsed) {
+        box-shadow: none;
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+
+      &::after {
+        content: unset;
+      }
+
+      &::before {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $white-color;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      &:not(.collapsed):before {
+        transform: rotate(180deg);
+      }
+
+      .course-count {
+        text-align: end;
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+    }
+
+    .accordion-body {
+      padding: 0.75rem;
+
+      .lesson-item {
+        background-color: $gray-color;
+        color: $white-color;
+        padding: 0.75rem 1rem;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+
+        &.active {
+          background-color: $red-color;
+
+          .lesson-item__info {
+            .time {
+              color: #fff;
+            }
+
+            .permission.free {
+              background-color: $darker-color;
+            }
+          }
+        }
+
+        &.empty {
+          justify-content: center;
+          cursor: auto;
+        }
+
+        &__info {
+          flex-grow: 1;
+          text-align: end;
+
+          .time {
+            color: $green-color;
+            margin-right: 0.5rem;
+          }
+
+          .permission {
+            &.free {
+              background-color: #544d4d;
+              border-radius: 4rem;
+              padding: 0.25rem 0.5rem;
+              font-size: 0.75rem;
+
+              i {
+                color: $green-color;
+                margin-right: 0.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.learning-tabs {
+  #accordionCourseContent {
+    .accordion-item {
+      background-color: transparent;
+    }
+
+    .accordion-collapse {
+      &.collapse {
+        .accordion-body {
+          border-right: 2px solid $gray-color;
+        }
+      }
+
+      .accordion-body {
+        padding: 0;
+        padding-right: 0.75rem;
+
+        .lesson-item {
+          padding: 0;
+          padding-inline: 1rem;
+          padding-block: 0.5rem;
+          display: block;
+          background-color: $darker-color;
+
+          &:first-of-type {
+            margin-top: 0.5rem;
+          }
+
+          &__title {
+            overflow: hidden;
+            display: -webkit-box;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+
+            @include responsive(max, 992px) {
+              width: calc(100% - 60px);
+              line-clamp: 2;
+              -webkit-line-clamp: 2;
+            }
+          }
+
+          .custom-checkbox {
+            flex-shrink: 0;
+          }
+
+          &__info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+
+            .watching {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              font-size: 0;
+              background-color: $red-color;
+              border: 0;
+              border-radius: 50%;
+              outline: none;
+              animation-name: pulse;
+              animation-duration: 1.5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+          }
+
+          .links {
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            .link {
+              padding: 4px 8px;
+              border-radius: 10rem;
+              color: $white-color;
+              border: 1px solid $white-color;
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 2px 0px rgba(239, 0, 85, 0.3);
+  }
+  65% {
+    box-shadow: 0px 0px 2px 6px rgba(239, 0, 85, 0.3);
+  }
+  90% {
+    box-shadow: 0px 0px 2px 6px rgba(239, 0, 85, 0);
+  }
+}

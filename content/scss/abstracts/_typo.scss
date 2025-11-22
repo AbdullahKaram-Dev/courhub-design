@@ -1,0 +1,46 @@
+$cairo-path: "../assets/fonts/cairo";
+
+@font-face {
+  font-family: "Cairo";
+  src: url("#{$cairo-path}/Cairo-Light.eot");
+  src: url("#{$cairo-path}/Cairo-Light.eot?#iefix") format("embedded-opentype"), url("#{$cairo-path}/Cairo-Light.woff2") format("woff2"), url("#{$cairo-path}/Cairo-Light.woff") format("woff"), url("#{$cairo-path}/Cairo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("#{$cairo-path}/Cairo-Regular.eot");
+  src: url("#{$cairo-path}/Cairo-Regular.eot?#iefix") format("embedded-opentype"), url("#{$cairo-path}/Cairo-Regular.woff2") format("woff2"), url("#{$cairo-path}/Cairo-Regular.woff") format("woff"), url("#{$cairo-path}/Cairo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("#{$cairo-path}/Cairo-Medium.eot");
+  src: url("#{$cairo-path}/Cairo-Medium.eot?#iefix") format("embedded-opentype"), url("#{$cairo-path}/Cairo-Medium.woff2") format("woff2"), url("#{$cairo-path}/Cairo-Medium.woff") format("woff"), url("#{$cairo-path}/Cairo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("#{$cairo-path}/Cairo-SemiBold.eot");
+  src: url("#{$cairo-path}/Cairo-SemiBold.eot?#iefix") format("embedded-opentype"), url("#{$cairo-path}/Cairo-SemiBold.woff2") format("woff2"), url("#{$cairo-path}/Cairo-SemiBold.woff") format("woff"), url("#{$cairo-path}/Cairo-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("#{$cairo-path}/Cairo-Bold.eot");
+  src: url("#{$cairo-path}/Cairo-Bold.eot?#iefix") format("embedded-opentype"), url("#{$cairo-path}/Cairo-Bold.woff2") format("woff2"), url("#{$cairo-path}/Cairo-Bold.woff") format("woff"), url("#{$cairo-path}/Cairo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

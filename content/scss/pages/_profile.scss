@@ -1,0 +1,197 @@
+.profile {
+  .alert {
+    background-color: $red-color;
+    border: 0;
+    color: #fff;
+
+    &__text > * {
+      display: inline;
+    }
+  }
+
+  &__tabs {
+    background: linear-gradient(360deg, rgba(37, 33, 33, 0) -68.99%, #393434 118.99%);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow-x: auto;
+
+    .nav-item {
+      flex-grow: 1;
+
+      .nav-link {
+        color: $white-color;
+        font-weight: 600;
+        border-bottom: 3px solid transparent;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-wrap: nowrap;
+        width: fit-content;
+
+        @include responsive(max, 400) {
+          margin-inline: 0.75rem !important;
+        }
+
+        img {
+          width: 25px;
+          filter: brightness(0) invert(1);
+          flex-shrink: 0;
+        }
+
+        &.active,
+        &:hover {
+          background-color: transparent;
+          border-bottom: 3px solid $red-color;
+          border-radius: 0;
+        }
+      }
+
+      &:not(:first-child) {
+        border-right: 1px solid #544d4d;
+      }
+    }
+  }
+
+  &__package {
+    background: linear-gradient(180deg, #393434 0%, #252121 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  &__data {
+    background-color: rgba($darker-color, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    h5 {
+      color: $white-color;
+    }
+
+    &__wrapper {
+      background-color: $gray-color;
+      border-radius: 1rem;
+      padding: 2rem 1rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-block: 1rem;
+
+      .file-input {
+        --primary: color-mix(in srgb, red 60%, blueviolet);
+        position: relative;
+        background-color: $gray-color;
+        width: 100px;
+        outline: 3px solid var(--primary);
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          outline: 5px solid var(--primary);
+        }
+
+        &:has(img[src]) .file-placeholder {
+          display: none;
+        }
+
+        input {
+          opacity: 0;
+          width: 0px;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 999px;
+          cursor: pointer;
+          transition: 200ms ease-in-out;
+          aspect-ratio: 1;
+          object-fit: cover;
+        }
+
+        .file-placeholder {
+          position: absolute;
+          width: 100%;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          cursor: pointer;
+          font-size: 0.75rem;
+          background-color: #393434;
+        }
+      }
+
+      .form-group {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__orders {
+    background-color: rgba($darker-color, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+    &__section {
+      color: white;
+      background-color: $dark-color;
+      padding: 20px;
+      border-radius: 10px;
+
+      .filter-input {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 16px;
+        flex-grow: 1;
+
+        label {
+          flex-shrink: 0;
+          margin: 0;
+        }
+
+        input,
+        select {
+          width: 100%;
+        }
+
+        input[type="date"]:not(:focus) {
+          &::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+          }
+        }
+
+        select.form-select:not(:focus) {
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+      }
+    }
+
+    &__table {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+
+  .product .main__btn {
+    white-space: nowrap;
+
+    @include responsive(max, 1300) {
+      padding-inline: 12px;
+    }
+  }
+}

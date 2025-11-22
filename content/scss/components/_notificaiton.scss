@@ -1,0 +1,15 @@
+.highlight {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  inset-inline-end: 0;
+  background: $red-color;
+
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

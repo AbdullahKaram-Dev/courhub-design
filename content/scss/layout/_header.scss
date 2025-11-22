@@ -1,0 +1,337 @@
+body,
+html {
+  font-family: "Tajawal", ui-sans-serif, system-ui, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !important;
+  background-color: #141414;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #09080c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6a1b9a;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "CourHub";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: revealText 2.5s forwards;
+    }
+  }
+
+  &.fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+}
+
+@keyframes revealText {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+    left: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+.header {
+  background-color: $darker-color;
+  position: sticky;
+  top: -1px;
+  z-index: 100;
+
+  .navbar {
+    gap: 12px;
+    .navbar-brand
+    {
+      font-size: 25px;
+      color: #FFE;
+      font-weight: bold;
+    }
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: flex-end;
+      align-items: center;
+
+      .nav-item {
+        font-size: 15px;
+
+        &:hover > .nav-link,
+        &.active > .nav-link {
+          color: $red-color;
+        }
+
+        .nav-link {
+          color: $white-color;
+          border-bottom: 1px solid transparent;
+        }
+
+        &.dropdown {
+          margin-left: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          position: relative;
+
+          &.active {
+            .nav-link {
+              color: $red-color;
+            }
+            &::after {
+              transform: rotate(180deg);
+            }
+          }
+
+          &:hover {
+            &::after {
+              color: $red-color;
+            }
+          }
+
+          &::after {
+            content: "\f107";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: $white-color;
+            font-size: 0.75rem;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .dropdown__menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: $darker-color;
+            border-radius: 6px;
+            min-width: 160px;
+            overflow: hidden;
+
+            .dropdown__menu__item {
+              color: $white-color;
+              white-space: nowrap;
+              font-size: 12px;
+              display: block;
+              width: 100%;
+              padding: 0.5rem 1rem;
+
+              &:not(.dropdown__menu__item--profile):hover,
+              &.active {
+                background-color: $red-color;
+              }
+
+              &.dropdown__menu__item--profile {
+                .user__wrapper {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 8px;
+                  background-color: $gray-color;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                  }
+
+                  .instructor {
+                    color: $white-color;
+                    text-align: end;
+
+                    .name {
+                      font-size: 1rem;
+                      margin-bottom: 0;
+                    }
+
+                    .email {
+                      font-size: 0.7rem;
+                      font-weight: 300;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        &.collapsed-mobile {
+          display: none;
+        }
+      }
+
+      // button for my courses
+      .main__btn {
+        width: 100%;
+        font-size: 15px;
+
+        &:hover {
+          background: $red-color;
+        }
+
+        @include responsive(max, 992) {
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+    }
+
+    &__user {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .nav-item {
+      position: relative;
+
+      .nav-link {
+        .notification {
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          color: $white-color;
+          background-color: $red-color;
+          aspect-ratio: 1/1;
+          min-width: 15px;
+          min-height: 15px;
+          border-radius: 50%;
+          font-size: 0.75rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.bottom-nav .nav-link {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.bottom-nav .nav-link.active {
+  color: #fbfbfb !important;
+}
+
+.bottom-nav .nav-link svg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.bottom-nav .dropup .dropdown-menu {
+  z-index: 101;
+}
+
+.bottom-nav .dropup .nav-link[aria-expanded=true] {
+  color: #fbfbfb !important;
+}
+
+.bottom-nav .dropup .dropdown-toggle::after {
+  display: none;
+}
+
+.bottom-nav .dropup .dropdown-item.active {
+  background-color: #ef0055;
+}
+.header-img {
+  border-radius: 15px;
+  margin-top: 15px;
+  max-height: 400px;
+  object-fit: cover;
+}
+.responsive-picture {
+  display: block;
+  width: 100%;
+
+  .responsive-img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 15px;
+
+  }
+}
+.header {
+  .navbar {
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .bottom-nav {
+    display: block !important;
+  }
+}

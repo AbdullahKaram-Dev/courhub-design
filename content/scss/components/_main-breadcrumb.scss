@@ -1,0 +1,46 @@
+.main-breadcrumb {
+  color: $white-color;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: $red-color;
+    border-radius: 12px;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb .breadcrumb-item {
+    position: relative;
+
+    a {
+      color: $white-color;
+    }
+
+    &.active {
+      color: $red-color;
+    }
+
+    &:not(:first-child) {
+      padding-right: 20px;
+
+      &::before {
+        content: "\f104" !important;
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900 !important;
+        color: $white-color;
+        padding: 0;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 6px;
+      }
+    }
+  }
+}

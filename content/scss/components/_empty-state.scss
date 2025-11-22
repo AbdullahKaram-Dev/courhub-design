@@ -1,0 +1,28 @@
+.empty-state {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    background-color: rgba(90, 90, 90, 0.44); // #5a5a5a70
+    min-width: 65%;
+    height: 50%;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media only screen and (max-width: 992px) {
+      min-width: 80%;
+      height: 60%;
+    }
+
+    @media only screen and (max-width: 450px) {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

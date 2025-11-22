@@ -1,0 +1,13 @@
+.floating-whatsapp {
+  position: fixed;
+  bottom: 3%;
+  inset-inline-start: 2%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .floating-whatsapp {
+    bottom: 75px;
+  }
+}

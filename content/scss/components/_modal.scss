@@ -1,0 +1,238 @@
+.main-modal {
+  .modal-content {
+    border-radius: 1.5rem;
+    background-color: $darker-color;
+    color: $white-color;
+    padding: 2rem;
+
+    @include responsive(max, 400) {
+      padding: 1rem;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  &__title {
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid $red-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .close__btn {
+    top: 5%;
+    left: 3%;
+
+    @include responsive(max, 400) {
+      top: 2%;
+      left: 3%;
+    }
+  }
+
+  .main__btn {
+    &:hover {
+      background-color: $gray-color;
+    }
+
+    &.gray {
+      &:hover {
+        background-color: $red-color;
+      }
+    }
+  }
+}
+
+.copy-modal {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+  }
+
+  &__icon {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+
+  #copyInput {
+    direction: ltr;
+  }
+}
+
+.paymant-modal {
+  .modal-content {
+    border: 3px solid $red-color;
+  }
+
+  .qr-svg {
+    svg {
+      padding: 0.75rem;
+      border-radius: 1rem;
+      background-color: #fff;
+    }
+  }
+}
+
+@import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+.rate-modal {
+  .submit-rate {
+    display: inline-block;
+    border: 0;
+    direction: ltr;
+  }
+  .submit-rate > input {
+    display: none;
+  }
+  .submit-rate > label {
+    float: right;
+  }
+  /* The star of the show */
+  .submit-rate > label:before {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0.3rem 0.2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+  }
+  .submit-rate .half:before {
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+  }
+  /* Click + hover color */
+  label:hover,
+  label:hover ~ label,
+  label:hover ~ input:checked ~ label,
+  input:checked ~ label:hover ~ label,
+  input:checked + label:hover,
+  input:checked ~ label:hover,
+  input:checked ~ label {
+    color: #ffb800;
+  }
+
+  textarea {
+    width: 100%;
+    background-color: $gray-color;
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: $white-color;
+  }
+
+  label[for="seeMore"] {
+    color: #fff;
+  }
+}
+
+.package-modal {
+  &__summary {
+    background-color: $dark-color;
+    padding: 14px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+
+    .form-group {
+      flex-grow: 1;
+      margin: 0;
+    }
+
+    label,
+    span {
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .background {
+        background-color: $gray-color;
+        padding: 10px;
+        border-radius: 16px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        position: relative;
+
+        .old {
+          color: rgba($white-color, 0.5);
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%) rotate(340deg);
+            left: 50%;
+            background-color: rgba($white-color, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  &__selector {
+    background-color: $dark-color;
+    padding: 22px;
+    border-radius: 16px;
+
+    .thin-scroll {
+      max-height: 250px;
+      overflow-y: auto;
+
+      @include responsive(max, 992) {
+        max-height: 200px;
+      }
+    }
+
+    .custom-checkbox {
+      flex-shrink: 0;
+    }
+
+    .product-img {
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .product-title {
+      margin: 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

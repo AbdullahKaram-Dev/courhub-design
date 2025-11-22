@@ -1,0 +1,33 @@
+/* help Center */
+.help-center {
+  &__box {
+    color: #ffff;
+    background-color: $gray-color;
+    border-radius: 12px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    padding: 3rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-color;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+}
+
+.vedio-modal {
+  background-color: #27282b;
+  opacity: 100;
+}
+
+.vedio-header {
+  margin: 0 auto;
+  border-bottom: 0;
+}

@@ -1,0 +1,91 @@
+.owl-carousel__categories
+{
+  margin-top: 40px !important;
+}
+.categories {
+  margin-block: 2.5rem;
+  margin-bottom: 1.5rem;
+  .owl-carousel__categories {
+    .owl-stage {
+      display: flex;
+    }
+
+    .item {
+      flex: 1 0 auto;
+      height: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0.5);
+    }
+
+    a {
+      background-color: red;
+      padding: 24px;
+      border-radius: 12px;
+      font-size: 16px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      height: 100%;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .cat-box
+  {
+    margin-bottom: 15px;
+  }
+}
+.cat-box i {
+  font-size: 25px;
+}
+.latest_course_title
+{
+  margin-bottom: 0 ;
+}
+@media screen and (max-width: 992px) {
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+  top: 30%;
+
+}
+  .categories
+  {
+    margin-top:0;
+  }
+
+
+  .categories .categories__title
+  {
+    font-size: 13px !important;
+  }
+  .main__heading h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+}

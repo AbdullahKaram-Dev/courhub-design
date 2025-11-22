@@ -1,0 +1,38 @@
+.package-details {
+  margin-top: 2.5rem;
+  background: linear-gradient(180deg, #393434 0%, #252121 100%);
+  border-radius: 1.5rem;
+  color: $white-color;
+  overflow: hidden;
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  &__pragrapgh {
+    width: 50%;
+
+    @include responsive(max, 768) {
+      width: 100%;
+    }
+  }
+
+  &__footer {
+    padding: 1.5rem;
+    background-color: $darker-color;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    gap: 8px;
+
+    @include responsive(max, 400) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .main__btn {
+        flex-grow: 1;
+        width: 100%;
+      }
+    }
+  }
+}

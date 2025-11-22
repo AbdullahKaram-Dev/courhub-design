@@ -1,0 +1,314 @@
+.course-details {
+
+
+  &__intro {
+    background-color: $gray-color;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    color: $white-color;
+    margin-bottom: 1.25rem;
+  }
+
+  &__instructor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h5 {
+      font-size: 1rem;
+      color: $white-color;
+      margin: 0;
+      font-weight: 300;
+
+      span {
+        color: $white-color;
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__feature {
+    font-size: 14px;
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
+    color: $white-color;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .icon__btn {
+    background-color: $gray-color;
+
+    &:hover {
+      background-color: $red-color;
+    }
+  }
+
+
+  .course-details-intro {
+    color: #fff;
+
+    .course-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .course-meta {
+      font-size: 0.9rem;
+
+      .meta-item {
+        padding: 6px 12px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .instructor-box {
+      background: hsla(0, 0%, 100%, .08);
+      padding: 18px;
+      border-radius: 18px;
+      gap: 18px;
+
+      .instructor-title {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .instructor-role {
+        font-size: 0.85rem;
+        opacity: .7;
+      }
+
+      .instructor-img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .course-benefits {
+    color: #fff;
+
+    .benefits-title {
+      font-weight: 700;
+    }
+
+    .benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .benefit-item {
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      img {
+        width: 28px;
+      }
+    }
+  }
+}
+
+.course-data {
+  border-radius: 1rem;
+  margin-top: 1rem;
+  .nav-pills
+  {
+    background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__tabs {
+
+    @include responsive(max, 768) {
+      justify-content: center;
+    }
+
+    .nav-link {
+      color: $white-color;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+
+      &.active {
+        background-color: transparent;
+        border-bottom: 3px solid $red-color;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 1rem;
+    color: $white-color;
+  }
+
+  .main__btn__priced.mobile {
+    display: none;
+    margin-top: 1rem;
+
+    @include responsive(max, 768) {
+      display: flex;
+    }
+  }
+}
+
+.rate-list {
+  max-height: 450px;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+
+  &__item {
+    background-color: $darker-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__commenter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__comment {
+    margin-top: -1rem;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 2px solid $gray-color;
+    padding-top: 1.5rem;
+  }
+}
+.course-details .course-benefits .benefits-title {
+  font-weight: 700;
+  text-align: right ! IMPORTANT;
+  font-size: 16px;
+}
+.course-details .course-benefits .benefit-item {
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: .95rem;
+}
+.course-data__content {
+  margin-top: 1rem;
+  color: #fff;
+  padding: 0 15px;
+}
+.course-data__content
+{
+  background-color: #1c1b1f;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+#accordionCourseContent .accordion-item .accordion-button {
+  background-color: #212025;
+  color: #fff;
+  border-radius: .75rem;
+  padding: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+#accordionCourseContent .accordion-item .accordion-button
+{
+  font-size: 15px;
+}
+.rate-list__comment
+{
+  padding-right: 0 ;
+  margin-right: 0;
+  font-size: 15px;
+}
+.about_trainer .custom_nav
+{
+  background: none;
+  margin-top: 20px;
+}
+
+.about_trainer  .course-data {
+  border-radius: 1rem;
+  margin-top: 1rem;
+
+  background-color: #1c1b1f;
+}
+.about_trainer .rate-list__commenter {
+  margin-right: 14px;
+}
+.course-data__content {
+  background-color: #1c1b1f;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+.box1 .course-data__content ,
+.box4 .course-data__content
+{
+  min-height: 550px;
+}
+.box2 img {
+  width: 100px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.rate-list {
+  max-height: 490px;
+}
+#accordionCourseContent .accordion-item .accordion-body .lesson-item
+{
+  font-size: 13px;
+}
+#accordionCourseContent .accordion-item .accordion-body .lesson-item__info .time
+{
+  color: #ffffff;
+}
+.box1 .course-data__content,
+.box4 .course-data__content {
+  padding: 21px !important;
+}
+@media screen and (max-width: 992px){
+  .box1 .course-data__content, .box4 .course-data__content {
+    padding: 5px !important;
+  }
+}

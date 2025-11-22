@@ -1,1334 +1,1021 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Soni Courses" />
+    <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
+    <!-- Additional CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./content/css/main.css" />
     <title>CourHub</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-    <!-- fontawesome 6.4.2 -->
-    <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
-    <!-- swiper Css 10.2.0 -->
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
-    <!-- magnific popup css -->
-    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
-    <!-- Bootstrap 5.0.2 -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <!-- jquery ui css -->
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.css">
-    <!-- metismenu scss -->
-    <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
-    <!-- custom style css -->
-<!-- FontAwesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta name="robots" content="noindex, nofollow">
+  </head>
 
+  <body>
+    <div class="loading-overlay d-none">
+      <img src="./content/assets/images/logo_gif.gif" alt="Loading" class="loading-overlay__image" />
+    </div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <!-- start banner -->
+    <div class="alert-banner d-none" >
+      <div class="alert-banner__text me-4">خصومات كبري علي كل الدبلومات والدورات لفتره محدوده <a href="#">اشترك الان</a> 1 ايام : 5 ساعات : 20 دقيقة : 20 ثانية</div>
+      <button class="close__btn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <!-- End banner -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <!-- header style one -->
-    <header class="header-one header--sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="header-one-wrapper">
-                        <div class="left-side-header">
-                            <a href="index.html" class="logo-area">
-                                CourHub
-                            </a>
-                        </div>
-                        <div class="main-nav-one">
-                            <nav>
-                                <ul>
-                                    <li style="position: static;">
-                                        <a class="nav-link active" href="#">الرئيسية</a>
-                                    </li>
-                                    <li style="position: static;">
-                                        <a class="nav-link" href="#">الدورات</a>
-                                    </li>
-
-                                    <li style="position: static;">
-                                        <a class="nav-link" href="#">الدبلومات</a>
-                                    </li>
-                                    <li style="position: static;">
-                                        <a class="nav-link" href="#">الدبلومات</a>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a class="nav-link" href="#"> الأقسام </a>
-                                        <ul class="submenu">
-                                            <li><a href="#">التصميم</a></li>
-                                            <li><a href="#">مونتاج الفيديو</a></li>
-                                            <li><a href="#">الثري دي</a></li>
-                                            <li><a href="#">تصميم المواقع والتطبيقات</a></li>
-        
-                                        </ul>
-                                    </li>
-                            
-                                </ul>
-                            </nav>
-                        </div>
-
-
-                        <div class="main-nav-one">
-                        </div>
-                        <div class="header-right-area-one">
-                            <div class="actions-area">
-                                <div class="search-btn" id="search" style="cursor:pointer;">
-                                    <i class="far fa-heart fa-lg"></i>
-                                </div>
-                                <div class="cart cart-icon" style="cursor:pointer;">
-                                    <i class="fas fa-cart-shopping fa-lg"></i>
-                                </div>
-                            </div>
-                            <div class="buttons-area">
-                    
-                                <a href="login.html" class="rts-btn btn-primary">تسجيل الدخول</a>
-                            </div>
-                            <div class="menu-btn" id="menu-btn">
-                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect y="14" width="20" height="2" fill="#1F1F25"></rect>
-                                    <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
-                                    <rect width="20" height="2" fill="#1F1F25"></rect>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav d-none bg-dark border-top border-secondary fixed-bottom">
+      <div class="d-flex justify-content-around text-center">
+        <a href="#" class="nav-link text-secondary flex-fill">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 13H14M19 13V20H5V9M5 9H19C19.5523 9 20 8.55228 20 8V5C20 4.44772 19.5523 4 19 4H12M5 9C4.44772 9 4 8.55228 4 8V5C4 4.44772 4.44772 4 5 4H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <small>الدبلومات</small>
+        </a>
+        <a href="#" class="nav-link text-secondary flex-fill">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 11L24 14.75V29M8 19V24C8 24 11 27 16 27C18.022 27 19.719 26.644 21.021 26.059M1 11L16 3L31 11L16 19L1 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          <small>الدورات</small>
+        </a>
+        <a href="#" class="nav-link text-secondary active flex-fill">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 22L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 22V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 9.5V13.5M20 22V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="currentColor" stroke-width="1.5"></path> </g></svg>
+          <small>الرئيسية</small>
+        </a>
+        <a href="#" class="nav-link text-secondary flex-fill">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 11.0975V16.0909C3 19.1875 3 20.7358 3.73411 21.4123C4.08422 21.735 4.52615 21.9377 4.99692 21.9915C5.98402 22.1045 7.13675 21.0849 9.44216 19.0458C10.4612 18.1445 10.9708 17.6938 11.5603 17.5751C11.8506 17.5166 12.1494 17.5166 12.4397 17.5751C13.0292 17.6938 13.5388 18.1445 14.5578 19.0458C16.8633 21.0849 18.016 22.1045 19.0031 21.9915C19.4739 21.9377 19.9158 21.735 20.2659 21.4123C21 20.7358 21 19.1875 21 16.0909V11.0975C21 6.80891 21 4.6646 19.682 3.3323C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.3323C3.5108 4.14827 3.19796 5.26881 3.07672 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 6H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+          <small>دوراتي</small>
+        </a>
+        <div class="dropup flex-fill">
+          <a
+            class="nav-link text-secondary dropdown-toggle d-flex flex-column align-items-center gap-1"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 10L13 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M10 3H16.5C16.9644 3 17.1966 3 17.3916 3.02567C18.7378 3.2029 19.7971 4.26222 19.9743 5.60842C20 5.80337 20 6.03558 20 6.5" stroke="currentColor" stroke-width="1.5"></path> <path d="M22 11.7979C22 9.16554 22 7.84935 21.2305 6.99383C21.1598 6.91514 21.0849 6.84024 21.0062 6.76946C20.1506 6 18.8345 6 16.2021 6H15.8284C14.6747 6 14.0979 6 13.5604 5.84678C13.2651 5.7626 12.9804 5.64471 12.7121 5.49543C12.2237 5.22367 11.8158 4.81578 11 4L10.4497 3.44975C10.1763 3.17633 10.0396 3.03961 9.89594 2.92051C9.27652 2.40704 8.51665 2.09229 7.71557 2.01738C7.52976 2 7.33642 2 6.94975 2C6.06722 2 5.62595 2 5.25839 2.06935C3.64031 2.37464 2.37464 3.64031 2.06935 5.25839C2 5.62595 2 6.06722 2 6.94975M21.9913 16C21.9554 18.4796 21.7715 19.8853 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+            <small>الأقسام</small>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark p-1 rounded-0">
+            <li><a class="dropdown-item active" href="#">تصميم</a></li>
+            <li><a class="dropdown-item" href="#">موشن جرافيك</a></li>
+            <li><a class="dropdown-item" href="#">الدورات المجانية المجانية</a></li>
+            <li><a class="dropdown-item" href="#">صناعة المحتوى</a></li>
+            <li><a class="dropdown-item" href="#">مونتاج</a></li>
+            <li><a class="dropdown-item" href="#">الثري دي</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- Start Navbar -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar-brand" href="./index.html">
+            CourHub
+          </a>
+          <div class="overlay"></div>
+          <ul class="navbar-nav collapsed-mobile">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./allCourses.html">الدورات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./allPackges.html">الدبلومات</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="javascript:void(0);"> الأقسام </a>
+              <div class="dropdown__menu">
+                <a class="dropdown__menu__item active" href="#">تصميم</a>
+                <a class="dropdown__menu__item" href="#">موشن جرافيك</a>
+                <a class="dropdown__menu__item" href="#">الدورات المجانية</a>
+                <a class="dropdown__menu__item" href="#">صناعة المحتوى</a>
+                <a class="dropdown__menu__item" href="#">مونتاج</a>
+                <a class="dropdown__menu__item" href="#">الثري دي</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="header__actions navbar-nav flex-grow-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./myCart.html">
+                <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
+                <span class="notification">1</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./favoriteCourses.html">
+                <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
+                <span class="notification">1</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown header-profile">
+              <a class="nav-link" href="javascript:void(0);">
+                <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="" />
+              </a>
+              <div class="dropdown__menu">
+                <div class="dropdown__menu__item dropdown__menu__item--profile">
+                  <a href="./profile.html" class="user__wrapper">
+                    <img src="./content/assets/images/instructor.jpg" alt="" />
+                    <div class="instructor">
+                      <h6 class="name">hosni abdel rahman</h6>
+                      <p class="email">hosniabdo17@gmail.com</p>
+                    </div>
+                  </a>
+                </div>
+                <a class="dropdown__menu__item" href="./helpCenter.html">مركز المساعدة</a>
+                <a class="dropdown__menu__item" href="./login.html">الخروج</a>
+              </div>
+            </li>
+            <!-- <button class="main__btn gray">
+              <a href="./login.html"> تسجيل الدخول </a>
+            </button> -->
+          </ul>
+        </nav>
+      </div>
     </header>
+    <!-- End Navbar -->
     <!-- header style end -->
     <div id="preloader">
-        <h1>CourHub</h1>
-      </div>
+      <h1>CourHub</h1>
+    </div>
     <!-- banner area start -->
-      <!-- rts banner area start -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <picture class="responsive-picture">
+          <source
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                  srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3OTgsInB1ciI6ImJsb2JfaWQifX0=--e0cdef0372d45e650bd6ae03f46d36f2109d4b8c/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(698%20x%20344%20px)%20(3).gif">
+          <source
+                  media="(min-width: 768px)"
+                  sizes="50vw"
+                  srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif">
+          <img
+                  src="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif"
+                  alt="Course Banner"
+                  class="responsive-img">
+        </picture>
+      </div>
+      <div class="categories">
+        <div class="container">
+          <div class="main__heading">
+            <div class="title-area-center-style">
+              <h2 class="title">الأقسام الرئيسية</h2>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme owl-carousel__categories">
+            <div class="item">
+              <div class="cat-box cat-box-red">
+                <i class="fa fa-book"></i>
               </div>
-              <div class="carousel-item">
-                <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+              <h4 class="categories__title">موشن جرافيك</h4>
+            </div>
+
+            <div class="item">
+              <div class="cat-box cat-box-blue">
+                <i class="fa fa-bell"></i>
               </div>
-              <div class="carousel-item">
-                <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+              <h4 class="categories__title">تصميم واجهات المستخدم</h4>
+            </div>
+
+            <div class="item">
+              <div class="cat-box cat-box-green">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <h4 class="categories__title">البزنس جرافيك</h4>
+            </div>
+
+            <div class="item">
+              <div class="cat-box cat-box-yellow">
+                <i class="fa fa-language"></i>
+              </div>
+              <h4 class="categories__title">تصميم ثلاثي الأبعاد</h4>
+            </div>
+
+            <div class="item">
+              <div class="cat-box cat-box-purple">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <h4 class="categories__title">تصميم الشعارات</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New arrivals  -->
+      <div class="products-section">
+        <div class="container">
+          <div class="main__heading">
+            <div class="title-area-center-style">
+              <h2 class="title latest_course_title">أحدث الدورات</h2>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
+                  <div class="product__labels">
+                    <span class="product__label product__label--green">مجاني</span>
+                  </div>
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-2.png" alt="" />
+                  <div class="product__labels">
+                    <span class="product__label product__label--red">خصم 50%</span>
+                    <span class="product__label product__label--gray">متقدم</span>
+                  </div>
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-1">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                  <button class="main__btn small">إشتراك الأن</button>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-3.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-4.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Courses  -->
+      <div class="products-section">
+        <div class="container">
+
+          <div class="main__heading">
+            <div class="title-area-center-style">
+              <h2 class="title latest_course_title"> الدورات</h2>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
+                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                </div>
+                <div class="product__actions">
+                  <div class="d-flex gap-2">
+                    <div class="product__wish" title="إضافة للمفضله">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product__addToCart" title="إضافة للسلة">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                  </div>
+                  <div class="product__info">
+                    <div class="product__rate">
+                      <i class="fa-regular fa-star"></i>
+                      4.5
+                    </div>
+                    <div class="product__users">
+                      <i class="fa-regular fa-user"></i>
+                      15
+                    </div>
+                  </div>
+                </div>
+                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <a href="./allCourses.html" class="product__loadMore">
+                  <span>الإطلاع على جميع الدورات</span>
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Packages  -->
+      <div class="products-section">
+        <div class="container">
+          <div class="main__heading">
+            <div class="title-area-center-style">
+              <h2 class="title latest_course_title"> الدبلومات</h2>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/package-1.png" alt="" />
+                  <div class="product__labels">
+                    <span class="product__label product__label--dark">3 دورات</span>
+                  </div>
+                  <a href="./packageDetails.html">تفاصيل الباقه</a>
+                </div>
+                <a href="./packageDetails.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                <a href="./packageDetails.html" class="product__details">
+                  تفاصيل الباقة
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/package-2.png" alt="" />
+                  <div class="product__labels">
+                    <span class="product__label product__label--dark">3 دورات</span>
+                  </div>
+                  <a href="./packageDetails.html">تفاصيل الباقه</a>
+                </div>
+                <a href="./packageDetails.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                <a href="./packageDetails.html" class="product__details">
+                  تفاصيل الباقة
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <div class="product__img">
+                  <img class="img-fluid" src="./content/assets/images/courses/package-3.png" alt="" />
+                  <div class="product__labels">
+                    <span class="product__label product__label--dark">3 دورات</span>
+                  </div>
+                  <a href="./packageDetails.html">تفاصيل الباقه</a>
+                </div>
+                <a href="./packageDetails.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                <a href="./packageDetails.html" class="product__details">
+                  تفاصيل الباقة
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product">
+                <a href="./allPackges.html" class="product__package-btn">
+                  <span>الإطلاع على جميع الدبلومات</span>
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+                <button class="product__package-btn dark" data-bs-toggle="modal" data-bs-target="#customPackageModal">
+                  <span>إنشيء باقتك الخاصة وأحصل على خصم 20%</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Students Testimonials  -->
+      <div class="testimonials">
+        <div class="container">
+          <div class="main__heading">
+            <div class="title-area-center-style">
+              <h2 class="title latest_course_title"> تقييمات وأراء المشتركين</h2>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme owl-carousel__testimonials">
+            <div class="item">
+              <div class="testimonials__card">
+                <div class="testimonials__card__user">
+                  <img src="./content/assets/images/instructor.jpg" alt="user" />
+                  <div class="testimonials__card__user__info">
+                    <h4>محمد ثروت</h4>
+                    <div class="star-ratings small-stars">
+                      <div class="fill-ratings" style="--width: 56%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonials__card__comment">ماشاء الله لا قوة الا بالله إسلوب تعليمي مميز و دورة رائعة وأنصح المهتمين بأخذ هذه الدورة ماشاء الله لا قوة الا بالله إسلوب تعليمي مميز و دورة رائعة وأنصح المهتمين بأخذ هذه الدورة</p>
+                <a class="testimonials__card__link" href="./previewPayedCourse.html">
+                  <img src="./content/assets/images/icons/comment-icon.png " alt="" />
+                  <span> كورس الموشن جرافيك من الصفر كورس الموشن جرافيك من الصفر </span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials__card">
+                <div class="testimonials__card__user">
+                  <img src="./content/assets/images/instructor.jpg" alt="user" />
+                  <div class="testimonials__card__user__info">
+                    <h4>محمد ثروت</h4>
+                    <div class="star-ratings small-stars">
+                      <div class="fill-ratings" style="--width: 56%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonials__card__comment">ماشاء الله لا قوة الا بالله إسلوب تعليمي مميز و دورة رائعة وأنصح المهتمين بأخذ هذه الدورة</p>
+                <a class="testimonials__card__link" href="./previewPayedCourse.html">
+                  <img src="./content/assets/images/icons/comment-icon.png " alt="" />
+                  <span>كورس الموشن جرافيك من الصفر </span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials__card">
+                <div class="testimonials__card__user">
+                  <img src="./content/assets/images/instructor.jpg" alt="user" />
+                  <div class="testimonials__card__user__info">
+                    <h4>محمد ثروت</h4>
+                    <div class="star-ratings small-stars">
+                      <div class="fill-ratings" style="--width: 56%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonials__card__comment">ماشاء الله لا قوة الا بالله إسلوب تعليمي مميز و دورة رائعة وأنصح المهتمين بأخذ هذه الدورة</p>
+                <a class="testimonials__card__link" href="./previewPayedCourse.html">
+                  <img src="./content/assets/images/icons/comment-icon.png " alt="" />
+                  <span> كورس الموشن جرافيك من الصفر كورس الموشن جرافيك من الصفر </span>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonials__card">
+                <div class="testimonials__card__user">
+                  <img src="./content/assets/images/instructor.jpg" alt="user" />
+                  <div class="testimonials__card__user__info">
+                    <h4>محمد ثروت</h4>
+                    <div class="star-ratings small-stars">
+                      <div class="fill-ratings" style="--width: 56%">
+                        <span>★★★★★</span>
+                      </div>
+                      <div class="empty-ratings">
+                        <span>★★★★★</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonials__card__comment">ماشاء الله لا قوة الا بالله إسلوب تعليمي مميز و دورة رائعة وأنصح المهتمين بأخذ هذه الدورة</p>
+                <a class="testimonials__card__link" href="./previewPayedCourse.html">
+                  <img src="./content/assets/images/icons/comment-icon.png" alt="" />
+                  <span> كورس الموشن جرافيك من الصفر كورس الموشن جرافيك من الصفر </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="owl-carousel owl-theme owl-carousel__videos d-none">
+            <div class="item">
+              <div class="video-frame">
+                <div class="play-button" data-video="<iframe src='https://player.vimeo.com/video/1054744863?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' frameborder='0' allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%' title='08'></iframe>" data-title="test">
+                  <i class="fa-regular fa-circle-play"></i>
+                </div>
+                <img class="" src="./content/assets/images/courses/course-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- certificate -->
+      <div class="container">
+        <div class="certificate-section">
+          <div class="row g-3 mb-5 justify-content-between">
+            <div class="col-12 col-lg-4 col-xl-4">
+              <div class="certificate-section__image">
+                <img class="img-fluid d-block mx-auto" src="./content/assets/images/certificate.png" alt="certificate" />
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8 col-xl-8 ">
+                <div class="certificate-section">
+                  <div class="title-area-center-style">
+                    <h2 class="title latest_course_title">احصل على شهادة معتمدة بعد انتهاء الكورس</h2>
+                  </div>
+                    <p class="text-muted fs-5">
+                      بمجرد الانتهاء من جميع دروس الكورس، هيتم منحك شهادة إتمام رسمية
+                      تقدر تستخدمها في الـ CV أو تعرضها على LinkedIn،
+                      وتعزز بيها فرصك في سوق العمل بشكل احترافي.
+                    </p>
+                    <p class="text-muted fs-5 mt-3">
+                      الشهادة تعتبر نقطة قوة في ملفك المهني،
+                      وبتزود فرص قبولك في أي وظيفة داخل مجال التصميم.
+                    </p>
+                </div>
+                <div class="mt-10">
+                  <a href="#" class="rts-btn btn-primary">اشترك الأن</a>
+                </div>
+            </div>
+          </div>
+          <div class="certificate-section__features">
+            <div class="certificate-section__feature">
+              <img class="certificate-icon" src="./content/assets/images/icons/infinity.png" width="auto" height="auto" alt="certificate" />
+              <div class="d-flex flex-column mr-3">
+                <h4 class="text-white mb-0 h5">وصول مدى الحياة</h4>
+                <p class="text-white font-weight-lighter">للدورات والدبلومات</p>
+              </div>
+            </div>
+            <div class="certificate-section__feature">
+              <img class="certificate-icon" src="./content/assets/images/icons/laptop.png" width="auto" height="auto" alt="certificate" />
+              <div class="d-flex flex-column mr-3">
+                <h4 class="text-white mb-0 h5">دورات بتطبيقات</h4>
+                <p class="text-white font-weight-lighter">عملية متسلسلة</p>
+              </div>
+            </div>
+            <div class="certificate-section__feature">
+              <img class="certificate-icon" src="./content/assets/images/icons/tax-free.png" width="auto" height="auto" alt="certificate" />
+              <div class="d-flex flex-column mr-3">
+                <h4 class="text-white mb-0 h5">دورات وورش</h4>
+                <p class="text-white font-weight-lighter">مجانية</p>
+              </div>
+            </div>
+            <div class="certificate-section__feature">
+              <img class="certificate-icon" src="./content/assets/images/icons/clock.png" width="auto" height="auto" alt="certificate" />
+              <div class="d-flex flex-column mr-3">
+                <h4 class="text-white mb-0 h5">تعلم أون لاين</h4>
+                <p class="text-white font-weight-lighter">بأي وقت</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end certificate -->
+
+      <!-- Start Custom Package Modal -->
+      <div class="modal thin-scroll main-modal package-modal" id="customPackageModal" tabindex="-1" aria-labelledby="customPackageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <h6 class="main-modal__title">إنشيء باقتك الخاصة</h6>
+            <div class="modal-body">
+              <form action="">
+                <div class="package-modal__summary">
+                  <div class="package-modal__summary__items">
+                    <div class="package-modal__summary__item">
+                      <label for="customPackageName"> إسم الباقة</label>
+                      <div class="form-group">
+                        <input type="text" id="customPackageName" class="form-control" placeholder="أدخل اسم الباقة" />
+                      </div>
+                    </div>
+                    <div class="package-modal__summary__item">
+                      <span>دورات الباقة</span>
+                      <div class="background">2</div>
+                    </div>
+                    <div class="package-modal__summary__item">
+                      <span>السعر :</span>
+                      <div class="background">
+                        <span class="old"> EGP 55555</span>
+                        <span class="current"> EGP 55555</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h5 class="text-white mb-3">إختر دورات الباقة : <small style="font-size: 12px">(يجب أختيار دورتين على الأقل)</small></h5>
+
+                <div class="package-modal__selector">
+                  <div class="thin-scroll mb-3">
+                    <div class="row row-cols-1 row-cols-lg-2 g-3 w-100">
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                      <div class="col d-flex align-items-center gap-2">
+                        <div class="custom-checkbox">
+                          <input type="checkbox" />
+                        </div>
+                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
+                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="main__btn">المزيد</button>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-end gap-2 mt-2">
+                  <button class="main__btn green">حفظ و إضافة للسلة</button>
+                  <button class="main__btn">حفظ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Custom Package Modal -->
+
+      <!-- Start video Modal -->
+      <div class="modal fade main-modal" id="videoProjectsModal" tabindex="-1" aria-labelledby="videoProjectsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
             </button>
+            <h6 class="main-modal__title"></h6>
+            <div class="modal-body">
+              <div class="video-frame"></div>
+            </div>
+          </div>
         </div>
- 
-    <!-- rts banner area end -->
-    <!-- banner area end -->
-    <!-- category area start -->
-    <div class="category-area-style-one shape-move rts-section-gap bg_image">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-area-center-style">
-                        <h2 class="title">الأقسام الرئيسية</h2>
-                        <p class="post-title">يمكنك تصفح اخر اقسام الدورات المقدمة لدينا</p>
-                    </div>
-                </div>
+      </div>
+      <!-- End video Modal -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center gy-4 gy-lg-0 my-3">
+          <div class="col-12 col-lg-3">
+            <a class="footer__logo" href="./index.html">
+              CourHub
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ul class="footer__links">
+              <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
+              <li><a class="nav-link" href="./allCourses.html">الدورات</a></li>
+              <li><a class="nav-link" href="./allPackges.html">الدبلومات</a></li>
+              <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
+              <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
+              <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 footer__contact">
+            <div class="footer__contact__item">
+              <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
+              <i class="fas fa-mobile-alt ms-2"></i>
             </div>
-            <div class="row mt--50">
-                <div class="col-lg-12">
-                    <div class="category-swiper-wrapper">
-                        <div class="swiper mySwiper-category-1">
-                            <div class="swiper-wrapper">
-            
-                                <!-- Graphic Design -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-pen-nib"></i>
-                                        </div>
-                                        <h5 class="title">تصميم الجرافيك</h5>
-                                        <span>90+ دورة</span>
-                                    </a>
-                                </div>
-            
-                                <!-- UI/UX -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-object-ungroup"></i>
-                                        </div>
-                                        <h5 class="title">تصميم واجهات  </h5>
-                                        <span>70+ دورة</span>
-                                    </a>
-                                </div>
-            
-                                <!-- 3D & Motion Graphics -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-cubes"></i>
-                                        </div>
-                                        <h5 class="title">الثري دي  </h5>
-                                        <span>60+ دورة</span>
-                                    </a>
-                                </div>
-            
-                                <!-- Animation -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-film"></i>
-                                        </div>
-                                        <h5 class="title">الأنيميشن والتحريك</h5>
-                                        <span>45+ دورة</span>
-                                    </a>
-                                </div>
-            
-                                <!-- Photography & Editing -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-camera-retro"></i>
-                                        </div>
-                                        <h5 class="title">التصوير والمونتاج</h5>
-                                        <span>85+ دورة</span>
-                                    </a>
-                                </div>
-            
-                                <!-- Branding & Social Media Design -->
-                                <div class="swiper-slide">
-                                    <a href="#" class="category-style-one">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-bullhorn"></i>
-                                        </div>
-                                        <h5 class="title">تصميم الهوية </h5>
-                                        <span>50+ دورة</span>
-                                    </a>
-                                </div>
-            
-                            </div>
-            
-                            <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
-                            <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer__contact__item">
+              <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
+              <i class="far fa-envelope ms-1"></i>
             </div>
-            
+          </div>
         </div>
-        <div class="shape-image">
-            <div class="shape one" data-speed="0.04" data-revert="true"><img src="assets/images/banner/15.png" alt=""></div>
-            <div class="shape two" data-speed="0.04"><img src="assets/images/banner/shape/banner-shape02.svg" alt=""></div>
-            <div class="shape three" data-speed="0.04"><img src="assets/images/banner/shape/banner-shape03.svg" alt=""></div>
+        <div class="row flex-column-reverse flex-md-row gy-3 gy-lg-0">
+          <div class="col-12 col-md-6">
+            <p class="footer__copyright">
+              جميع الحقوق محفوظة لـ
+              <a href="https://www.sonicourses.com/home"> &#169; CoursHub</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="footer__social">
+              <a class="footer__social__item" href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="footer__social__item" href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="footer__social__item" href="https://twitter.com/">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a class="footer__social__item" href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- category area end -->
-    <!-- Latest course area start -->
-    <div class="course-area-start rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <h2 class="title">أحدث الدورات </h2>
-                            <p class="post-title">تصفح أقوى الدورات المميزة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="ms-portfolio-filter-area main-isotop">
-                <div class="portfolio_wrap">
-                    <div class="filter row g-5 mt--20 portfolio-feed personal">
-    
-                     <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Latest course area end -->
-    <!--  course area start -->
-    <div class="course-area-start rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <h2 class="title"> الدورات</h2>
-                            <p class="post-title">تصفح أقوى الدورات المميزة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="ms-portfolio-filter-area main-isotop">
-                <div class="portfolio_wrap">
-                    <div class="filter row g-5 mt--20 portfolio-feed personal">
-    
-                    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                            
-                                    <div class="lesson-studente">
-                                        <div class="lesson"><i class="fa-light fa-calendar-lines-pen"></i><span>32 درس</span></div>
-                                        <div class="lesson"><i class="fa-light fa-user-group"></i><span>280 متدرب</span></div>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title">احتراف الموشن جرافيك باستخدام After Effects من الصفر للاحتراف</h5></a>
-                                
-                                    <div class="rating-and-price">
-                                        <div class="rating-area">
-                                            <span>4.9</span>
-                                            <div class="stars">
-                                                <ul>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                    <li><i class="fa-sharp fa-solid fa-star"></i></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="join-button ">
-                                        <a href="#" class="btn btn-primary btn-sm join_btn">إشترك الآن</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  course area end -->
+    <a href="" class="floating-whatsapp">
+      <img src="./content/assets/images/icons/floating-whatsapp.gif" alt="whatsapp" title="contact us on whatsapp" width="50" height="50" />
+    </a>
 
-
-
-    <!-- fun facts area start -->
-    <div class="fun-facts-area-1 shape-move bg_image ptb--50">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="fun-facts-main-wrapper-1">
-                        <!-- single  -->
-                        <div class="single-fun-facts">
-                            <div class="icon">
-                                <img src="assets/images/icons/education.png" alt="icon">
-                            </div>
-                            <h5 class="title">تعليم مرن</h5>
-                            <span class="enr">درس وقت ما تحب</span>
-                        </div>
-                        <!-- single end -->
-                    
-                        <!-- single  -->
-                        <div class="single-fun-facts">
-                            <div class="icon">
-                                <img src="assets/images/icons/support.png" alt="icon">
-                            </div>
-                            <h5 class="title">دعم مستمر</h5>
-                            <span class="enr">إجابات سريعة لأسئلتك</span>
-                        </div>
-                        <!-- single end -->
-                    
-                        <!-- single  -->
-                        <div class="single-fun-facts">
-                            <div class="icon">
-                                <img src="assets/images/icons/lesson.png" alt="icon">
-                            </div>
-                            <h5 class="title">محتوى احترافي</h5>
-                            <span class="enr">شرح سهل ومبسط</span>
-                        </div>
-                        <!-- single end -->
-                    
-                        <!-- single  -->
-                        <div class="single-fun-facts">
-                            <div class="icon">
-                                <img src="assets/images/icons/certificate.png" alt="icon">
-                            </div>
-                            <h5 class="title">شهادات معتمدة</h5>
-                            <span class="enr">أضفها لسيرتك الذاتية</span>
-                        </div>
-                        <!-- single end -->
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="shape-image">
-            <div class="shape one" data-speed="0.04" data-revert="true"><img src="assets/images/banner/15.png" alt=""></div>
-            <div class="shape three" data-speed="0.04"><img src="assets/images/banner/16.png" alt=""></div>
-        </div>
-    </div>
-    <!-- fun facts area end -->
-    <!-- Latest course area start -->
-    <div class="course-area-start rts-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <div class="text-center">
-                            <h2 class="title">الدبلومات </h2>
-                            <p class="post-title">الآن يمكنك الإشتراك في نظام الدبلومات التعليمية المتاحة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="ms-portfolio-filter-area main-isotop">
-                <div class="portfolio_wrap">
-                    <div class="filter row g-5 mt--20 portfolio-feed personal">
-                        <div class="text-center diploma flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title"> دبلومة الموشن جرافيك</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center diploma flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title"> دبلومة الموشن جرافيك</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center diploma flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title"> دبلومة الموشن جرافيك</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center diploma flash grid-item-p element-item transition creative col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                            <div class="rts-single-course">
-                                <a href="#" class="thumbnail">
-                                    <img src="assets/images/courses/1.png" alt="course">
-                                </a>
-                                <div class="course-details p-2">
-                                    <div class="save-icon" data-bs-toggle="modal" data-bs-target="#exampleModal-login">
-                                        <i class="fa-sharp fa-light fa-heart"></i>
-                                    </div>
-                                    <a href="single-course.html"><h5 class="title"> دبلومة الموشن جرافيك</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="rts-btn btn-primary add_dipmloa">أنشأ الدبلومة الخاصة بك </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Latest course area end -->
-<!-- rts students feedbacka area start -->
-    <div class="rts-students-feedback-area rts-section-gap bg-feedback-nine">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-w-style-center">
-                        <h2 class="title">آراء طلابنا</h2>
-                        <p>تجارب حقيقية ساهمت في تحقيق أهداف مهنية وتعليمية مميزة</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt--50">
-                <div class="col-lg-12">
-                    <div class="swiper-feedback-wrapper-5">
-                        <div class="swiper swiper-data" data-swiper='{
-                            "spaceBetween":30,
-                            "slidesPerView":3,
-                            "loop": true,
-                            "navigation":{
-                                "nextEl":".swiper-button-next",
-                                "prevEl":".swiper-button-prev"
-                            },
-                            "pagination":{
-                                "el":".swiper-pagination",
-                                "clickable":"true"
-                            },
-                            "autoplay":{
-                                "delay":"2500"
-                            },
-                            "breakpoints":{"320":{
-                                "slidesPerView":1,
-                                "spaceBetween":30},
-                            "480":{
-                                "slidesPerView":1,
-                                "spaceBetween":30},
-                            "840":{
-                                "slidesPerView":2,
-                                "spaceBetween":30},
-                            "1140":{
-                                "slidesPerView":3,
-                                "spaceBetween":30}
-                            }
-                        }'>
-
-                            <div class="swiper-wrapper">
-
-                                <!-- 1 -->
-                                <div class="swiper-slide">
-                                    <div class="single-students-feedback-5">
-                                        <p class="disc">
-                                            كانت تجربتي مع الدورات ممتازة جدًا، الشرح واضح والتطبيقات العملية أفادتني بشكل كبير وخلتني أقدر أطبق مباشرة.
-                                        </p>
-                                        <div class="authore-area">
-                                            <img src="assets/images/user.png" alt="feedback">
-                                            <div class="author">
-                                                <h6 class="title">أحمد محمد</h6>
-                                                <div class="stars">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 2 -->
-                                <div class="swiper-slide">
-                                    <div class="single-students-feedback-5">
-                                        <p class="disc">
-                                            كانت تجربتي مع الدورات ممتازة جدًا، الشرح واضح والتطبيقات العملية أفادتني بشكل كبير وخلتني أقدر أطبق مباشرة.
-                                        </p>
-                                        <div class="authore-area">
-                                            <img src="assets/images/user.png" alt="feedback">
-                                            <div class="author">
-                                                <h6 class="title">أحمد محمد</h6>
-                                                <div class="stars">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 3 -->
-                                <div class="swiper-slide">
-                                    <div class="single-students-feedback-5">
-                                        <p class="disc">
-                                            كانت تجربتي مع الدورات ممتازة جدًا، الشرح واضح والتطبيقات العملية أفادتني بشكل كبير وخلتني أقدر أطبق مباشرة.
-                                        </p>
-                                        <div class="authore-area">
-                                            <img src="assets/images/user.png" alt="feedback">
-                                            <div class="author">
-                                                <h6 class="title">أحمد محمد</h6>
-                                                <div class="stars">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-regular fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="left-align-arrow-btn">
-                                <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
-                                <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- rts students feedbacka area end -->
-<section class="py-5 bg-light certificate_section">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <div class="col-md-5 text-center mt-4 mt-md-0">
-                <img src="assets/images/certificate.png"
-                    alt="Course Certificate"
-                    class="img-fluid shadow-lg rounded"
-                    style="max-width: 90%;">
-            </div>
-         
-            <div class="col-md-7">
-                <h2 class="fw-bold mb-3">احصل على شهادة معتمدة بعد انتهاء الكورس</h2>
-                <p class="text-muted fs-5">
-                    بمجرد الانتهاء من جميع دروس الكورس، هيتم منحك شهادة إتمام رسمية 
-                    تقدر تستخدمها في الـ CV أو تعرضها على LinkedIn، 
-                    وتعزز بيها فرصك في سوق العمل بشكل احترافي.
-                </p>
-                <p class="text-muted fs-5 mt-3">
-                    الشهادة تعتبر نقطة قوة في ملفك المهني،  
-                    وبتزود فرص قبولك في أي وظيفة داخل مجال التصميم.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- footer call to action area start -->
-    <div class="footer-style-home-five pt--100 pb--60 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-style-five-wrapper">
-                        <a href="index.html" class="logo-footer">
-                            CourHub
-                        </a>
-    
-                        <p class="disc">نوفر دورات تعليمية متكاملة تساعدك على تطوير مهاراتك وصقل خبراتك في مختلف المجالات بخطوات احترافية وبأسلوب بسيط وواضح.</p>
-    
-                        <div class="social-copyright">
-                            <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-    
-                        <p class="copu-right">© 2025 جميع الحقوق محفوظة لـ <a href="#">Studyhub</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- footer call to action area end -->
-
-    <!-- Modal -->
-    <div class="modal login-pupup-modal fade" id="exampleModal-login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Hi, Welcome back!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" class="login-form">
-                        <input type="text" placeholder="Username of Email Address" required>
-                        <input type="password" placeholder="Password" required>
-                        <div class="d-flex mb--20 align-items-center">
-                            <input type="checkbox" id="examplecheck-modal">
-                            <label for="examplecheck-modal">I agree to the terms of use and privacy policy.</label>
-                        </div>
-                        <button type="submit" class="rts-btn btn-primary">Sign In</button>
-
-                        <p class="dont-acc mt--20">Dont Have an Account? <a href="registration.html">Sign-up</a> </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- header style two -->
-    <div id="side-bar" class="side-bar header-two">
-        <button class="close-icon-menu"><i class="far fa-times"></i></button>
-        <!-- inner menu area desktop start -->
-        <div class="inner-main-wrapper-desk">
-            <div class="thumbnail">
-                <img src="assets/images/banner/04.jpg" alt="elevate">
-            </div>
-            <div class="inner-content">
-                <h4 class="title">We Build Building and Great Constructive Homes.</h4>
-                <p class="disc">
-                    We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly master new technologies.
-                </p>
-                <div class="footer">
-                    <h4 class="title">Got a project in mind?</h4>
-                    <a href="contact.html" class="rts-btn btn-primary">Let's talk</a>
-                </div>
-            </div>
-        </div>
-        <!-- mobile menu area start -->
-        <div class="mobile-menu-main">
-            <nav class="nav-main mainmenu-nav mt--30">
-                <ul class="mainmenu metismenu" id="mobile-menu-active">
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Home</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a class="mobile-menu-link" href="index.html">Main Home</a></li>
-                            <li><a class="mobile-menu-link" href="index-two.html">Online Course</a></li>
-                            <li><a class="mobile-menu-link" href="index-three.html">Course Hub</a></li>
-                            <li><a class="mobile-menu-link" href="index-four.html">Distance Learning</a></li>
-                            <li><a class="mobile-menu-link" href="index-five.html">Single Instructor</a></li>
-                            <li><a class="mobile-menu-link" href="index-six.html">Language Academy</a></li>
-                            <li><a class="mobile-menu-link" href="index-seven.html">Gym Instructor</a></li>
-                            <li><a class="mobile-menu-link" href="index-eight.html">Kitchen Coach</a></li>
-                            <li><a class="mobile-menu-link" href="index-nine.html">Course Portal</a></li>
-                            <li><a class="mobile-menu-link" href="index-ten.html">Business Coach</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Pages</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a class="mobile-menu-link" href="about.html">About Us</a></li>
-                            <li><a class="mobile-menu-link" href="about-two.html">About Us Two</a></li>
-                            <li><a class="mobile-menu-link" href="instructor-profile.html">Profile</a></li>
-                            <li><a class="mobile-menu-link" href="contact.html">Contact</a></li>
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Zoom</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-                                    <li><a href="zoom-meeting.html"></a>Zoom Meeting</li>
-                                    <li><a href="zoom-details.html"></a>Zoom Details</li>
-                                </ul>
-                            </li>
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Event</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-                                    <li><a href="event.html"></a>Event</li>
-                                    <li><a href="event-two.html"></a>Event Two</li>
-                                    <li><a href="event-details.html"></a>Event Details</li>
-                                </ul>
-                            </li>
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Shop</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-                                    <li><a href="shop.html"></a>Shop</li>
-                                    <li><a href="product-details.html"></a>Product Details</li>
-                                    <li><a href="checkout.html"></a>Checkout</li>
-                                    <li><a href="cart.html"></a>Cart</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Course</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="#" class="tag">Courses</a></li>
-                            <li><a class="mobile-menu-link" href="course-one.html">Courses</a></li>
-                            <li><a class="mobile-menu-link" href="course-two.html">Course List</a></li>
-                            <li><a class="mobile-menu-link" href="course-three.html">Course Grid</a></li>
-                            <li><a class="mobile-menu-link" href="course-four.html">Course List Two</a></li>
-                            <li><a class="mobile-menu-link" href="course-five.html">Course Grid Two</a></li>
-                            <li><a class="mobile-menu-link" href="course-six.html">Course Filter</a></li>
-                        </ul>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="#" class="tag">Courses Details</a></li>
-                            <li><a class="mobile-menu-link" href="single-course.html">Courses Details</a></li>
-                            <li><a class="mobile-menu-link" href="single-course-two.html">Courses Details V2</a></li>
-                            <li><a class="mobile-menu-link" href="single-course-three.html">Courses Details V3</a></li>
-                            <li><a class="mobile-menu-link" href="single-course-four.html">Courses Details V4</a></li>
-                            <li><a class="mobile-menu-link" href="single-course-five.html">Courses Details V5</a></li>
-                            <li><a class="mobile-menu-link" href="single-course-free.html">Courses Details Free</a></li>
-                        </ul>
-                        <ul class="submenu mm-collapse">
-                            <li><a href="#" class="tag">Others</a></li>
-                            <li><a class="mobile-menu-link" href="become-instructor.html">Become an Instructor</a></li>
-                            <li><a class="mobile-menu-link" href="instructor-profile.html">Instructor Profile</a></li>
-                            <li><a class="mobile-menu-link" href="instructor.html">Instructor</a></li>
-                            <li><a class="mobile-menu-link" href="pricing.html">Membership Plan</a></li>
-                            <li><a class="mobile-menu-link" href="log-in.html">Log In</a></li>
-                            <li><a class="mobile-menu-link" href="registration.html">Registration</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Dashboard</a>
-                        <ul class="submenu mm-collapse">
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Instructor Dashboard</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-                                    <li><a href="dashboard.html"></a>Dashboard</li>
-                                    <li><a href="my-profile.html"></a>My Profile</li>
-                                    <li><a href="enroll-course.html"></a>Enroll Course</li>
-                                    <li><a href="wishlist.html"></a>Wishlist</li>
-                                    <li><a href="reviews.html"></a>Reviews</li>
-                                    <li><a href="quick-attempts.html"></a>Quick Attempts</li>
-                                    <li><a href="order-history.html"></a>Order History</li>
-                                    <li><a href="question-answer.html"></a>Question Answer</li>
-                                    <li><a href="calender.html"></a>Calender</li>
-                                    <li><a href="my-course.html"></a>My Course</li>
-                                    <li><a href="announcement.html"></a>Announcement</li>
-                                    <li><a href="assignments.html"></a>Assignments</li>
-                                    <li><a href="certificate.html"></a>Certificate</li>
-                                </ul>
-                            </li>
-                            <li class="has-droupdown third-lvl">
-                                <a class="main" href="#">Students Dashboard</a>
-                                <ul class="submenu-third-lvl mm-collapse">
-                                    <li><a href="student-dashboard.html"></a>Dashboard</li>
-                                    <li><a href="student-profile.html"></a>My Profile</li>
-                                    <li><a href="student-enroll-course.html"></a>Enroll Course</li>
-                                    <li><a href="student-wishlist.html"></a>Wishlist</li>
-                                    <li><a href="student-reviews.html"></a>Reviews</li>
-                                    <li><a href="student-quick-attempts.html"></a>Quick Attempts</li>
-                                    <li><a href="student-order-history.html"></a>Order History</li>
-                                    <li><a href="student-question-answer.html"></a>Question Answer</li>
-                                    <li><a href="student-calender.html"></a>Calender</li>
-                                    <li><a href="student-settings.html"></a>Students Settings</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="has-droupdown">
-                        <a href="#" class="main">Blog</a>
-                        <ul class="submenu mm-collapse">
-                            <li><a class="mobile-menu-link" href="blog.html">Blog</a></li>
-                            <li><a class="mobile-menu-link" href="blog-grid.html">Blog Grid</a></li>
-                            <li><a class="mobile-menu-link" href="blog-list.html">Blog List</a></li>
-                            <li><a class="mobile-menu-link" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                            <li><a class="mobile-menu-link" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                            <li><a class="mobile-menu-link" href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="buttons-area">
-                <a href="#" class="rts-btn btn-border">Log In</a>
-                <a href="#" class="rts-btn btn-primary">Sign Up</a>
-            </div>
-
-            <div class="rts-social-style-one pl--20 mt--50">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- mobile menu area end -->
-    </div>
-    <!-- header style two End -->
-
-    <!-- modal -->
-
-    <!-- rts backto top start -->
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
-    </div>
-    <!-- rts backto top end -->
-
-    <!-- offcanvase search -->
-    <div class="search-input-area">
-        <div class="container">
-            <div class="search-input-inner">
-                <div class="input-div">
-                    <input class="search-input autocomplete" type="text" placeholder="Search by keyword or #">
-                    <button><i class="far fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
-    </div>
-    <!-- offcanvase search -->
-    <div id="anywhere-home" class="">
-    </div>
-
-    <!-- all scripts -->
-    <!-- jquery min js -->
-    <script src="assets/js/vendor/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- jquery ui js -->
-    <script src="assets/js/vendor/jquery-ui.js"></script>
-    <!-- metismenu js -->
-    <script src="assets/js/vendor/metismenu.js"></script>
-    <!-- magnific popup js-->
-    <script src="assets/js/vendor/magnifying-popup.js"></script>
-    <!-- swiper JS 10.2.0 -->
-    <script src="assets/js/plugins/swiper.js"></script>
-    <!-- counterup js -->
-    <script src="assets/js/plugins/counterup.js"></script>
-    <!-- waypoint js -->
-    <script src="assets/js/vendor/waypoint.js"></script>
-    <!-- wow js -->
-    <script src="assets/js/vendor/waw.js"></script>
-    <!-- isotop mesonary -->
-    <script src="assets/js/plugins/isotop.js"></script>
-    <!-- jquery imageloaded -->
-    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
-    <!-- resize sensor js -->
-    <script src="assets/js/plugins/resizer-sensor.js"></script>
-    <!-- sticky sidebar -->
-    <script src="assets/js/plugins/sticky-sidebar.js"></script>
-    <!-- gsap twinmax js -->
-    <script src="assets/js/plugins/twinmax.js"></script>
-    <!-- chroma js -->
-    <script src="assets/js/vendor/chroma.min.js"></script>
-    <!-- bootstrap 5.0.2 -->
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <!-- dymanic Contact Form -->
-    <script src="assets/js/plugins/contact.form.js"></script>
-    <!-- calender js -->
-    <script src="assets/js/plugins/calender.js"></script>
-    <!-- main Js -->
-    <script src="assets/js/main.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-          const preloader = document.getElementById('preloader');
-          preloader.classList.add('fade-out');
-      
-          setTimeout(() => {
-            document.getElementById('content').style.display = 'block';
-          }, 500); 
-        });
-      </script>
-
->>>>>>> 2d3d177 (Home Page Design)
-</body>
-
+    <!-- Base Scripts Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
+    <!-- Additional Scripts Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="./content/script/owl-init.js"></script>
+    <script src="./content/script/general.js"></script>
+    <script src="./content/script/videoPopup.js"></script>
+  </body>
 </html>

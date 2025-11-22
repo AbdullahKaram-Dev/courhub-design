@@ -1,0 +1,59 @@
+.error {
+  background-color: $darker-color;
+  border-radius: 22px;
+  padding: 2rem;
+  color: $white-color;
+  max-width: 1000px;
+  margin-inline: auto;
+
+  &__header {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &__content {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  &__code {
+    color: $red-color;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    li {
+      font-size: 1rem;
+      font-weight: 300;
+      list-style: disc;
+    }
+
+    &.no-disc {
+      padding-inline-start: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        a {
+          color: $white-color;
+        }
+
+        &:hover {
+          color: $red-color;
+          a {
+            color: $red-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.checkout {
+  color: white;
+  background-color: #5a5a5a70;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+
+  .form-group {
+    .main__btn {
+      padding: 4px 8px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+  }
+
+  &__error {
+    display: block;
+    font-size: 12px;
+    color: red;
+    margin-top: 0.5rem;
+  }
+
+  &__total {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .current-price {
+      color: $yellow-color;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .old-price {
+      color: gray;
+      font-size: 0.85em;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: gray;
+      }
+    }
+  }
+
+  &__type {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 8px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    background-color: #1e1919;
+
+    label,
+    p {
+      color: #fff;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    img {
+      width: 45px;
+      height: 25px;
+      object-fit: contain;
+    }
+
+    &__img {
+      display: block;
+    }
+
+    .active-img {
+      display: none;
+    }
+
+    input[type="radio"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:has(input:checked) {
+      background-color: $red-color;
+
+      p {
+        color: $white-color;
+      }
+
+      .checkout__type__img {
+        display: none;
+      }
+
+      .active-img {
+        display: block;
+      }
+    }
+
+    &.whatsapp {
+      border-color: $darker-color;
+
+      @include responsive(max, 992) {
+        margin-inline: 20px;
+      }
+    }
+
+    &.wallet {
+      & ~ .wallet__number {
+        display: none;
+        background-color: $darker-color;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding: 4px 8px;
+        margin-bottom: 8px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include responsive(max, 425) {
+          flex-wrap: wrap;
+        }
+
+        input {
+          background-color: transparent;
+          border: 0;
+          color: #fff;
+          text-align: end;
+
+          @include responsive(max, 425) {
+            flex-grow: 1;
+            width: 100%;
+            text-align: start;
+          }
+
+          &:focus-visible {
+            outline: 0;
+          }
+        }
+      }
+
+      &:has(input:checked) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+
+        & ~ .wallet__number {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .main__btn.green {
+    font-weight: 600;
+    background-color: #4aa51f;
+
+    &:hover {
+      background-color: #3d8b19;
+    }
+  }
+}

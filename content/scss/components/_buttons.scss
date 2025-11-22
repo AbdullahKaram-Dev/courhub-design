@@ -1,0 +1,168 @@
+.main__btn {
+  display: block;
+  width: fit-content;
+  color: $white-color;
+  background: $main-gradient;
+  border-radius: 10rem;
+  padding: 6px 24px;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+
+  a {
+    color: $white-color;
+  }
+
+  &:hover {
+    background: $darker-color;
+  }
+
+  &.gray-hover:hover {
+    background: $gray-color;
+  }
+
+  &.green {
+    background: $green-color;
+
+    &:hover {
+      background: #3d8b19;
+    }
+  }
+
+  &.gray {
+    background: $gray-color;
+
+    i.fa-star {
+      color: #ffb800;
+    }
+
+    &:hover {
+      background: $red-color;
+    }
+  }
+
+  &.center {
+    margin-inline: auto;
+  }
+
+  &.small {
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 8px;
+    background: $red-color;
+
+    &:hover {
+      background: #ad023f;
+    }
+  }
+
+  &.checkout-btn {
+    background: $green-color;
+
+    &:hover {
+      background: #ad023f;
+    }
+  }
+}
+
+.close__btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white-color;
+  width: 20px;
+  border: 0;
+  height: 20px;
+  border-radius: 50%;
+  background: $red-color;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+
+  i {
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background: $gray-color;
+    i {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.icon__btn {
+  background: $dark-color;
+  color: $white-color;
+  border-radius: 50%;
+  width: 55px;
+  height: 45px;
+  border-radius: 5rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+
+  &.gray {
+    background: $gray-color;
+  }
+
+  &:hover,
+  &.active {
+    background: $red-color !important;
+  }
+}
+
+.main__btn__priced {
+  width: fit-content;
+  color: $white-color;
+  background: $red-color;
+  border-radius: 10rem;
+  padding: 6px 24px;
+  transition: background 0.3s ease-in-out;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &.center {
+    margin-inline: auto;
+  }
+
+  &:hover {
+    background: $darker-color;
+  }
+
+  .current {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .old {
+    color: rgba($white-color, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      transform: translate(-50%) rotate(340deg);
+      left: 50%;
+      background: rgba($white-color, 0.5);
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.learning-tabs {
+  position: relative;
+
+  .nav-pills {
+    background-color: $darker-color;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+
+    .nav-item {
+      flex-grow: 1;
+
+      .nav-link {
+        color: $white-color;
+        margin-inline: auto;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+
+        &.active {
+          background-color: transparent;
+          border-color: $red-color;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    background: linear-gradient(180deg, #393434 15.15%, rgba(37, 33, 33, 0) 109.05%);
+
+    .tab-pane {
+      padding: 1rem;
+    }
+  }
+
+  .fullPreviewButton {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: $gray-color;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-color;
+    }
+  }
+}
+
+.certificate-result {
+  display: flex;
+  align-items: center;
+  color: $white-color;
+  gap: 16px;
+
+  @include responsive(max, 400) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    .main__btn {
+      margin-inline: auto;
+    }
+  }
+}
+
+.certificate-note {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #363535;
+  color: $white-color;
+
+  ul li {
+    list-style: disc;
+  }
+}
+
+.watching-course {
+  position: relative;
+  padding-inline: 1rem;
+
+  .showLessonsButton {
+    position: absolute;
+    top: 10%;
+    right: -25px;
+    width: 40px;
+    height: 40px;
+    background-color: $gray-color;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red-color;
+    }
+
+    @include responsive(max, 576) {
+      position: relative;
+      border-radius: 8px;
+      margin-inline-start: 24px;
+    }
+  }
+
+  .next,
+  .prev {
+    color: $white-color;
+    font-size: 1rem;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $red-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next {
+    right: -25px;
+  }
+
+  .prev {
+    content: "\f104";
+    left: 0;
+  }
+}
+
+#lessonsList,
+#previewLesson {
+  transition: all 0.3s ease;
+}
+
+.hide-lessons {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.testimonials__writer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.min-w-max-content {
+  min-width: max-content;
+}
+
+@media screen and (max-width: 991px) {
+
+  .fullPreviewButton,
+  .showLessonsButton {
+    display: none !important;
+  }
+
+  #lessonsList {
+    display: block !important;
+  }
+
+  .hide-lessons {
+    opacity: 1;
+    visibility: unset;
+    height: unset;
+    width: unset;
+    overflow: unset;
+  }
+}
+
+.course-iframe iframe {
+  aspect-ratio: 640 / 360;
+}

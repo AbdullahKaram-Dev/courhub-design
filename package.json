@@ -1,0 +1,16 @@
+{
+  "name": "sonicourses-design",
+  "version": "1.0.0",
+  "description": "to run sass watcher:",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass content/scss/main.scss content/css/main.css --style=compressed --source-map",
+    "watch": "sass --watch content/scss/main.scss:content/css/main.css --style=compressed --source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.94.1"
+  }
+}
