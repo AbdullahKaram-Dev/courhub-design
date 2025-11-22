@@ -41,9 +41,6 @@ $(document).on("click", function (event) {
   window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   preloader.classList.add('fade-out');
-
-  setTimeout(() => {
-  document.getElementById('content').style.display = 'block';
-}, 500);
+  
 
 });
