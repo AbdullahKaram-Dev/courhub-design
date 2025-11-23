@@ -1,0 +1,229 @@
+$bg-dark: #1c1b1f;
+$bg-light: #2a292e;
+$btn-bg: #3e43a7;
+$delete-bg: #3a3a3f;
+$text-light: #fff;
+$text-muted: #b2b2b2;
+
+.cart-wrapper {
+  direction: rtl;
+
+  .cart-box {
+    background: $bg-dark;
+    padding: 25px;
+    border-radius: 20px;
+    max-height: 380px;
+    overflow-y: auto;
+
+    .cart-row {
+      display: flex;
+      align-items: center;
+      background: $bg-light;
+      padding: 15px;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      position: relative;
+
+      .delete-btn {
+        border: none;
+        background: $delete-bg;
+        color: $text-light;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      .item-img {
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 14px;
+          object-fit: cover;
+        }
+      }
+
+      .item-info {
+        margin-right: 15px;
+        flex: 1;
+
+        h6 {
+          color: $text-light;
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          color: $text-muted;
+          margin: 0;
+          font-size: 13px;
+        }
+      }
+
+      .item-price {
+        color: $text-light;
+        font-size: 16px;
+        text-align: left;
+        min-width: 100px;
+      }
+    }
+  }
+
+  .total-box {
+    background: $bg-dark;
+    padding: 30px;
+    border-radius: 20px;
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      color: $text-light;
+      margin-bottom: 10px;
+
+      .total-price {
+        font-weight: bold;
+      }
+    }
+
+    .checkout-btn {
+      display: block;
+      background: $btn-bg;
+      color: $text-light;
+      text-align: center;
+      padding: 14px;
+      margin-top: 25px;
+      border-radius: 12px;
+      font-size: 17px;
+      text-decoration: none;
+    }
+  }
+}
+#cartModal {
+  .modal-content {
+    background-color: #1c1b1f;
+  }
+
+  .modal-header {
+    border: 0;
+
+    h5 {
+      color: #fff;
+    }
+  }
+
+  .cart-wrapper {
+    .cart-box {
+      padding: 6px;
+
+      .cart-row {
+        .item-img {
+          img {
+            width: 145px;
+            height: 90px;
+            border-radius: 14px;
+            object-fit: cover;
+          }
+        }
+
+        .item-price {
+          .btn-danger {
+            display: block;
+            margin: 0 auto 7px auto;
+            background-color: transparent;
+            border: 0;
+            color: #949495;
+          }
+        }
+      }
+    }
+
+    .total-box {
+      border: 0 !important;
+      padding: 0 !important;
+
+      .total-row {
+        .total-price {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .btn-success {
+    background-color: #6a1b9a !important;
+    border: 0;
+    padding: 13px;
+    text-align: center;
+    width: 233px !important;
+    display: block;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+  }
+
+  .btn-close {
+    filter: brightness(0) invert(1);
+  }
+
+  @media screen and (max-width: 992px) {
+    .cart-wrapper {
+      .cart-box {
+        .cart-row {
+          .item-price {
+            color: #fff;
+            font-size: 13px;
+            text-align: left;
+            min-width: 0;
+          }
+
+          .item-img {
+            img {
+              width: 85px;
+              height: 60px;
+              border-radius: 14px;
+              object-fit: cover;
+            }
+          }
+
+          padding: 7px;
+
+          .item-info {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty-cart
+{
+  i{
+    color: #676667;
+  }
+  color: #fff;
+  h3
+  {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  p{
+    color: #9c9a9a;
+    font-size: 17px;
+  }
+  .btn
+  {
+    background-color: #6a1b9a;
+    border: 0;
+    margin-top: 60px !important;
+    padding: 13px 70px;
+    font-size: 19px;
+    i{
+      color: #fff;
+    }
+  }
+}

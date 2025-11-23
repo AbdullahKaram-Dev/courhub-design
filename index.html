@@ -31,6 +31,103 @@
     </div>
     <!-- End banner -->
 
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content login-modal">
+
+          <div class="modal-body">
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <h2 class="text-center mb-2">مرحباً بك!</h2>
+            <p class="text-center mb-4">تسجيل الدخول للمتابعة</p>
+
+            <button class="social-btn google-btn">
+              <img src="https://www.svgrepo.com/show/355037/google.svg" style="height: 20px" alt="">
+              تسجيل الدخول بواسطة جوجل
+            </button>
+
+            <button class="social-btn facebook-btn mt-3">
+              <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" style="height: 20px" alt="">
+              تسجيل الدخول بواسطة فيسبوك
+            </button>
+
+
+            <div class="divider">أو</div>
+
+            <form class="login_inputs">
+              <div class="input-group mb-3 custom-input">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+              </div>
+
+              <span class="error-text">البريد الإلكتروني مطلوب</span>
+
+              <div class="input-group mb-3 custom-input password-group">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control password-input" placeholder="كلمة السر ">
+                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
+              </div>
+
+
+            </form>
+            <form class="register_inputs">
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="input-group mb-3 custom-input">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="الاسم الأول">
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="input-group mb-3 custom-input">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="الاسم الأخير">
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group mb-3 custom-input">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+              </div>
+
+              <div class="input-group mb-3 custom-input password-group">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control password-input" placeholder="كلمة السر ">
+                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
+              </div>
+
+              <div class="input-group mb-3 custom-input password-group">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control password-input" placeholder="تأكيد كلمة السر ">
+                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
+              </div>
+
+
+
+            </form>
+
+            <a href="#" class="forget">هل نسيت كلمة المرور؟</a>
+
+            <button type="submit" class="btn login-submit-btn w-100 mt-4">تسجيل الدخول</button>
+            <p class="text-center mt-3 new-account">
+              ليس لديك حساب؟ <a href="#" class="switch-to-register">حساب جديد</a>
+            </p>
+
+            <p class="text-center mt-3 back-to-login d-none" id="backLogin">
+              لديك حساب بالفعل؟ <a href="#" class="switch-to-login">تسجيل الدخول</a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
     <!-- Bottom Navigation -->
     <nav class="bottom-nav d-none bg-dark border-top border-secondary fixed-bottom">
       <div class="d-flex justify-content-around text-center">
@@ -104,19 +201,27 @@
             </li>
           </ul>
           <ul class="header__actions navbar-nav flex-grow-0">
+
             <li class="nav-item">
-              <a class="nav-link" href="./myCart.html">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
                 <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
                 <span class="notification">1</span>
               </a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="./favoriteCourses.html">
                 <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
                 <span class="notification">1</span>
               </a>
             </li>
+
+            <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+              تسجيل الدخول
+            </button>
+
             <li class="nav-item dropdown header-profile">
+
               <a class="nav-link" href="javascript:void(0);">
                 <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="" />
               </a>
@@ -765,8 +870,7 @@
                 <img class="img-fluid d-block mx-auto" src="./content/assets/images/certificate.png" alt="certificate" />
               </div>
             </div>
-
-            <div class="col-12 col-lg-8 col-xl-8 ">
+            <div class="col-12 col-lg-4 col-xl-4 ">
                 <div class="certificate-section">
                   <div class="title-area-center-style">
                     <h2 class="title latest_course_title">احصل على شهادة معتمدة بعد انتهاء الكورس</h2>
@@ -785,6 +889,14 @@
                   <a href="#" class="rts-btn btn-primary">اشترك الأن</a>
                 </div>
             </div>
+
+            <div class="col-12 col-lg-4 col-xl-4">
+              <div class="certificate-section__image">
+                <img class="img-fluid d-block mx-auto" src="./content/assets/images/event.png" alt="certificate" />
+              </div>
+            </div>
+
+
           </div>
           <div class="certificate-section__features">
             <div class="certificate-section__feature">
@@ -819,6 +931,79 @@
         </div>
       </div>
       <!-- end certificate -->
+
+
+      <!--cart modal -->
+      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel">محتوي السلة</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="empty-cart text-center mb-4 d-none">
+                <i class="fa fa-shopping-cart fa-3x mb-3"></i>
+                <h3>سلة المشتريات فارغة</h3>
+                <p>يرجى إضافة بعض الدورات إلى سلة المشتريات للمتابعة</p>
+                <a href="#" class="btn btn-primary mt-3">
+                  <i class="fa fa-arrow-right"></i> مواصلة التسوق
+                </a>
+              </div>
+
+              <div class="row cart-wrapper ">
+                <!-- CART ITEMS -->
+                <div class="col-12 ">
+                  <div class="cart-box thin-scroll">
+
+                    <!-- Item -->
+                    <div class="cart-row d-flex align-items-center mb-3">
+                      <div class="item-img me-3">
+                        <img src="./content/assets/images/courses/course-1.png" class="img-fluid" alt="">
+                      </div>
+                      <div class="item-info me-auto">
+                        <p>دورة</p>
+                        <h6>معدّات التصوير بأنواعها</h6>
+
+                      </div>
+                      <div class="item-price">
+                        <button class="btn btn-danger me-2"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </div>
+
+
+
+                    <div class="total-box p-3 border rounded">
+                      <div class="total-row d-flex justify-content-between mb-2">
+                        <div>المجموع</div>
+                        <div class="total-price">5,168.87 ج.م</div>
+                      </div>
+                      <hr>
+                      <div class="total-row d-flex justify-content-between mb-3">
+                        <div>المبلغ الإجمالي</div>
+                        <div class="total-price">5,168.87 ج.م</div>
+                      </div>
+
+                      <a class="btn btn-success w-100" href="./checkOut.html">
+                        إتمام عملية التسجيل <i class="fas fa-credit-card"></i>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- TOTAL BOX -->
+                <div class="col-12 ">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- Start Custom Package Modal -->
       <div class="modal thin-scroll main-modal package-modal" id="customPackageModal" tabindex="-1" aria-labelledby="customPackageModalLabel" aria-hidden="true">

@@ -75,6 +75,13 @@ html {
   top: -1px;
   z-index: 100;
 
+  .login_btn
+  {
+    background-color: #6a1b9a !important;
+    border: 0;
+    border-radius: 19px;
+    font-size: 15px;
+  }
   .navbar {
     gap: 12px;
     .navbar-brand
@@ -327,11 +334,162 @@ html {
   }
 }
 
+.login-modal {
+  background: #11011a;;
+  border-radius: 10px;
+  padding: 25px 30px;
+  position: relative;
+  color: #fff;
+  font-family: "Tajawal", sans-serif;
 
+  .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    filter: brightness(0) invert(1);
+  }
 
+  h2 {
+    font-weight: 600;
+  }
+
+  .social-btn {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: #000;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+    margin: 0 auto;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .google-btn {
+    background: #fff;
+  }
+
+  .facebook-btn {
+    background: #fff;
+  }
+
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background: #444;
+      top: 50%;
+    }
+
+    &::before {
+      right: 0;
+    }
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .custom-input {
+    background: #232334;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .input-group-text {
+      background: transparent;
+      border: none;
+      color: #aaa;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      color: #fff;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .error-text {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .forget {
+    font-size: 14px;
+    color: rgba(163, 105, 201, 0.98);
+    text-decoration: none;
+  }
+
+  .login-submit-btn {
+    background:#6a1b9a;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+
+    &:hover {
+      background: #6a1b9a;
+    }
+  }
+
+  .new-account {
+    font-size: 14px;
+
+    a {
+      color: rgba(163, 105, 201, 0.98);
+    }
+  }
+  .custom-input {
+    input {
+      direction: rtl;
+      padding: 20px 0px;
+      &::placeholder {
+        color: #bfbfbf !important;  // لون placeholder واضح
+        opacity: 1;                  // مهم جداً
+      }
+    }
+  }
+  .register_inputs {
+    display: none;
+  }
+  .switch-to-login
+  {
+    color: #c971ff;
+  }
+}
 
 @media screen and (max-width: 992px) {
   .bottom-nav {
     display: block !important;
+  }
+  .login-modal .social-btn
+  {
+    width: 100%;
+  }
+  .login-modal {
+    background: #13011d;
+    border-radius: 10px;
+    padding: 19px 4px;
   }
 }

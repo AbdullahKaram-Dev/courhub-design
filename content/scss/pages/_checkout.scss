@@ -4,6 +4,10 @@
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 0.5rem;
+  p
+  {
+    font-size: 16px;
+  }
 
   .form-group {
     .main__btn {
@@ -93,6 +97,7 @@
       inset: 0;
       opacity: 0;
       cursor: pointer;
+      padding: 12px 10px;
     }
 
     &:has(input:checked) {
@@ -173,3 +178,23 @@
     }
   }
 }
+.checkout__type
+{
+  padding: 12px 8px;
+}
+.checkout__type label, .checkout__type p {
+  color: #fff;
+  font-size: 14px;
+}
+.cart__item__img
+{
+  width: 165px;
+  flex-shrink: 0;
+  height: auto;
+  margin-right: 10px;
+}
+.cart__item
+{
+  padding: 7px 0px;
+}
+

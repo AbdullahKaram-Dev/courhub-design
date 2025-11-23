@@ -1,18 +1,24 @@
 .empty-state {
-  height: 60vh;
-  display: flex;
   justify-content: center;
   align-items: center;
-
+  .main__btn {
+    background: #6a1b9a;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 27px;
+    border-radius: 4px;
+    padding: 15px 45px;
+    font-size: 18px;
+  }
   &__content {
-    background-color: rgba(90, 90, 90, 0.44); // #5a5a5a70
+
     min-width: 65%;
     height: 50%;
     border-radius: 12px;
     padding: 1rem;
-    display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 
     @media only screen and (max-width: 992px) {
       min-width: 80%;

@@ -42,5 +42,48 @@ $(document).on("click", function (event) {
   const preloader = document.getElementById('preloader');
   preloader.classList.add('fade-out');
 
+ //login and  register
+
+      $(".switch-to-register").on("click", function (e) {
+        e.preventDefault();
+
+        $(".login_inputs").hide();
+        $(".register_inputs").show();
+        $(".forget").hide();
+
+        $(".new-account").hide();
+        $(".back-to-login").removeClass("d-none").show();
+
+        $(".login-submit-btn").text("إنشاء حساب");
+      });
+
+      $(".switch-to-login").on("click", function (e) {
+        e.preventDefault();
+
+        $(".login_inputs").show();
+        $(".register_inputs").hide();
+        $(".forget").show();
+
+        $(".back-to-login").hide();
+        $(".new-account").show();
+
+        $(".login-submit-btn").text("تسجيل الدخول");
+
+      });
+
+
+    $(document).on("click", ".toggle-password", function () {
+      let input = $(this).siblings(".password-input");
+
+      if (input.attr("type") === "password") {
+        input.attr("type", "text");
+        $(this).find("i").removeClass("fa-eye").addClass("fa-eye-slash");
+      } else {
+        input.attr("type", "password");
+        $(this).find("i").removeClass("fa-eye-slash").addClass("fa-eye");
+      }
+
+    });
+
 
 });
