@@ -186,7 +186,6 @@
           &__info {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
             gap: 8px;
 
             .watching {
@@ -206,19 +205,21 @@
           }
 
           .links {
-            margin-top: 0.5rem;
-            display: flex;
             align-items: center;
             flex-direction: row-reverse;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 10px;
+            margin-bottom: 10px;
+            margin-top: 12px;
 
             .link {
               padding: 4px 8px;
               border-radius: 10rem;
-              color: $white-color;
-              border: 1px solid $white-color;
-              font-size: 0.75rem;
+              color: #fff;
+              border: 1px solid #363131;
+              font-size: .75rem;
+              background-color: #312d2d;
+              margin-left: 5px;
             }
           }
         }
@@ -237,4 +238,9 @@
   90% {
     box-shadow: 0px 0px 2px 6px rgba(239, 0, 85, 0);
   }
+}
+.learning-tabs #accordionCourseContent .accordion-collapse .accordion-body .lesson-item__info {
+  display: flow;
+  align-items: center;
+  margin-top: 10px;
 }

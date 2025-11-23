@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Soni Courses" />
+    <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png" />
+    <!-- Base Style Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./content/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+    <title>SONI COURSES | الملف الشخصي</title>
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+  <div id="preloader">
+    <h1>CourHub</h1>
+  </div>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar-brand" href="./index.html">
+            <img src="content/assets/images/logo.png" style="height: 30px">
+          </a>
+          <div class="overlay"></div>
+          <ul class="navbar-nav collapsed-mobile">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./allCourses.html">الدورات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./allPackges.html">الدبلومات</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="javascript:void(0);"> الأقسام </a>
+              <div class="dropdown__menu">
+                <a class="dropdown__menu__item active" href="allCourses.html">تصميم</a>
+                <a class="dropdown__menu__item" href="allCourses.html">موشن جرافيك</a>
+                <a class="dropdown__menu__item" href="allCourses.html">الدورات المجانية</a>
+                <a class="dropdown__menu__item" href="allCourses.html">صناعة المحتوى</a>
+                <a class="dropdown__menu__item" href="allCourses.html">مونتاج</a>
+                <a class="dropdown__menu__item" href="allCourses.html">الثري دي</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">دوراتى</a>
+            </li>
+
+          </ul>
+          <ul class="header__actions navbar-nav flex-grow-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
+                <span class="notification">1</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./favoriteCourses.html">
+                <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
+                <span class="notification">1</span>
+              </a>
+            </li>
+
+            <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+              تسجيل الدخول
+            </button>
+
+            <li class="nav-item dropdown header-profile">
+
+              <a class="nav-link" href="javascript:void(0);">
+                <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="" />
+              </a>
+              <div class="dropdown__menu">
+                <div class="dropdown__menu__item dropdown__menu__item--profile">
+                  <a href="./profile.html" class="user__wrapper">
+                    <img src="./content/assets/images/instructor.jpg" alt="" />
+                    <div class="instructor">
+                      <h6 class="name">Fahmy Mansour</h6>
+                      <p class="email">Test@gmail.com</p>
+                    </div>
+                  </a>
+                </div>
+                <a class="dropdown__menu__item" href="./helpCenter.html">مركز المساعدة</a>
+                <a class="dropdown__menu__item" href="./login.html">الخروج</a>
+              </div>
+            </li>
+            <!-- <button class="main__btn gray">
+              <a href="./login.html"> تسجيل الدخول </a>
+            </button> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container mt-4">
+        <div class="profile">
+          <div class="alert d-none" role="alert">
+            <div class="alert__text">
+              <h4 class="alert-heading">تحقق من بريدك الإلكتروني</h4>
+              <p>لقد قمنا بإرسال رسالة تحقق إلى بريدك الإلكتروني. يرجى التحقق من بريدك الإلكتروني والنقر على الرابط لتأكيد عنوان بريدك الإلكتروني.</p>
+              <p class="mb-0">لم تستلم البريد الإلكتروني؟ <a href="javascript:void(0);" class="alert-link" onclick="event.preventDefault(); $('#verify-user-email-form').submit();">إضغط هنا لأعادة إلارسال</a></p>
+            </div>
+          </div>
+
+          <ul class="nav nav-pills profile__tabs mb-3 thin-scroll thin-scroll--x" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active position-relative" id="pills-courses-tab" data-bs-toggle="pill" data-bs-target="#pills-courses" type="button" role="tab" aria-controls="pills-courses" aria-selected="true">
+                <img class="img-fluid" src="./content/assets/images/icons/courses.svg" alt="" />
+                دوراتي
+                <span class="highlight d-none"></span>
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-packages-tab" data-bs-toggle="pill" data-bs-target="#pills-packages" type="button" role="tab" aria-controls="pills-packages" aria-selected="false">
+                <img class="img-fluid" src="./content/assets/images/icons/packages.svg" alt="" />
+                الدبلومات
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-orders-tab" data-bs-toggle="pill" data-bs-target="#pills-orders" type="button" role="tab" aria-controls="pills-orders" aria-selected="false">
+                <img class="img-fluid" src="./content/assets/images/icons/orders.svg" alt="" />
+                طلباتي
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <img class="img-fluid" src="./content/assets/images/icons/profile.svg" alt="" />
+                الملف الشخصي
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab" tabindex="0">
+              <!-- <div class="empty-state">
+                <div class="empty-state__content">
+                  <div class="empty-state__content__text">
+                    <h5 class="text-white my-3">المفضلة فارغة</h5>
+                    <a class="main__btn" href="./allCourses.html">الإطلاع على الدورات</a>
+                  </div>
+                  <img src="./content/assets/images/icons/magnifying-glass.png" alt="" height="100" />
+                </div>
+              </div> -->
+
+              <div class="profile__courses">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray" data-bs-toggle="modal" data-bs-target="#rateModal">
+                          قيم الدورة
+                          <i class="fa-regular fa-star"></i>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="product">
+                      <div class="product__img">
+                        <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
+                        <a href="./learningPage.html">بدء الدورة</a>
+                      </div>
+                      <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                      <div class="product__owned">
+                        <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                        <button class="main__btn gray">
+                          <a href="#">
+                            قيم الدورة
+                            <i class="fa-regular fa-star"></i>
+                          </a>
+                        </button>
+                        <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                          <i class="fa-solid fa-share"></i>
+                        </button>
+                      </div>
+                      <div class="product__progress">
+                        <span>مكتملة 70%</span>
+                        <div class="product__progress__bar">
+                          <span style="--progress: 70%"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-packages" role="tabpanel" aria-labelledby="pills-packages-tab" tabindex="0">
+              <!-- <div class="empty-state">
+                <div class="empty-state__content">
+                  <div class="empty-state__content__text">
+                    <h5 class="text-white my-3">المفضلة فارغة</h5>
+                    <a class="main__btn" href="./allCourses.html">الإطلاع على الدورات</a>
+                  </div>
+                  <img src="./content/assets/images/icons/magnifying-glass.png" alt="" height="100" />
+                </div>
+              </div> -->
+              <div class="accordion packages" id="accordionCourseContent">
+                <div class="accordion-item">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#sectionOne-collapseOne" aria-expanded="true" aria-controls="sectionOne-collapseOne">دبلومة الموشن جرافيك</button>
+                  <div id="sectionOne-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4">
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray" data-bs-toggle="modal" data-bs-target="#rateModal">
+                                قيم الدورة
+                                <i class="fa-regular fa-star"></i>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sectionTwo-collapseTwo" aria-expanded="false" aria-controls="sectionTwo-collapseTwo">دبلومة التصميم</button>
+                  <div id="sectionTwo-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4">
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray" data-bs-toggle="modal" data-bs-target="#rateModal">
+                                قيم الدورة
+                                <i class="fa-regular fa-star"></i>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="product">
+                            <div class="product__img">
+                              <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
+                              <a href="./learningPage.html">بدء الدورة</a>
+                            </div>
+                            <a href="./learningPage.html" class="product__title one-line">كورس التصميم على الفوتوشوب من الصفر</a>
+                            <div class="product__owned">
+                              <button class="main__btn"><a href="./learningPage.html">بدء الدورة</a></button>
+                              <button class="main__btn gray">
+                                <a href="#">
+                                  قيم الدورة
+                                  <i class="fa-regular fa-star"></i>
+                                </a>
+                              </button>
+                              <button class="icon__btn gray" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                <i class="fa-solid fa-share"></i>
+                              </button>
+                            </div>
+                            <div class="product__progress">
+                              <span>مكتملة 70%</span>
+                              <div class="product__progress__bar">
+                                <span style="--progress: 70%"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="main__btn center">المزيد</button>
+            </div>
+            <div class="tab-pane fade" id="pills-orders" role="tabpanel" aria-labelledby="pills-orders-tab" tabindex="0">
+              <div class="profile__orders">
+                <div class="profile__orders__section">
+                  <h5 class="main__heading">فلترة الطلبات :</h5>
+                  <form action="">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3 g-3">
+                      <div class="col">
+                        <div class="filter-input">
+                          <label>الحاله :</label>
+                          <select class="form-select log-select">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="filter-input">
+                          <label>التاريخ من :</label>
+                          <input type="date" class="form-control" placeholder="أختار تاريخ من" />
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="filter-input">
+                          <label>التاريخ الي :</label>
+                          <input type="date" class="form-control" placeholder="أختار تاريخ الي" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <button class="main__btn me-3  default_btn">مسح</button>
+                      <button class="main__btn green search_btn">بحث</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="profile__orders">
+                <div class="profile__orders__section">
+                  <h5 class="main__heading">طلباتك :</h5>
+                  <div class="profile__orders__table thin-scroll">
+                    <table id="myTable" class="display table table-striped table-bordered dark-table">
+                      <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>رقم الطلب</th>
+                        <th>حاله الطلب</th>
+                        <th>المبلغ الاجمالي الفرعى</th>
+                        <th>المبلغ الإجمالي</th>
+                        <th>عدد العناصر</th>
+                        <th>التاريخ</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>ORD-1745016577-5573327</td>
+                        <td>مرفوض</td>
+                        <td>USD19</td>
+                        <td>USD19</td>
+                        <td>1</td>
+                        <td>19 Apr, 2025 12:49 AM</td>
+                      </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+              <div class="profile__data">
+                <h5>بيانات المستخدم :</h5>
+                <form action="">
+                  <div class="profile__data__wrapper">
+                    <label for="file-input" class="file-input">
+                      <input id="file-input" type="file" />
+                      <div class="file-placeholder">
+                        <i class="fa-solid fa-plus"></i>
+                        إضافة الصورة
+                      </div>
+                      <img id="img-preview" />
+                    </label>
+                    <div class="flex-grow-1">
+                      <label for="firstName">الأسم الأول</label>
+                      <div class="form-group">
+                        <input type="text" name="firstName" class="form-control" id="firstName" placeholder="الأسم الأول" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <label for="secondName">الأسم الثانى</label>
+                      <div class="form-group">
+                        <input type="text" name="secondName" class="form-control" id="secondName" placeholder="الأسم الثانى" />
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <label for="e-mail">البريد الألكترونى</label>
+                      <div class="form-group">
+                        <input type="text" name="e-mail" class="form-control" id="e-mail" placeholder="البريد الألكترونى" />
+                      </div>
+                    </div>
+                  </div>
+                  <button class="main__btn">تحديث البيانات</button>
+                </form>
+              </div>
+              <div class="profile__data">
+                <h5>كلمة السر :</h5>
+                <form action="">
+                  <div class="profile__data__wrapper">
+                    <div class="flex-grow-1">
+                      <label for="currentPassword">كلمه السر الحاليه</label>
+                      <div class="form-group">
+                        <input class="form-control pass" type="password" name="password" placeholder="كلمة السر " required="" />
+                        <i class="toggle-password fas fa-eye"></i>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <label for="newPassword">كلمه السر الجديده</label>
+                      <div class="form-group">
+                        <input id="newPassword" class="form-control pass" type="password" name="newPassword" placeholder="كلمة السر " required="" />
+                        <div class="info-input">
+                          <i class="tooltip-icon fa-solid fa-circle-info"></i>
+                          <div class="tooltip">
+                            <ul>
+                              <li>يجب ان تكون على الاقل 8 حروف</li>
+                              <li>يجب ان تحتوي على حرف كبير</li>
+                              <li>يجب ان تحتوي على حرف صغير</li>
+                              <li>يجب ان تحتوي على رقم</li>
+                              <li>يجب ان تحتوي على رمز</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <i class="toggle-password fas fa-eye"></i>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1">
+                      <label for="confirmPassowrd">تاكيد كلمه السر</label>
+                      <div class="form-group">
+                        <input id="confirmPassword" class="form-control pass" type="password" name="confirmPassword" placeholder="تاكيد كلمة السر " required="" />
+                        <div class="info-input">
+                          <i class="tooltip-icon fa-solid fa-circle-info"></i>
+                          <div class="tooltip">
+                            <ul>
+                              <li>يجب ان تكون على الاقل 8 حروف</li>
+                              <li>يجب ان تحتوي على حرف كبير</li>
+                              <li>يجب ان تحتوي على حرف صغير</li>
+                              <li>يجب ان تحتوي على رقم</li>
+                              <li>يجب ان تحتوي على رمز</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <i class="toggle-password fas fa-eye"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="main__btn">تحديث البيانات</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Share Modal  -->
+    <div class="modal fade main-modal copy-modal" id="shareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <h6 class="main-modal__title">مشاركه</h6>
+          <div class="modal-body">
+            <div class="form-group mb-4">
+              <input class="form-control copyInput" type="text" readonly value="https://www.sonicourses.com/bundle_details/8/دبلومة-الموشن-جرافيك" />
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="main__btn copy-btn">نسخ الرابط</button>
+              <div class="copy-modal__list">
+                <span>شارك في</span>
+                <a href="" target="_blank" class="copy-modal__icon">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" target="_blank" class="copy-modal__icon">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="" target="_blank" class="copy-modal__icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fawry Modal  -->
+    <!-- <div class="modal fade show main-modal paymant-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <img class="img-fluid d-block mx-auto mb-3" width="120" src="./content/assets/images/icons/checkout/fawry.png" alt="" />
+            <h6 class="text-center">ادفع عن طريق فوري</h6>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit velit laborum necessitatibus id illo quisquam hic, autem magnam modi quod?</p>
+            <div class="form-group">
+              <input class="form-control text-center my-2 copyInput mx-auto w-75" type="text" readonly value="16846516515123168" />
+            </div>
+            <button class="main__btn center copy-btn">نسخ الرابط</button>
+            <p class="text-center mt-2">هذا الكود ساري حتى : 22:56:14 2050-07-03</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- wallet Modal  -->
+    <!-- <div class="modal fade show main-modal paymant-modal" id="wallet-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <img class="img-fluid d-block mx-auto mb-3" width="50" src="./content/assets/images/icons/checkout/digital-wallet.png" alt="" />
+            <h6 class="text-center">ادفع عن المحفظه الالكترونيه</h6>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit velit laborum necessitatibus id illo quisquam hic, autem magnam modi quod?</p>
+            <div class="qr-svg mt-2">
+              <img class="img-fluid d-block mx-auto" width="200" src="./content/assets/images/QR.png" alt="" />
+            </div>
+            <button class="main__btn center copy-btn mt-2">تحميل <i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Rate Modal  -->
+    <div class="modal fade main-modal rate-modal thin-scroll" id="rateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+          <h6 class="main-modal__title">تقييمك للدورة</h6>
+          <div class="modal-body">
+            <form action="" class="text-center">
+              <fieldset class="submit-rate">
+                <input type="radio" id="rating10" name="rating" value="10" />
+                <label for="rating10" title="5 stars"></label>
+
+                <input type="radio" id="rating9" name="rating" value="9" />
+                <label class="half" for="rating9" title="4.5 stars"></label>
+
+                <input type="radio" id="rating8" name="rating" value="8" />
+                <label for="rating8" title="4 stars"></label>
+
+                <input type="radio" id="rating7" name="rating" value="7" />
+                <label class="half" for="rating7" title="3.5 stars"></label>
+
+                <input type="radio" id="rating6" name="rating" value="6" />
+                <label for="rating6" title="3 stars"></label>
+
+                <input type="radio" id="rating5" name="rating" value="5" />
+                <label class="half" for="rating5" title="2.5 stars"></label>
+
+                <input type="radio" id="rating4" name="rating" value="4" />
+                <label for="rating4" title="2 stars"></label>
+
+                <input type="radio" id="rating3" name="rating" value="3" />
+                <label class="half" for="rating3" title="1.5 stars"></label>
+
+                <input type="radio" id="rating2" name="rating" value="2" />
+                <label for="rating2" title="1 star"></label>
+
+                <input type="radio" id="rating1" name="rating" value="1" />
+                <label class="half" for="rating1" title="0.5 star"></label>
+              </fieldset>
+
+              <textarea class="thin-scroll" name="" id="" rows="6" placeholder="أكتب رأيك في الدورة"></textarea>
+              <div class="d-flex align-items-center gap-2 my-2">
+                <div class="custom-checkbox">
+                  <input type="checkbox" id="seeMore" />
+                </div>
+                <label for="seeMore" class="m-0">عدم العرض مرة أخرى</label>
+              </div>
+              <div class="d-flex gap-2 flex-wrap align-items-center mt-3">
+                <button class="main__btn">تقييم</button>
+                <button class="main__btn gray" type="button" data-bs-dismiss="modal" aria-label="Close">إغلاق</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center gy-4 gy-lg-0 my-3">
+          <div class="col-12 col-lg-3">
+            <a class="footer__logo" href="./index.html">
+              <img src="content/assets/images/logo.png" style="height: 40px ;">
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ul class="footer__links">
+              <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
+              <li><a class="nav-link" href="./allCourses.html">الدورات</a></li>
+              <li><a class="nav-link" href="./allPackges.html">الدبلومات</a></li>
+              <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
+              <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
+              <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 footer__contact">
+            <div class="footer__contact__item">
+              <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
+              <i class="fas fa-mobile-alt ms-2"></i>
+            </div>
+            <div class="footer__contact__item">
+              <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
+              <i class="far fa-envelope ms-1"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-md-row gy-3 gy-lg-0">
+          <div class="col-12 col-md-6">
+            <p class="footer__copyright">
+              جميع الحقوق محفوظة لـ
+              <a href="https://www.sonicourses.com/home"> &#169; CoursHub</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="footer__social">
+              <a class="footer__social__item" href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="footer__social__item" href="https://www.youtube.com/">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="footer__social__item" href="https://twitter.com/">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a class="footer__social__item" href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- Base Scripts Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
+    <script src="./content/script/general.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- Optional: Bootstrap integration -->
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#myTable').DataTable({
+        pageLength: 10,
+        responsive: true,
+        language: {
+          decimal:        "",
+          emptyTable:     "لا توجد بيانات متاحة في الجدول",
+          info:           "عرض _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+          infoEmpty:      "عرض 0 إلى 0 من أصل 0 مدخل",
+          infoFiltered:   "(منتقاة من مجموع _MAX_ مدخل)",
+          infoPostFix:    "",
+          thousands:      ",",
+          lengthMenu:     "عرض _MENU_ مدخلات",
+          loadingRecords: "جاري التحميل...",
+          processing:     "جاري المعالجة...",
+          search:         "بحث:",
+          zeroRecords:    "لم يتم العثور على سجلات مطابقة",
+          paginate: {
+            first:      "الأول",
+            last:       "الأخير",
+            next:       "التالي",
+            previous:   "السابق"
+          },
+          aria: {
+            sortAscending:  ": تفعيل لفرز العمود تصاعدياً",
+            sortDescending: ": تفعيل لفرز العمود تنازلياً"
+          }
+        }
+      });
+    });
+  </script>
+
+    <!-- Additional Scripts Link -->
+    <script src="./content/script/showPassword.js"></script>
+    <script src="./content/script/imageUploader.js"></script>
+    <script src="./content/script/copyLink.js"></script>
+    <script src="./content/script/tooltip.js"></script>
+  </body>
+</html>

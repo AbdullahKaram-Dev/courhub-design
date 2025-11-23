@@ -10,12 +10,15 @@
   }
 
   &__tabs {
-    background: linear-gradient(360deg, rgba(37, 33, 33, 0) -68.99%, #393434 118.99%);
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 1rem;
     border-radius: 1rem;
     overflow-x: auto;
+    background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-radius: 1rem;
+    overflow-x: auto;
+    padding: 10px;
+
 
     .nav-item {
       flex-grow: 1;
@@ -83,7 +86,7 @@
       margin-block: 1rem;
 
       .file-input {
-        --primary: color-mix(in srgb, red 60%, blueviolet);
+        --primary: color-mix(in srgb, #6a1b9a 60%, blueviolet);
         position: relative;
         background-color: $gray-color;
         width: 100px;
@@ -135,6 +138,12 @@
 
       .form-group {
         flex-grow: 1;
+        background-color: #09080c;
+        color: #fff;
+        border-radius: 7px;
+        padding: 11px 12px;
+        border: 1px solid #262626;
+
       }
     }
   }
@@ -189,9 +198,16 @@
 
   .product .main__btn {
     white-space: nowrap;
-
+    background: linear-gradient(315deg, #691b9a, #6a1b9a);
     @include responsive(max, 1300) {
       padding-inline: 12px;
     }
   }
+}
+.form-group input[type=text], .form-group input[type=email], .form-group input[type=password], .form-group textarea {
+  background-color: #09080c;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
