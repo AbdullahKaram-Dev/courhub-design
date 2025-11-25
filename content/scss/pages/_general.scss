@@ -235,3 +235,15 @@ $text-muted: #b2b2b2;
   justify-content: space-between;
   margin-top: .5rem;
 }
+.testimonials .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next {
+  top: 50%;
+}
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next
+{
+  top: 50%;
+}
+.categories .owl-carousel .owl-nav .owl-prev,
+.categories .owl-carousel .owl-nav .owl-next
+{
+  top: 32%;
+}
