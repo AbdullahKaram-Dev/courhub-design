@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Soni Courses" />
+    <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png" />
+    <!-- Base Style Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./content/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>CourHub | الدفع</title>
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+  <div id="preloader">
+    <h1>CourHub</h1>
+  </div>
+    <!-- Start Navbar -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="navbar-brand" href="./index.html">
+          CourHub
+        </a>
+        <div class="overlay"></div>
+        <ul class="navbar-nav collapsed-mobile">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./allCourses.html">الدورات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./allPackges.html">الدبلومات</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="javascript:void(0);"> الأقسام </a>
+            <div class="dropdown__menu">
+              <a class="dropdown__menu__item active" href="allCourses.html">تصميم</a>
+              <a class="dropdown__menu__item" href="allCourses.html">موشن جرافيك</a>
+              <a class="dropdown__menu__item" href="allCourses.html">الدورات المجانية</a>
+              <a class="dropdown__menu__item" href="allCourses.html">صناعة المحتوى</a>
+              <a class="dropdown__menu__item" href="allCourses.html">مونتاج</a>
+              <a class="dropdown__menu__item" href="allCourses.html">الثري دي</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="header__actions navbar-nav flex-grow-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
+              <span class="notification">1</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./favoriteCourses.html">
+              <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
+              <span class="notification">1</span>
+            </a>
+          </li>
+
+          <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+            تسجيل الدخول
+          </button>
+
+          <li class="nav-item dropdown header-profile">
+
+            <a class="nav-link" href="javascript:void(0);">
+              <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="" />
+            </a>
+            <div class="dropdown__menu">
+              <div class="dropdown__menu__item dropdown__menu__item--profile">
+                <a href="./profile.html" class="user__wrapper">
+                  <img src="./content/assets/images/instructor.jpg" alt="" />
+                  <div class="instructor">
+                    <h6 class="name">Fahmy Mansour</h6>
+                    <p class="email">Test@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+              <a class="dropdown__menu__item" href="./helpCenter.html">مركز المساعدة</a>
+              <a class="dropdown__menu__item" href="./login.html">الخروج</a>
+            </div>
+          </li>
+          <!-- <button class="main__btn gray">
+            <a href="./login.html"> تسجيل الدخول </a>
+          </button> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <!-- End Navbar -->
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <div class="main-breadcrumb mt-5">
+          <h1>صفحه الدفع</h1>
+          <p>هنا تجد االمؤتمرات التي أضفتها  للحجز</p>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 col-lg-6">
+            <div class="cart thin-scroll">
+              <div class="cart__item">
+                <div class="cart__item__img">
+                  <img src="./content/assets/images/event.png" alt="" />
+                </div>
+                <div class="cart__item__content">
+                  <h6>مؤتتمر ملتقى مطوري ال php</h6>
+                  <p> 3 تذاكر </p>
+                  <div class="cart__item__content__price">
+                    <span>200</span>
+                    <span>$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5">
+
+
+            <div class="checkout">
+              <h5 class="mb-4">اختر طريقه الدفع المناسبه:</h5>
+              <form action="">
+                <div class="checkout__type">
+                  <input type="radio" name="checkout-type" value="visa-mastercard" checked />
+                  <label>فيزا - ماستركاد</label>
+                  <img class="checkout__type__img" src="./content/assets/images/icons/checkout/visa-master-card.png" alt="" />
+                  <img class="active-img" src="./content/assets/images/icons/checkout/visa-master-card-active.png" alt="" />
+                </div>
+                <div class="checkout__type">
+                  <input type="radio" name="checkout-type" value="fawry" />
+                  <p>فوري</p>
+                  <img class="checkout__type__img" src="./content/assets/images/icons/checkout/fawry.png" alt="" />
+                  <img class="active-img" src="./content/assets/images/icons/checkout/fawry-active.png" alt="" />
+                </div>
+                <div class="checkout__type wallet">
+                  <input type="radio" name="checkout-type" value="wallet" />
+                  <p>المحفظه الالكترونية</p>
+                  <img class="checkout__type__img" src="./content/assets/images/icons/checkout/digital-wallet.png" alt="" />
+                  <img class="active-img" src="./content/assets/images/icons/checkout/digital-wallet-active.png" alt="" />
+                </div>
+                <div class="wallet__number">
+                  اكتب رقم هاتف محفظتك
+                  <input type="text" placeholder="01022674132" />
+                </div>
+                <div class="checkout__type">
+                  <input type="radio" name="checkout-type" value="paypal" />
+                  <p>باي بال</p>
+                  <img class="checkout__type__img" src="./content/assets/images/icons/checkout/paypal.png" alt="" />
+                  <img class="active-img" src="./content/assets/images/icons/checkout/paypal-active.png" alt="" />
+                </div>
+                <button type="submit" class="main__btn checkout-btn">إتمام عملية الشراء</button>
+              </form>
+            </div>
+            <a href="https://wa.me" class="checkout__type whatsapp">
+              <p>لتوفير طرق دفع اخري تواصل معنا</p>
+              <img src="./content/assets/images/icons/checkout/whatsapp.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center gy-4 gy-lg-0 my-3">
+        <div class="col-12 col-lg-3">
+          <a class="footer__logo" href="./index.html">
+            CourHub
+          </a>
+        </div>
+        <div class="col-12 col-lg-6">
+          <ul class="footer__links">
+            <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
+            <li><a class="nav-link" href="./allCourses.html">الدورات</a></li>
+            <li><a class="nav-link" href="./allPackges.html">الدبلومات</a></li>
+            <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
+            <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
+            <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3 footer__contact">
+          <div class="footer__contact__item">
+            <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
+            <i class="fas fa-mobile-alt ms-2"></i>
+          </div>
+          <div class="footer__contact__item">
+            <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
+            <i class="far fa-envelope ms-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-column-reverse flex-md-row gy-3 gy-lg-0">
+        <div class="col-12 col-md-6">
+          <p class="footer__copyright">
+            جميع الحقوق محفوظة لـ
+            <a href="https://www.sonicourses.com/home"> &#169; CoursHub</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="footer__social">
+            <a class="footer__social__item" href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="footer__social__item" href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a class="footer__social__item" href="https://twitter.com/">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a class="footer__social__item" href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end Footer -->
+    <!-- Base Scripts Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
+    <script src="./content/script/general.js"></script>
+
+    <!-- script to auto focus the wallet number -->
+    <script>
+      $('.checkout__type.wallet input[type="radio"]').change(function () {
+        if (this.checked) {
+          $('.checkout__type.wallet ~ .wallet__number input[type="text"]').focus();
+        }
+      });
+    </script>
+  </body>
+</html>

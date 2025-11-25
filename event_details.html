@@ -108,7 +108,7 @@
 
           <div class="row align-items-start g-4">
             <!-- LEFT SIDE -->
-            <div class="col-lg-7">
+            <div class="col-lg-8">
               <h1 class="meetup-title">
                 ملتقى مطوري Laravel & PHP <br>
                 لقاء نهاية العام
@@ -116,68 +116,231 @@
 
               <!-- Host -->
               <div class="host-box d-flex align-items-center mt-3">
-                <img src="./content/assets/images/instructor.jpg" class="host-img">
-                <p class="host-text ms-2">يقدّمه <span>محمد سعيد.</span></p>
+                <div class="border-rotate">
+                  <img src="./content/assets/images/instructor.jpg" class="host-img">
+                </div>
+                <p class="host-text ms-2">بواسطة <span>محمد سعيد.</span></p>
               </div>
 
-              <!-- Card -->
-              <div class="community-card d-flex mt-4">
-                <img src="./content/assets/images/event.png" class="community-img">
-                <div class="ms-3">
-                  <h5 class="mb-4">مجتمع Laravel العربي</h5>
-                  <div class="rating">
-                    <span>4.9</span>
-                    <span class="stars">★★★★★</span>
-                    <span class="count">219 مراجعة</span>
-                  </div>
-                </div>
-              </div>
+
 
               <!-- DETAILS -->
-              <div class="details mt-4">
-                <h4>تفاصيل الحدث</h4>
+              <div class="details mt-4 mb-4">
+                <h4 class="mb-3"> التفاصيل</h4>
                 <p class="details-text">
                   يسعدنا دعوتكم لحضور ملتقى نهاية العام لمطوري Laravel و PHP،
                   حيث نشارك أحدث المستجدات، ونتبادل الخبرات، ونتعرف على مطورين جدد.
                   حضوركم يشرفنا ويسعدنا وجودكم بيننا.
                 </p>
               </div>
-
               <div class="details mt-4">
-                <h4>جدول اللقاء :</h4>
-                <ul class="pl-5 list-disc mb-4">
-                  <li><i class="fa-solid fa-angle-left me-2"></i> 6:30 مساءً – استقبال الحضور</li>
-                  <li><i class="fa-solid fa-angle-left me-2"></i> 7:00 مساءً – تحديثات PHP 8.5 <em>يقدمه أحمد ر.</em></li>
-                  <li><i class="fa-solid fa-angle-left me-2"></i> 7:45 مساءً – جلسة تقنية "Laravel Tips" <em>يقدمه كريم م.</em></li>
-                  <li><i class="fa-solid fa-angle-left me-2"></i> 8:30 مساءً – احتفال نهاية العام مع وجبات خفيفة ومشروبات</li>
-                </ul>
+                <h4>الفاعليات :</h4>
 
+                <div class="schedule-tabs container mt-3">
 
+                  <!-- Tabs Header -->
+                  <ul class="nav nav-pills mb-4" id="scheduleTabs">
+
+                    <li class="nav-item">
+                      <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#day1">
+                        <strong>14 فبراير</strong>
+                        اليوم الأول
+                      </button>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#day2">
+                        <strong>21 فبراير</strong>
+                        اليوم الثاني
+                      </button>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#day3">
+                        <strong>28 فبراير</strong>
+                        اليوم الثالث
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <!-- Tabs Content -->
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="day1">
+                      <div class="event-box d-flex mb-4 ">
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">9:00 ص - 10:00 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة A
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title" >افتتاح المؤتمر والترحيب بالحضور</h4>
+                          <p>
+                            مقدمة تعريفية عن المؤتمر وأهدافه، مع كلمة افتتاحية من منظم الحدث.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Event 2 -->
+                      <div class="event-box d-flex mb-4 ">
+
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">10:15 ص - 11:30 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة B
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title">جلسة: مستقبل البرمجة في الوطن العربي</h4>
+                          <p>
+                            نقاش حول أحدث التقنيات والمجالات المطلوبة في السنوات القادمة.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <!-- =======================
+                         اليوم الثاني
+                    ======================== -->
+                    <div class="tab-pane fade" id="day2">
+
+                      <div class="event-box d-flex mb-4 ">
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">9:00 ص - 10:00 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة A
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title" >افتتاح المؤتمر والترحيب بالحضور</h4>
+                          <p>
+                            مقدمة تعريفية عن المؤتمر وأهدافه، مع كلمة افتتاحية من منظم الحدث.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="event-box d-flex mb-4 ">
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">9:00 ص - 10:00 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة A
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title" >افتتاح المؤتمر والترحيب بالحضور</h4>
+                          <p>
+                            مقدمة تعريفية عن المؤتمر وأهدافه، مع كلمة افتتاحية من منظم الحدث.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- =======================
+                         اليوم الثالث
+                    ======================== -->
+                    <div class="tab-pane fade" id="day3">
+                      <div class="event-box d-flex mb-4 ">
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">9:00 ص - 10:00 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة A
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title" >افتتاح المؤتمر والترحيب بالحضور</h4>
+                          <p>
+                            مقدمة تعريفية عن المؤتمر وأهدافه، مع كلمة افتتاحية من منظم الحدث.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="event-box d-flex mb-4 ">
+                        <div class="event-time text-center me-4">
+                          <span class="badge event-badge">9:00 ص - 10:00 ص</span>
+                          <p class="text-muted small mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            مركز القاهرة الدولي للمؤتمرات – القاعة A
+                          </p>
+                        </div>
+
+                        <div class="event-details flex-grow-1">
+                          <h4 class="fw-bold event-title" >افتتاح المؤتمر والترحيب بالحضور</h4>
+                          <p>
+                            مقدمة تعريفية عن المؤتمر وأهدافه، مع كلمة افتتاحية من منظم الحدث.
+                          </p>
+
+                          <div class="speakers">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                            <img src="./content/assets/images/instructor.jpg" class="speaker-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
 
               <!-- Location Section -->
-              <div class="location-box">
-                <h5 class="fw-bold mb-3">الموقع:</h5>
-                <p class="text-muted mb-1">شارع التحرير – القاهرة</p>
-                <p class="mb-3">نسعد بوجودكم معنا!</p>
-
-                <div class="map-wrapper overflow-hidden">
-                  <iframe
-                          width="100%"
-                          height="200"
-                          style="border:0;"
-                          loading="lazy"
-                          allowfullscreen
-                          referrerpolicy="no-referrer-when-downgrade"
-                          src="https://www.google.com/maps?q=cairo+tahrir&output=embed">
-                  </iframe>
+              <div class="details mt-4 mb-4">
+                <h4 class="mb-3"> الموقع </h4>
+                <div class="location-box">
+                  <div class="map-wrapper overflow-hidden">
+                    <iframe
+                            width="100%"
+                            height="200"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=cairo+tahrir&output=embed">
+                    </iframe>
+                  </div>
                 </div>
               </div>
 
               <!-- Attendees Section -->
               <div class="attendees-section p-4 rounded-4 shadow-sm mt-4">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4 class="fw-bold m-0">الحاضرون <span class="count">(52)</span></h4>
+                  <h4 class="fw-bold m-0"> منظمى المؤتمر <span class="count">(10)</span></h4>
                 </div>
 
                 <div class="attendees-list d-flex gap-4 flex-wrap">
@@ -239,8 +402,8 @@
 
                   <!-- Others -->
                   <div class="attendee others text-center d-flex flex-column align-items-center justify-content-center">
-            <span class="rounded-circle bg-primary text-white fs-5 d-flex align-items-center justify-content-center"
-                  style="width:60px;height:60px;">+49</span>
+                    <span class="rounded-circle bg-primary text-white fs-5 d-flex align-items-center justify-content-center"
+                  style="width:60px;height:60px;">+3</span>
                     <span class="text-muted small mt-2">آخرون</span>
                   </div>
 
@@ -250,10 +413,31 @@
             </div>
 
             <!-- RIGHT SIDE -->
-            <div class="col-lg-5">
-              <div class="big-card">
+            <div class="col-md-4">
+              <div class="countdown-wrapper">
+                <div class="countdown">
+                  <div class="time-box">
+                    <span id="days">00</span>
+                    <p>أيام</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>ساعات</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>دقائق</p>
+                  </div>
+                  <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>ثواني</p>
+                  </div>
+                </div>
+              </div>
+            <div class="big-card event-image">
                 <img src="./content/assets/images/event.png" class="w-100 big-img rounded-3">
-
+              </div>
+              <div class="event-address">
                 <div class="info-card p-3 mt-3 rounded-3">
                   <p class="calendar mb-2">
                     <i class="fa-regular fa-calendar-days"></i>
@@ -264,76 +448,150 @@
                     <i class="fa-solid fa-location-dot"></i>
                     شارع التحرير – القاهرة
                   </p>
+                  <button class="btn btn-primary mt-2 main__btn" data-bs-toggle="modal" data-bs-target="#shareModal">
+                    <i class="fa-solid fa-share me-2 "></i> <!-- أيقونة المشاركة -->
+                    مشاركة عبر وسائل التواصل
+                  </button>
+
                 </div>
               </div>
+              <div class="ticket-card rounded-3 p-4 mt-3">
 
+                <h2 class="mb-4 fw-bold">انضم الينا الان </h2>
+
+                <div class="ticket-type-box p-3 rounded-3 mb-4">
+                  <p >
+                    <span class="small">(باقي 20 مقعد)</span>
+                  </p>
+                  <hr class="dotted-hr my-3">
+
+                  <div class="row align-items-center text-center">
+
+                    <div class="col-4 text-start">
+                      <p class="text-muted small mb-0">سعر التذكرة:</p>
+                      <p class="fw-bold mb-0 ticket-price">900 ج.م</p>
+                    </div>
+
+                    <div class="col-4">
+                      <p class="text-muted small mb-0">الكمية</p>
+                      <div class="input-group input-group-sm quantity-input">
+                        <button class="btn btn-outline-secondary" type="button" aria-label="تقليل">-</button>
+                        <input type="text" class="form-control text-center" value="0" readonly>
+                        <button class="btn btn-outline-secondary" type="button" aria-label="زيادة">+</button>
+                      </div>
+                    </div>
+
+                    <div class="col-4 text-end">
+                      <p class="text-muted small mb-0">المجموع الجزئي:</p>
+                      <p class="fw-bold mb-0 subtotal"> 10 ج.م</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between my-3 px-1">
+                  <span class="fw-bold">الكمية: <span class="quantity-value">10</span></span>
+                  <span class="fw-bold">الإجمالي: <span class="total-value ">10 ج.م</span></span>
+                </div>
+
+                <a href="event-checkout.html" class="btn btn-lg get-tickets-btn w-100" >
+                  احجز التذاكر
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
 
       </div>
     </main>
+    <!-- مودال المشاركة -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-3">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="shareModalLabel">مشاركة المؤتمر</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="social-share d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#" title="فيسبوك">
+                <img src="content/assets/images/social/facebook.png" alt="Facebook" />
+              </a>
+              <a href="#" title="انستجرام">
+                <img src="content/assets/images/social/instagram.png" alt="Instagram" />
+              </a>
+              <a href="#" title="لينكدإن">
+                <img src="content/assets/images/social/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="#" title="تويتر">
+                <img src="content/assets/images/social/whatsapp.png" alt="WhatsApp" />
+              </a>
+            </div>
 
-    <!-- Footer -->
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row align-items-center gy-4 gy-lg-0 my-3">
-      <div class="col-12 col-lg-3">
-        <a class="footer__logo" href="./index.html">
-          <img src="content/assets/images/logo.png" style="height: 40px ;">
-        </a>
-      </div>
-      <div class="col-12 col-lg-6">
-        <ul class="footer__links">
-          <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
-          <li><a class="nav-link" href="./allCourses.html">الدورات</a></li>
-          <li><a class="nav-link" href="./allPackges.html">الدبلومات</a></li>
-          <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
-          <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
-          <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-lg-3 footer__contact">
-        <div class="footer__contact__item">
-          <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
-          <i class="fas fa-mobile-alt ms-2"></i>
-        </div>
-        <div class="footer__contact__item">
-          <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
-          <i class="far fa-envelope ms-1"></i>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row flex-column-reverse flex-md-row gy-3 gy-lg-0">
-      <div class="col-12 col-md-6">
-        <p class="footer__copyright">
-          جميع الحقوق محفوظة لـ
-          <a href="https://www.sonicourses.com/home"> &#169; CoursHub</a>
-        </p>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="footer__social">
-          <a class="footer__social__item" href="https://www.facebook.com/">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a class="footer__social__item" href="https://www.youtube.com/">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a class="footer__social__item" href="https://twitter.com/">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a class="footer__social__item" href="https://www.instagram.com/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center gy-4 gy-lg-0 my-3">
+            <div class="col-12 col-lg-3">
+              <a class="footer__logo" href="./index.html">
+                <img src="content/assets/images/logo.png" style="height: 40px ;">
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <ul class="footer__links">
+                <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
+                <li><a class="nav-link" href="./allCourses.html">الدورات</a></li>
+                <li><a class="nav-link" href="./allPackges.html">الدبلومات</a></li>
+                <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
+                <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
+                <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 footer__contact">
+              <div class="footer__contact__item">
+                <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
+                <i class="fas fa-mobile-alt ms-2"></i>
+              </div>
+              <div class="footer__contact__item">
+                <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
+                <i class="far fa-envelope ms-1"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row flex-column-reverse flex-md-row gy-3 gy-lg-0">
+            <div class="col-12 col-md-6">
+              <p class="footer__copyright">
+                جميع الحقوق محفوظة لـ
+                <a href="https://www.sonicourses.com/home"> &#169; CoursHub</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="footer__social">
+                <a class="footer__social__item" href="https://www.facebook.com/">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="footer__social__item" href="https://www.youtube.com/">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="footer__social__item" href="https://twitter.com/">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a class="footer__social__item" href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- end Footer -->
-    <!-- end Footer -->
-
+      </footer>
+      <!-- end Footer -->
     <!-- Base Scripts Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
@@ -341,5 +599,34 @@
     <!-- Additional Scripts Link -->
     <script src="./content/script/showPassword.js"></script>
     <script src="./content/script/tooltip.js"></script>
+    <script>
+      // اضبط تاريخ النهاية
+      let countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+
+      function updateCountdown() {
+        let now = new Date().getTime();
+        let distance = countdownDate - now;
+
+        if (distance < 0) {
+          document.querySelector(".countdown-wrapper").innerHTML = "<h2>Countdown Finished!</h2>";
+          clearInterval(interval);
+          return;
+        }
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+      }
+
+      let interval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+    </script>
   </body>
 </html>
