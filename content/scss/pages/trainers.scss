@@ -1,0 +1,94 @@
+
+.col-lg-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.speaker-card {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 25px rgba(0,0,0,0.15);
+  border: 2px solid #6a1b9a;
+  opacity: 0;
+  transform: translateY(60px);
+
+  transition: transform .4s ease;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* ▲▼ Alternate Animations */
+
+.speakers-row > div:nth-child(odd) .speaker-card {
+  animation-name: fadeUp;
+}
+.speakers-row > div:nth-child(even) .speaker-card {
+  animation-name: fadeDown;
+}
+
+/* Animation Delays */
+@for $i from 1 through 10 {
+  .speakers-row > div:nth-child(#{$i}) .speaker-card {
+    animation-delay: #{$i * 0.15}s;
+  }
+}
+
+
+/* Hover Gradient */
+.speaker-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(106, 27, 153), rgba(0,0,0,0));
+  opacity: 0;
+  transition: .4s ease;
+}
+
+.speaker-card:hover::after {
+  opacity: 1;
+}
+
+
+/* Overlay Text */
+.overlay-content {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .4s ease;
+  z-index: 3;
+}
+
+.speaker-card:hover .overlay-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(0px); }
+  to   { opacity: 1; transform: translateY(30px); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(0px); }
+  to   { opacity: 1; transform: translateY(-30px); }
+}
+
+@media (max-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

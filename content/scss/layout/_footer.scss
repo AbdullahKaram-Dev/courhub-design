@@ -1,8 +1,27 @@
 .footer {
   background-color: $black-color;
   color: $white-color;
-  padding: 2rem 0 6rem;
+  padding: 1rem 0 2rem;
+  .payment-methods
+  {
+  ul {
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 15px;
 
+    li {
+      display: flex;
+
+      img {
+        height: 22px;
+
+      }
+    }
+  }
+  }
   &__logo {
     display: block;
     width: fit-content;
@@ -88,6 +107,8 @@
   }
 
   &__copyright {
+    margin-top: 15px;
+    text-align: center;
     a {
       color: $red-color;
     }

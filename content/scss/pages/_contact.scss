@@ -1,5 +1,24 @@
 #partners-section {
+  .brands-slider2 {
+    direction: ltr !important;
+    button
+    {
+      display: none;
+    }
+  }
 
+  .owl-carousel {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .brands-slider
+  {
+
+    button
+    {
+      display: none !important;
+    }
+  }
   position: relative;
 
     padding: 100px 0;

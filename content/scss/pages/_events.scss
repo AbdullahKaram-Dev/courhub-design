@@ -1,0 +1,167 @@
+.meetup-wrapper {
+  color: #fff;
+  .meetup-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* Host */
+  .host-box {
+    .host-img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
+
+    .host-text {
+      font-size: 15px;
+      color: #fff;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  /* Mini Card */
+  .community-card {
+    background: hsla(0, 0%, 100%, .08);
+    padding: 18px;
+    border-radius: 18px;
+    gap: 18px;
+
+    .community-img {
+      width: 110px;
+      border-radius: 10px;
+    }
+
+    .rating {
+      font-size: 16px;
+
+      .stars {
+        color: #6a1b9a;
+        margin: 0 4px;
+      }
+
+      .count {
+        color: #fff;
+      }
+      h5
+      {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  /* Details */
+  .details {
+    h4 {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .details-text {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
+    }
+  }
+
+  /* Right Side Card */
+  .big-card {
+    .big-img {
+      border-radius: 18px;
+    }
+
+    .info-card {
+      background: #262626;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+
+      p {
+        font-size: 16px;
+        i {
+          color: #6a1b9a;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .location-box,
+  .attendees-section {
+    border-radius: 16px;
+
+  }
+  .location-box p{
+    color: #fff !important;
+  }
+  .map-wrapper iframe {
+    border-radius: 18px;
+  }
+
+  /* Attendees */
+  .attendees-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .attendee {
+      text-align: center;
+
+      .img-wrapper {
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+
+        img {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .others span {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+    }
+  }
+
+  .count {
+    background: #141414;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .text-primary
+  {
+    color: rgb(106 27 154) !important;
+  }
+  .bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(106 27 154) !important;
+  }
+}
+
+ .meetup-wrapper .attendees-section
+{
+  background-color: #262626;
+}
+.meetup-wrapper .big-card .info-card p i {
+  color: #6a1b9a;
+  margin-right: 6px;
+  font-size: 19px;
+  margin-left: 10px;
+}
+.details .list-disc
+{
+  padding: 0 ;
+}
+.details .list-disc li{
+  line-height: 30px;
+}
