@@ -193,6 +193,7 @@
       width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
+
     }
   }
 
@@ -228,4 +229,10 @@ label
     gap: 10px;
   }
 
+}
+
+#myTable_paginate .pagination
+{
+  text-align: left;
+  float: left;
 }
