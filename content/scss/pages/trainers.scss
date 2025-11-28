@@ -1,7 +1,6 @@
-
 .col-lg-2-4 {
-  flex: 0 0 20%;
-  max-width: 20%;
+  flex: 0 0 14.285%;
+  max-width: 14.285%;
 }
 .speaker-card {
   border-radius: 25px;
@@ -16,13 +15,20 @@
   transition: transform .4s ease;
   animation-duration: .9s;
   animation-fill-mode: forwards;
-
+  h4
+  {
+    font-size: 20px;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
+}
+.speakers-row
+{
+  margin-bottom: 30px !important;
 }
 
 /* ▲▼ Alternate Animations */
@@ -40,7 +46,6 @@
     animation-delay: #{$i * 0.15}s;
   }
 }
-
 
 /* Hover Gradient */
 .speaker-card::after {
@@ -85,6 +90,7 @@
   from { opacity: 0; transform: translateY(0px); }
   to   { opacity: 1; transform: translateY(-30px); }
 }
+
 
 @media (max-width: 992px) {
   .col-lg-2-4 {
