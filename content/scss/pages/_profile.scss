@@ -149,10 +149,10 @@
   }
 
   &__orders {
-    background-color: rgba($darker-color, 0.5);
+    background-color: rgba(9, 8, 12, .5);
     padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    border-radius: 0;
+    margin-bottom: 0;
 
     &__section {
       color: white;
@@ -210,4 +210,22 @@
   border: 0;
   border-radius: 0;
   padding: 0;
+}
+.dataTables_length
+{
+label
+{
+  display: inline-flex;
+  gap: 10px;
+}
+}
+.dataTables_filter
+{
+  text-align: left;
+  label
+  {
+    display: inline-flex;
+    gap: 10px;
+  }
+
 }
