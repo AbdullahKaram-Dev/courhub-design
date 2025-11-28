@@ -1,4 +1,11 @@
 #partners-section {
+  h1
+  {
+    span{
+      color: #fff !important;
+    }
+  }
+
   .brands-slider2 {
     direction: ltr !important;
     button
@@ -25,14 +32,18 @@
 
   .title-purple {
     color: #6A1B9A;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 800;
 
   }
-
+  h4
+  {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
   .big-purple {
     color: #6A1B9A;
-    font-size: 60px;
+    font-size: 45px;
   }
 
   .desc {
@@ -46,7 +57,7 @@
   .contact-form {
     .input-box {
       border: 1px solid #6a1b9a;
-      border-radius: 13px;
+      border-radius: 30px;
       padding: 15px 22px;
       direction: rtl;
 
@@ -66,13 +77,13 @@
   }
 
   .main-btn {
-    background: #6A1B9A;
     color: #fff;
     border: none;
-    padding: 12px 40px;
+    padding: 13px 39px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
+    background: linear-gradient(124deg, #7525a1, #b864ce);
 
     &:hover {
       background: #a135a1;
@@ -105,7 +116,7 @@
   .sub_1 {
     position: relative;
     color: #6A1B9A;
-    border: 1px solid #6A1B9A;
+    border: 2px solid #6A1B9A;
     border-radius: 16px;
     padding: 9px 20px;
     margin-top: 20px !important;
@@ -114,18 +125,16 @@
    {
      font-weight: bold;
    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: -18px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 0;
-      border-top: 14px solid transparent;
-      border-bottom: 14px solid transparent;
-      border-right: 18px solid #6A1B9A;
+
+  }
+  .sub_2 {
+    border: 2px solid #666565;
+    h3
+    {
+      font-weight: bold;
+      color: #666565;
     }
 
   }
+
 }
