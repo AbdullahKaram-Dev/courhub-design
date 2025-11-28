@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./content/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
 
 
     <title>SONI COURSES | الملف الشخصي</title>
@@ -599,11 +601,12 @@
                         </select>
                       </div>
                       <div class="col-md-2">
-                        <input type="date" class="form-control" name="form">
+                        <input type="text" id="date_from" class="form-control" placeholder="من">
                       </div>
 
                       <div class="col-md-2">
-                        <input type="date" class="form-control" name="to">
+                        <input type="text" id="date_to" class="form-control" placeholder="إلى">
+
                       </div>
                       <div class="col-md-2">
                         <button type="button" class="main-btn btn btn-primary main__btn  "> بحث</button>
@@ -613,7 +616,7 @@
               </div>
               <div class="profile__orders">
                   <div class="profile__orders__table thin-scroll">
-                    <table id="myTable" class="display table table-striped table-bordered dark-table">
+                    <table id="myTable" class=" table dark-table">
                       <thead>
                       <tr>
                         <th>#</th>
@@ -623,17 +626,25 @@
                         <th>المبلغ الإجمالي</th>
                         <th>عدد العناصر</th>
                         <th>التاريخ</th>
+                        <th>الفاتورة</th>
                       </tr>
                       </thead>
                       <tbody>
                       <tr>
                         <td>1</td>
-                        <td>ORD-1745016577-5573327</td>
+                        <td>ORD-174</td>
                         <td>مرفوض</td>
                         <td>USD19</td>
                         <td>USD19</td>
                         <td>1</td>
                         <td>19 Apr, 2025 12:49 AM</td>
+                        <td>
+                          <a href="#" class="btn download_invoice">
+                            تحميل الفاتورة
+                            <i class="fa-solid fa-file-invoice ms-1"></i>
+                          </a>
+                        </td>
+
                       </tr>
                       </tbody>
                     </table>
@@ -970,5 +981,18 @@
     <script src="./content/script/imageUploader.js"></script>
     <script src="./content/script/copyLink.js"></script>
     <script src="./content/script/tooltip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      $(document).ready(function (){
+        flatpickr("#date_from", {
+          dateFormat: "Y-m-d"
+        });
+
+        flatpickr("#date_to", {
+          dateFormat: "Y-m-d"
+        });
+      })
+
+    </script>
   </body>
 </html>
