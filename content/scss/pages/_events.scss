@@ -565,12 +565,12 @@ $box-radius: 15px;
       text-align: center;
       /* background: hsla(0, 0%, 100%, .1); */
       padding: 0 0;
-      border-radius: 15px;
+      border-radius: 5px;
       min-width: 50px;
       transition: all .3s ease;
 
       &:hover {
-        transform: translateY(-5px);
+        transform: translateY(0px);
         background: rgba(255,255,255,0.2);
       }
 
