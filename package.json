@@ -4,8 +4,11 @@
   "description": "to run sass watcher:",
   "main": "index.js",
   "scripts": {
-    "build": "sass content/scss/main.scss content/css/main.css --style=compressed --source-map",
-    "watch": "sass --watch content/scss/main.scss:content/css/main.css --style=compressed --source-map"
+    "build:website": "sass content/scss/main.scss content/css/main.css --style=compressed --source-map",
+    "watch:website": "sass --watch content/scss/main.scss:content/css/main.css --style=compressed --source-map",
+
+    "build:instructor": "sass instractor_dashboard/content/scss/main.scss instractor_dashboard/content/css/main.css --style=compressed --source-map",
+    "watch:instructor": "sass --watch instractor_dashboard/content/scss/main.scss:instractor_dashboard/content/css/main.css --style=compressed --source-map"
   },
   "keywords": [],
   "author": "",

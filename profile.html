@@ -134,6 +134,12 @@
               </a>
             </li>
             <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-events-tab" data-bs-toggle="pill" data-bs-target="#pills-events" type="button" role="tab" aria-controls="pills-events" aria-selected="false">
+                <img class="img-fluid" src="./content/assets/images/icons/packages.svg" alt="" />
+                ورش العمل
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
               <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
                 <img class="img-fluid" src="./content/assets/images/icons/profile.svg" alt="" />
                 الملف الشخصي
@@ -650,6 +656,67 @@
                     </table>
 
                   </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-events" role="tabpanel" aria-labelledby="pills-orders-tab" tabindex="0">
+              <div class="profile__orders">
+                <div class="filter-box ">
+                  <div class="row mt-2">
+                    <div class="col-md-2">
+                      <select class="form-control">
+                        <option disabled selected> الحالة </option>
+                        <option> تمت الموافقه </option>
+                        <option> غير الموافقة  </option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <input type="text" id="date_from" class="form-control" placeholder="من">
+                    </div>
+
+                    <div class="col-md-2">
+                      <input type="text" id="date_to" class="form-control" placeholder="إلى">
+
+                    </div>
+                    <div class="col-md-2">
+                      <button type="button" class="main-btn btn btn-primary main__btn  "> بحث</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__orders">
+                <div class="profile__orders__table thin-scroll">
+                  <table id="myTable" class=" table dark-table">
+                    <thead>
+                    <tr>
+                      <th>#</th>
+                      <th> رقم الطلب</th>
+                      <th> ورشة العمل </th>
+                      <th> عدد التذاكر </th>
+                      <th>المبلغ الإجمالي</th>
+                      <th>التاريخ</th>
+                      <th>الفاتورة</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>ORD-174</td>
+                      <td>مؤتمر منظمى php</td>
+                      <td>2 </td>
+                      <td>120 </td>
+                      <td>19 Apr, 2025 12:49 AM</td>
+                      <td>
+                        <a href="#" class="btn download_invoice">
+                          تحميل الفاتورة
+                          <i class="fa-solid fa-file-invoice ms-1"></i>
+                        </a>
+                      </td>
+
+                    </tr>
+                    </tbody>
+                  </table>
+
+                </div>
               </div>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">

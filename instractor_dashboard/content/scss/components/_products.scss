@@ -1,0 +1,360 @@
+.products-section {
+  padding-block: 2.5rem;
+
+  &__header {
+    color: $white-color;
+    h2 {
+      font-weight: 600;
+    }
+  }
+}
+
+.product {
+  &__img {
+    width: 100%;
+    height: 178px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      position: absolute;
+      inset: 0;
+      background-color: transparent;
+      color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      a {
+        background-color: rgba($black-color, 0.8);
+        color: $white-color;
+      }
+    }
+  }
+
+  &__labels {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  &__label {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 4rem;
+    color: $white-color;
+    flex-shrink: 0;
+
+    &--green {
+      background-color: $green-color !important;
+    }
+
+    &--red {
+      background-color: $red-color;
+    }
+
+    &--dark {
+      background-color: $dark-color;
+    }
+
+    &--gray {
+      background-color: $gray-color;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white-color;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 0.5rem;
+
+    &.one-line {
+      line-clamp: 1;
+      -webkit-line-clamp: 1;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  &__wish,
+  &__addToCart,
+  &__delete,
+  &__edit {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-color;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__wish {
+    font-size: 16px;
+    background-color: $gray-color;
+
+    &:hover,
+    &.active {
+      background-color: $green-color;
+    }
+  }
+
+  &__addToCart {
+    background-color: $gray-color;
+
+    &:hover,
+    &.active {
+      background-color: $red-color;
+    }
+  }
+
+  &__delete {
+    background-color: $red-color;
+
+    &:hover {
+      background-color: $darker-color;
+    }
+  }
+
+  &__edit {
+    background-color: $green-color;
+
+    &:hover {
+      background-color: #3d8b19;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $white-color;
+    }
+  }
+  &__info_2 {
+    display: contents;
+    align-items: center;
+    gap: 12px;
+
+    & > * {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $white-color;
+    }
+  }
+  &__loadMore {
+    width: 100%;
+    height: 179px;
+    background-color: $red-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    color: $white-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+
+    span {
+      font-size: 20px;
+      text-align: center;
+      width: 70%;
+    }
+
+    i {
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $darker-color;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+  &__package-btn {
+    width: 100%;
+    height: 115px;
+    background-color: $red-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 16px;
+    color: $white-color;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+
+    &.dark {
+      background-color: $darker-color;
+
+      &:hover {
+        background-color: $red-color;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      width: 70%;
+      text-align: start;
+    }
+
+    i {
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $darker-color;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #a9a9a9;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__owned {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block: 0.5rem;
+
+    & > :first-child {
+      margin-left: auto;
+    }
+
+    & > * {
+      font-size: 0.75rem;
+    }
+
+    .icon__btn {
+      width: 35px;
+      height: 30px;
+    }
+  }
+
+  &__progress {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $white-color;
+
+    > span {
+      flex-shrink: 0;
+      font-size: 12px;
+    }
+
+    &__bar {
+      width: 100%;
+      height: 2px;
+      border-radius: 3rem;
+      background-color: $red-color;
+      position: relative;
+
+      span {
+        --progress: 0;
+
+        border-radius: 3rem;
+        background-color: $white-color;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: var(--progress);
+      }
+    }
+  }
+
+  &.custom-package {
+    .product__labels {
+      max-width: 70%;
+    }
+
+    .product__actions {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      margin: 0;
+      z-index: 2;
+    }
+  }
+
+  &:hover {
+    .product__details {
+      opacity: 1;
+    }
+  }
+}
+hr {
+  color: #494949 !important;
+}
+.close__btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 20px;
+  border: 0;
+  height: 20px;
+  border-radius: 50%;
+  background: #09080c;
+  transition: background .3s
+  ease-in-out;
+  cursor: pointer;
+}
