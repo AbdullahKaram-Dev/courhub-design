@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="content/css/jquery-jvectormap-2.0.5.css">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Tagify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css">
     <!-- Main css -->
     <link rel="stylesheet" href="content/css/main.css">
 </head>
@@ -178,73 +181,132 @@
             <!-- Course Tab Start -->
             <div class="card create_course">
                 <div class="card-header border-bottom border-gray-100 flex-align gap-8">
-                    <h5 class="mb-0">تفاصيل الدورة</h5>
-                    <button type="button" class="text-main-600 text-md d-flex" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="تفاصيل الدورة">
-                        <i class="ph-fill ph-question"></i>
-                    </button>
+                    <h5 class="mb-0"> اضافة دورة جديدة</h5>
                 </div>
 
                 <div class="card-body">
-                    <form action="#">
-                        <div class="row gy-20">
-                            <div class="col-xxl-12 col-md-8 col-sm-7">
-                                <div class="row g-20">
-                                    <!-- Title -->
-                                    <div class="col-sm-6">
-                                        <label class="h5 mb-8 fw-semibold font-heading">عنوان الدورة <span class="text-13 text-gray-400 fw-medium">(إجباري)</span></label>
-                                        <div class="position-relative">
-                                            <input type="text" class="text-counter placeholder-13 form-control py-11 pe-76" maxlength="100" placeholder="اكتب اسم الدورة">
-                                            <div class="text-gray-400 position-absolute inset-inline-end-0 top-50 translate-middle-y me-16">
-                                                <span id="current">0</span><span id="maximum">/ 100</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row g-4">
 
-                                    <!-- Category -->
-                                    <div class="col-sm-6">
-                                        <label class="h5 mb-8 fw-semibold font-heading">تصنيف الدورة</label>
-                                        <select class="form-select py-9 placeholder-13 text-15">
-                                            <option disabled selected>اختر تصنيف الدورة</option>
-                                            <option>علوم الحاسب</option>
-                                            <option>الأعمال</option>
-                                            <option>الإدارة</option>
-                                            <option>العلوم الإنسانية</option>
-                                        </select>
-                                    </div>
+                            <div class="col-md-4 position-relative">
+                                <label class="mb-10">عنوان الدورة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control text-counter" maxlength="100" name="title" placeholder="اكتب عنوان الدورة هنا">
+                                <div class="text-counter-box"><span class="current">0</span>/100</div>
+                            </div>
 
-                                    <!-- Status -->
-                                    <div class="col-sm-6">
-                                        <label class="h5 mb-8 fw-semibold font-heading">حالة الدورة</label>
-                                        <select class="form-select py-9 placeholder-13 text-15">
-                                            <option value="draft" selected>مسودة</option>
-                                            <option value="published">منشور</option>
-                                            <option value="pending">بانتظار المراجعة</option>
-                                        </select>
-                                    </div>
+                            <div class="col-md-4 position-relative">
+                                <label class="mb-10">اسم الدورة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control text-counter" maxlength="100" name="name" placeholder="اكتب اسم الدورة هنا">
+                                <div class="text-counter-box"><span class="current">0</span>/100</div>
+                            </div>
 
-                                    <!-- Short Description -->
-                                    <div class="col-sm-12">
-                                        <label class="h5 mb-8 fw-semibold font-heading">وصف مختصر</label>
-                                        <textarea class="form-control placeholder-13 py-11" rows="3" maxlength="200" placeholder="اكتب وصفاً مختصراً للدورة..."></textarea>
-                                    </div>
+                            <div class="col-md-4">
+                                <label class="mb-10">سلاج الدورة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="slug" placeholder="اكتب سلاج الدورة">
+                            </div>
 
-                                    <!-- Full Description -->
-                                    <div class="col-sm-12">
-                                        <label class="h5 mb-8 fw-semibold font-heading">الوصف الكامل</label>
-                                        <div id="courseDescription" style="height: 200px;"></div>
-                                    </div>
+                            <div class="col-md-4">
+                                <label class="mb-10">مستوى الدورة <span class="text-danger">*</span></label>
+                                <select class="form-control" name="level">
+                                    <option>مبتدئ</option>
+                                    <option>متوسط</option>
+                                </select>
+                            </div>
 
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="mb-10">مجاني <span class="text-danger">*</span></label>
+                                        <div class="toggle-btn" id="togglePrice"></div>
+                                        <input type="hidden" name="special_price" id="special_price" value="0">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <label class="mb-10">سعر الدورة <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="price" id="price_field" placeholder="أدخل سعر الدورة" disabled>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Actions -->
-                            <div class="flex-align justify-content-end gap-8">
-                                <a href="#" class="btn btn-outline-main rounded-pill py-9">إلغاء</a>
-                                <button type="submit" class="btn btn-main rounded-pill py-9">حفظ</button>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="mb-10">بخصم <span class="text-danger">*</span></label>
+                                        <div class="toggle-btn" data-target-name="price" data-hidden-name="special_price"></div>
+                                        <input type="hidden" name="special_price" value="0">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <label class="mb-10">السعر المخصوم <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="price" placeholder="أدخل السعر بعد الخصم" disabled>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- التصنيف -->
+                            <div class="col-md-4">
+                                <label class="mb-10">الفئة <span class="text-danger">*</span></label>
+                                <select class="form-select" name="category">
+                                    <option selected disabled>اختر الفئة المناسبة</option>
+                                    <option>علوم الحاسب</option>
+                                    <option>الأعمال</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">صورة الدورة <span class="text-danger">*</span></label>
+                                <input type="file" class="form-control" name="image">
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="mb-10 d-block">مميزة <span class="text-danger">*</span></label>
+                                        <div class="toggle-btn" data-toggle-name="featured"></div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="mb-10 d-block">فعالة <span class="text-danger">*</span></label>
+                                        <div class="toggle-btn" data-toggle-name="active"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">كلمات دلالية <span class="text-danger">*</span></label>
+                                <input id="keywords" class="form-control" >
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">متطلبات الدورة <span class="text-danger">*</span></label>
+                                <input id="requirements" class="form-control" >
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">فوائد الدورة <span class="text-danger">*</span></label>
+                                <input id="benefits" class="form-control" p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">وصف الدورة التدريبية <span class="text-danger">*</span></label>
+                                <textarea class="form-control" rows="4" name="outline" placeholder="اكتب وصف مختصر للدورة"></textarea>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">iframe الترويجي <span class="text-danger">*</span></label>
+                                <textarea class="form-control" rows="4" name="iframe" placeholder="أدخل كود iframe الترويجي"></textarea>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="mb-10">وصف الدورة التفصيلي <span class="text-danger">*</span></label>
+                                <textarea class="form-control" rows="4" name="details" placeholder="اكتب وصف مفصل للدورة"></textarea>
+                            </div>
+
+                            <div class="col-12 d-flex gap-3 mt-15">
+                                <button type="submit" class="btn btn-main">حفظ </button>
+                                <button type="submit" class="btn btn-secondary">إلغاء </button>
                             </div>
 
                         </div>
                     </form>
+
                 </div>
             </div>
             <!-- Course Tab End -->
@@ -275,7 +337,8 @@
             <script src="content/js/jquery-jvectormap-2.0.5.min.js"></script>
             <!-- jvectormap world Js -->
             <script src="content/js/jquery-jvectormap-world-mill-en.js"></script>
-
+            <!-- Tagify JS -->
+            <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
             <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
             <!-- main js -->
@@ -296,5 +359,58 @@
                 });
 
             </script>
-    </body>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+
+                    document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+
+                        btn.addEventListener('click', function () {
+
+                            this.classList.toggle('active');
+
+                            let priceInput = document.getElementById(this.dataset.toggleTarget);
+                            let hiddenInput = document.getElementById(this.dataset.toggleHidden);
+
+                            if (this.classList.contains('active')) {
+                                priceInput.disabled = false;
+                                hiddenInput.value = 1;
+                            } else {
+                                priceInput.disabled = true;
+                                hiddenInput.value = 0;
+                                priceInput.value = "";
+                            }
+                        });
+
+                    });
+
+                });
+
+            </script>
+            <script>
+                var inputKeywords = document.querySelector('#keywords');
+                new Tagify(inputKeywords, {
+                    delimiters: ",",
+                    whitelist: [],
+                    dropdown: {
+                        enabled: 0
+                    }
+                });
+
+                var inputRequirements = document.querySelector('#requirements');
+                new Tagify(inputRequirements, {
+                    delimiters: ",",
+                    whitelist: [],
+                    dropdown: { enabled: 0 }
+                });
+
+                var inputBenefits = document.querySelector('#benefits');
+                new Tagify(inputBenefits, {
+                    delimiters: ",",
+                    whitelist: [],
+                    dropdown: { enabled: 0 }
+                });
+            </script>
+
+
+</body>
 </html>

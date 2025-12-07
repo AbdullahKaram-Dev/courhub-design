@@ -1,0 +1,31 @@
+.create_course  {
+  input
+  {
+    border: 1px solid #262626;
+    background-color: #363636 !important;
+    color: #fff;
+  }
+  select{
+    border: 1px solid #262626;
+    background-color: #363636 !important;
+    color: #fff;
+  }
+  textarea{
+    border: 1px solid #262626;
+    background-color: #363636 !important;
+    color: #fff;
+  }
+  .btn-secondary
+  {
+    height: 40px;
+    font-family: "Tajawal", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  tags
+  {
+    padding: 0 ;
+    border: 1px solid #262626;
+    background-color: #363636 !important;
+    color: #fff;
+
+  }
+}

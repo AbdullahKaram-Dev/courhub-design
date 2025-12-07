@@ -69,15 +69,8 @@
 
 
   //  =========================== Sidebar Open & Close Start ===============================
-  $('.toggle-btn').on('click', function () {
-    $('.sidebar').addClass('active')
-    $('.side-overlay').addClass('show')
-  }); 
 
-  $('.side-overlay, .sidebar-close-btn').on('click', function () {
-    $('.side-overlay').removeClass('show')
-    $('.sidebar').removeClass('active')
-  }); 
+
   //  =========================== Sidebar Open & Close End ===============================
 
   
