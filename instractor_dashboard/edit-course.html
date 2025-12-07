@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> CourHub | انشاء دورة جديدة</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="content/css/bootstrap.min.css">
+    <!-- file upload -->
+    <link rel="stylesheet" href="content/css/file-upload.css">
+    <!-- file upload -->
+    <link rel="stylesheet" href="content/css/plyr.css">
+    <!-- DataTables -->
+    <!-- full calendar -->
+    <link rel="stylesheet" href="content/css/full-calendar.css">
+    <!-- jquery Ui -->
+    <link rel="stylesheet" href="content/css/jquery-ui.css">
+    <!-- editor quill Ui -->
+    <link rel="stylesheet" href="content/css/editor-quill.css">
+    <!-- apex charts Css -->
+    <link rel="stylesheet" href="content/css/apexcharts.css">
+    <!-- calendar Css -->
+    <link rel="stylesheet" href="content/css/calendar.css">
+    <!-- jvector map Css -->
+    <link rel="stylesheet" href="content/css/jquery-jvectormap-2.0.5.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!-- Tagify CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="content/css/main.css">
+</head>
+<body>
+
+<!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+<!--==================== Sidebar Overlay End ====================-->
+<div class="side-overlay"></div>
+<!--==================== Sidebar Overlay End ====================-->
+
+<!-- ============================ Sidebar Start ============================ -->
+
+<aside class="sidebar">
+    <!-- sidebar close btn -->
+    <button type="button" class="sidebar-close-btn text-gray-500 hover-text-white hover-bg-main-600 text-md w-24 h-24 border border-gray-100 hover-border-main-600 d-xl-none d-flex flex-center rounded-circle position-absolute"><i class="ph ph-x"></i></button>
+    <!-- sidebar close btn -->
+
+    <a href="instractor_dashboard/index.html" class="sidebar__logo text-center p-20 position-sticky inset-block-start-0  w-100 z-1 pb-10">
+        <img src="../content/assets/images/logo.png" alt="Logo">
+    </a>
+
+    <div class="sidebar-menu-wrapper overflow-y-auto scroll-sm">
+        <div class="p-20 pt-10">
+            <ul class="sidebar-menu">
+
+                <!-- Dashboard -->
+
+
+                <li class="sidebar-menu__item ">
+                    <a href="setting.html" class="sidebar-menu__link">
+                        <span class="icon"><i class="ph ph-squares-four"></i></span>
+                        <span class="text"> لوحة التحكم </span>
+                    </a>
+                </li>
+
+                <!-- Courses -->
+                <li class="sidebar-menu__item has-dropdown">
+                    <a href="javascript:void(0)" class="sidebar-menu__link">
+                        <span class="icon"><i class="ph ph-graduation-cap"></i></span>
+                        <span class="text">الدورات </span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li class="sidebar-submenu__item">
+                            <a href="mentor-courses.html" class="sidebar-submenu__link"> دوراتى </a>
+                        </li>
+                        <li class="sidebar-submenu__item">
+                            <a href="create-course.html" class="sidebar-submenu__link"> إنشاء دورة جديدة</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!-- Settings -->
+                <li class="sidebar-menu__item">
+                    <span class="text-gray-300 text-sm px-20 pt-20 fw-semibold   d-block text-uppercase">الإعدادات</span>
+                </li>
+
+                <li class="sidebar-menu__item">
+                    <a href="setting.html" class="sidebar-menu__link">
+                        <span class="icon"><i class="ph ph-gear"></i></span>
+                        <span class="text">إعدادات الحساب</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</aside>
+<!-- ============================ Sidebar End  ============================ -->
+
+<div class="dashboard-main-wrapper">
+    <div class="top-navbar flex-between gap-16">
+
+        <div class="flex-align gap-16">
+            <!-- Toggle Button Start -->
+            <button type="button" class="toggle-btn d-xl-none d-flex text-26 text-gray-500"><i class="ph ph-list"></i></button>
+            <!-- Toggle Button End -->
+        </div>
+
+        <div class="flex-align gap-16">
+            <!-- User Profile Start -->
+            <div class="dropdown">
+                <button class="users arrow-down-icon border border-gray-200 rounded-pill p-4 d-inline-block pe-40 position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="position-relative">
+                    <img src="../instractor_dashboard/content/assets/images/thumbs/user-img.png" alt="Image" class="h-32 w-32 rounded-circle">
+                    <span class="activation-badge w-8 h-8 position-absolute inset-block-end-0 inset-inline-end-0"></span>
+                </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu--lg border-0 bg-transparent p-0">
+                    <div class="card border border-gray-100 rounded-12 box-shadow-custom">
+                        <div class="card-body">
+                            <div class="flex-align gap-8 mb-20 pb-20 border-bottom border-gray-100">
+                                <img src="../instractor_dashboard/content/assets/images/thumbs/user-img.png" alt="" class="w-54 h-54 rounded-circle">
+                                <div class="">
+                                    <h4 class="mb-0">Michel John</h4>
+                                    <p class="fw-medium text-13 text-gray-200">examplemail@mail.com</p>
+                                </div>
+                            </div>
+                            <ul class="max-h-270 overflow-y-auto scroll-sm pe-4">
+                                <li class="mb-4">
+                                    <a href="setting.html" class="py-12 text-15 px-20 hover-bg-gray-50 text-gray-300 rounded-8 flex-align gap-8 fw-medium text-15">
+                                        <span class="text-2xl text-primary-600 d-flex"><i class="ph ph-gear"></i></span>
+                                        <span class="text">Account Settings</span>
+                                    </a>
+                                </li>
+
+                                <li class="mb-4">
+                                    <a href="analytics.html" class="py-12 text-15 px-20 hover-bg-gray-50 text-gray-300 rounded-8 flex-align gap-8 fw-medium text-15">
+                                        <span class="text-2xl text-primary-600 d-flex"><i class="ph ph-chart-line-up"></i></span>
+                                        <span class="text">Daily Activity</span>
+                                    </a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="message.html" class="py-12 text-15 px-20 hover-bg-gray-50 text-gray-300 rounded-8 flex-align gap-8 fw-medium text-15">
+                                        <span class="text-2xl text-primary-600 d-flex"><i class="ph ph-chats-teardrop"></i></span>
+                                        <span class="text">Inbox</span>
+                                    </a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="email.html" class="py-12 text-15 px-20 hover-bg-gray-50 text-gray-300 rounded-8 flex-align gap-8 fw-medium text-15">
+                                        <span class="text-2xl text-primary-600 d-flex"><i class="ph ph-envelope-simple"></i></span>
+                                        <span class="text">Email</span>
+                                    </a>
+                                </li>
+                                <li class="pt-8 border-top border-gray-100">
+                                    <a href="sign-in.html" class="py-12 text-15 px-20 hover-bg-danger-50 text-gray-300 hover-text-danger-600 rounded-8 flex-align gap-8 fw-medium text-15">
+                                        <span class="text-2xl text-danger-600 d-flex"><i class="ph ph-sign-out"></i></span>
+                                        <span class="text">Log Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dashboard-body">
+        <div class="edit-course">
+        <h3 class="course-title">دورة تعلم Html ومبادئ اللغه</h3>
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs mb-4" id="courseTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic" type="button" role="tab" aria-controls="basic" aria-selected="true">
+                    المعلومات الأساسية
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="curriculum-tab" data-bs-toggle="tab" data-bs-target="#curriculum" type="button" role="tab" aria-controls="curriculum" aria-selected="false">
+                    المنهج
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="courseTabsContent">
+            <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                <div class="card create_course">
+                    <div class="card-header border-bottom border-gray-100 flex-align gap-8">
+                        <h5 class="mb-0">تعديل بيانات الدورة</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <div class="row g-4">
+
+                                <div class="col-md-4 position-relative">
+                                    <label class="mb-10">عنوان الدورة <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control text-counter" maxlength="100" name="title" placeholder="اكتب عنوان الدورة هنا">
+                                    <div class="text-counter-box"><span class="current">0</span>/100</div>
+                                </div>
+
+                                <div class="col-md-4 position-relative">
+                                    <label class="mb-10">اسم الدورة <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control text-counter" maxlength="100" name="name" placeholder="اكتب اسم الدورة هنا">
+                                    <div class="text-counter-box"><span class="current">0</span>/100</div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">سلاج الدورة <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="slug" placeholder="اكتب سلاج الدورة">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">مستوى الدورة <span class="text-danger">*</span></label>
+                                    <select class="form-control" name="level">
+                                        <option>مبتدئ</option>
+                                        <option>متوسط</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="mb-10">مجاني <span class="text-danger">*</span></label>
+                                            <div class="toggle-btn" id="togglePrice"></div>
+                                            <input type="hidden" name="special_price" id="special_price" value="0">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label class="mb-10">سعر الدورة <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="price" id="price_field" placeholder="أدخل سعر الدورة" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="mb-10">بخصم <span class="text-danger">*</span></label>
+                                            <div class="toggle-btn" data-target-name="price" data-hidden-name="special_price"></div>
+                                            <input type="hidden" name="special_price" value="0">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label class="mb-10">السعر المخصوم <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="price" placeholder="أدخل السعر بعد الخصم" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- التصنيف -->
+                                <div class="col-md-4">
+                                    <label class="mb-10">الفئة <span class="text-danger">*</span></label>
+                                    <select class="form-select" name="category">
+                                        <option selected disabled>اختر الفئة المناسبة</option>
+                                        <option>علوم الحاسب</option>
+                                        <option>الأعمال</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">صورة الدورة <span class="text-danger">*</span></label>
+                                    <input type="file" class="form-control" name="image">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="mb-10 d-block">مميزة <span class="text-danger">*</span></label>
+                                            <div class="toggle-btn" data-toggle-name="featured"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="mb-10 d-block">فعالة <span class="text-danger">*</span></label>
+                                            <div class="toggle-btn" data-toggle-name="active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">كلمات دلالية <span class="text-danger">*</span></label>
+                                    <input id="keywords" class="form-control" >
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">متطلبات الدورة <span class="text-danger">*</span></label>
+                                    <input id="requirements" class="form-control" >
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">فوائد الدورة <span class="text-danger">*</span></label>
+                                    <input id="benefits" class="form-control" >
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">وصف الدورة التدريبية <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="4" name="outline" placeholder="اكتب وصف مختصر للدورة"></textarea>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">iframe الترويجي <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="4" name="iframe" placeholder="أدخل كود iframe الترويجي"></textarea>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="mb-10">وصف الدورة التفصيلي <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" rows="4" name="details" placeholder="اكتب وصف مفصل للدورة"></textarea>
+                                </div>
+
+                                <div class="col-12 d-flex gap-3 mt-15">
+                                    <button type="submit" class="btn btn-main">حفظ </button>
+                                    <button type="submit" class="btn btn-secondary">إلغاء </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
+                <div class="course-data">
+                    <div class="buttons d-flex gap-10 mb-3">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#addSectionModal">إضافة قسم</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#addLessonModal">إضافة درس</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#sortSectionsModal">
+                            ترتيب الأقسام
+                        </button>
+                    </div>
+                    <div class="accordion" id="sectionsAccordion">
+
+                        <!-- مثال قسم 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex justify-content-between align-items-center" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    قسم 1
+                                </button>
+                                <div class="section-actions">
+                                    <button class="btn btn-sm btn-primary me-1" title="تعديل القسم"><i class="ph ph-pencil"></i></button>
+                                    <button class="btn btn-sm btn-danger" title="حذف القسم"><i class="ph ph-trash"></i></button>
+                                </div>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#sectionsAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            درس 1
+                                            <div class="lesson-actions">
+                                                <button class="btn btn-sm btn-primary me-1" title="تعديل الدرس"><i class="ph ph-pencil"></i></button>
+                                                <button class="btn btn-sm btn-danger" title="حذف الدرس"><i class="ph ph-trash"></i></button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            درس 2
+                                            <div class="lesson-actions">
+                                                <button class="btn btn-sm btn-primary me-1" title="تعديل الدرس"><i class="ph ph-pencil"></i></button>
+                                                <button class="btn btn-sm btn-danger" title="حذف الدرس"><i class="ph ph-trash"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- مثال قسم 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex justify-content-between align-items-center" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    قسم 2
+                                </button>
+                                <div class="section-actions">
+                                    <button class="btn btn-sm btn-primary me-1" title="تعديل القسم"><i class="ph ph-pencil"></i></button>
+                                    <button class="btn btn-sm btn-danger" title="حذف القسم"><i class="ph ph-trash"></i></button>
+                                </div>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#sectionsAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            درس 1
+                                            <div class="lesson-actions">
+                                                <button class="btn btn-sm btn-primary me-1" title="تعديل الدرس"><i class="ph ph-pencil"></i></button>
+                                                <button class="btn btn-sm btn-danger" title="حذف الدرس"><i class="ph ph-trash"></i></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- اضافه القسم -->
+    <div class="modal fade" id="addSectionModal" tabindex="-1" aria-labelledby="addSectionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSectionLabel">إضافة قسم جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#" method="POST">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label>اسم القسم <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="section_name" placeholder="أدخل اسم القسم">
+                        </div>
+
+                        <div class="mb-3 form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="sectionActive" name="section_active" checked>
+                            <label class="form-check-label" for="sectionActive">نشط</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-main">حفظ</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- اضافه الدرس -->
+
+    <div class="modal fade" id="addLessonModal" tabindex="-1" aria-labelledby="addLessonLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addLessonLabel">إضافة درس جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label>اختر القسم <span class="text-danger">*</span></label>
+                                <select class="form-select" name="section_id">
+                                    <option selected disabled>اختر القسم</option>
+                                    <option value="1">قسم 1</option>
+                                    <option value="2">قسم 2</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>عنوان الدرس <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="lesson_title" placeholder="أدخل عنوان الدرس">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>ملحقات الدرس</label>
+                                <input type="file" class="form-control" name="attachments[]" multiple>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>رابط الفيديو</label>
+                                <input type="text" class="form-control" name="video_url" placeholder="أدخل رابط الفيديو أو رفع فيديو">
+                            </div>
+
+                            <div class="col-md-6 form-check form-switch mt-3">
+                                <input class="form-check-input" type="checkbox" id="lessonActive" name="lesson_active" checked>
+                                <label class="form-check-label" for="lessonActive">نشط</label>
+                            </div>
+
+                            <div class="col-md-6 form-check form-switch mt-3">
+                                <input class="form-check-input" type="checkbox" id="lessonFree" name="lesson_free">
+                                <label class="form-check-label" for="lessonFree">مجاني</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-main">حفظ</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--ترتيب الاقسام -->
+    <div class="modal fade" id="sortSectionsModal" tabindex="-1" aria-labelledby="sortSectionsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sortSectionsLabel">ترتيب الأقسام</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="sortSectionsForm" action="#" method="POST">
+                    <div class="modal-body">
+                        <ul id="sectionsList" class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-id="1">
+                                قسم 1
+                                <i class="ph ph-dots-six-vertical handle" style="cursor: grab;" title="اسحب لإعادة الترتيب"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-id="2">
+                                قسم 2
+                                <i class="ph ph-dots-six-vertical handle" style="cursor: grab;" title="اسحب لإعادة الترتيب"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-id="3">
+                                قسم 3
+                                <i class="ph ph-dots-six-vertical handle" style="cursor: grab;" title="اسحب لإعادة الترتيب"></i>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-id="4">
+                                قسم 4
+                                <i class="ph ph-dots-six-vertical handle" style="cursor: grab;" title="اسحب لإعادة الترتيب"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-main">حفظ الترتيب</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- Jquery js -->
+<script src="content/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="content/js/boostrap.bundle.min.js"></script>
+<!-- Phosphor Js -->
+<script src="content/js/phosphor-icon.js"></script>
+<!-- file upload -->
+<script src="content/js/file-upload.js"></script>
+<!-- file upload -->
+<script src="content/js/plyr.js"></script>
+<!-- dataTables -->
+<!-- full calendar -->
+<script src="content/js/full-calendar.js"></script>
+<!-- jQuery UI -->
+<script src="content/js/jquery-ui.js"></script>
+<!-- jQuery UI -->
+<script src="content/js/editor-quill.js"></script>
+<!-- apex charts -->
+<script src="content/js/apexcharts.min.js"></script>
+<!-- jvectormap Js -->
+<script src="content/js/jquery-jvectormap-2.0.5.min.js"></script>
+<!-- jvectormap world Js -->
+<script src="content/js/jquery-jvectormap-world-mill-en.js"></script>
+<!-- Tagify JS -->
+<script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- main js -->
+<script src="content/js/main.js"></script>
+<script>
+    var quill = new Quill('#courseDescription', {
+        theme: 'snow',
+        placeholder: 'اكتب الوصف الكامل للدورة...',
+        modules: {
+            toolbar: [
+                [{ 'header': [1, 2, false] }],
+                ['bold', 'italic', 'underline'],
+                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                ['link'],
+                ['clean']
+            ]
+        }
+    });
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        document.querySelectorAll('.toggle-btn').forEach(function (btn) {
+
+            btn.addEventListener('click', function () {
+
+                this.classList.toggle('active');
+
+                let priceInput = document.getElementById(this.dataset.toggleTarget);
+                let hiddenInput = document.getElementById(this.dataset.toggleHidden);
+
+                if (this.classList.contains('active')) {
+                    priceInput.disabled = false;
+                    hiddenInput.value = 1;
+                } else {
+                    priceInput.disabled = true;
+                    hiddenInput.value = 0;
+                    priceInput.value = "";
+                }
+            });
+
+        });
+
+    });
+
+</script>
+<script>
+    var inputKeywords = document.querySelector('#keywords');
+    new Tagify(inputKeywords, {
+        delimiters: ",",
+        whitelist: [],
+        dropdown: {
+            enabled: 0
+        }
+    });
+
+    var inputRequirements = document.querySelector('#requirements');
+    new Tagify(inputRequirements, {
+        delimiters: ",",
+        whitelist: [],
+        dropdown: { enabled: 0 }
+    });
+
+    var inputBenefits = document.querySelector('#benefits');
+    new Tagify(inputBenefits, {
+        delimiters: ",",
+        whitelist: [],
+        dropdown: { enabled: 0 }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var el = document.getElementById('sectionsList');
+        var sortable = Sortable.create(el, {
+            animation: 150,
+            ghostClass: 'sortable-ghost'
+        });
+
+        // عند حفظ الفورم
+        document.getElementById('sortSectionsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var order = [];
+            el.querySelectorAll('li').forEach(function(item){
+                order.push(item.getAttribute('data-id'));
+            });
+            console.log('الترتيب الجديد للأقسام:', order);
+            // هنا ممكن ترسل الـ order للـ backend عبر AJAX
+            alert('تم حفظ الترتيب الجديد');
+            // أغلق المودال
+            var modalEl = document.getElementById('sortSectionsModal');
+            var modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+        });
+    });
+</script>
+
+
+</body>
+</html>

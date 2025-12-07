@@ -1,0 +1,53 @@
+.modal
+{
+  .modal-header
+  {
+    border-bottom: 1px solid #363636;
+    h5
+    {
+      color: #fff;
+    }
+  }
+  .modal-body
+  {
+    input {
+      border: 1px solid #262626;
+      background-color: #363636 !important;
+      color: #fff;
+    }
+    select {
+      border: 1px solid #262626;
+      background-color: #363636 !important;
+      color: #fff;
+    }
+    .form-check-label{
+      color: #fff;
+    }
+
+  }
+  .modal-footer
+  {
+    border: 0;
+  }
+  .modal-content
+  {
+    background-color: #262626;
+    color: #fff;
+  }
+  .btn-close
+  {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+  .btn-secondary
+  {
+    border: 0 !important;
+    border-radius: 8px !important;
+    font-family: "Tajawal", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  }
+  .form-check .form-check-input:checked {
+    background-color: #6a1b9a !important;
+    border-color: #6a1b9a !important;
+    box-shadow: none;
+  }
+}
