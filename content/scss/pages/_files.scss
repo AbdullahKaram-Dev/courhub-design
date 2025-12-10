@@ -1,0 +1,14 @@
+.files_design {
+  .product__img {
+    width: 100%;
+    height: 350px !important;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      transition: opacity .45s ease;
+    }
+  }
+}
