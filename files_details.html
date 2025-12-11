@@ -7,14 +7,16 @@
     <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./content/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <title>CourHub |  المتجر الرقمي</title>
     <meta name="robots" content="noindex, nofollow">
 </head>
-
 <body>
-
 <div id="preloader">
     <h1>CourHub</h1>
 </div>
@@ -88,8 +90,267 @@
 </header>
 <!-- End Navbar -->
 <main>
-    <div class="container"
+    <div class="container py-5">
+        <div class="row align-items-start">
+            <div class="col-md-4">
+                <!-- Main Slider -->
+                <div class="swiper mainSlider mb-3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-4" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-4" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-4" />
+                        </div>
+                    </div>
+                    <!-- arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="swiper thumbsSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-3" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./content/assets/images/files/files_design.png" class="img-fluid rounded-3" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="files_details">
+                    <h3 class="fw-bold mb-2">حزمة تصميم جرافيك احترافية</h3>
+                    <p class="text-muted mb-1">مجموعة جاهزة لتسهيل أعمالك الإبداعية</p>
+                    <h4 class="fw-bold text-dark mb-4 price">EGP 149.00</h4>
+
+                    <p>
+                        بعد شرائك لهذه الحزمة، ستحصل مباشرة على ملف قابل للتحميل يحتوي على مجموعة من العناصر
+                        الجرافيكية عالية الجودة، المناسبة للمصممين، وأصحاب الأعمال، وصناع المحتوى.
+                    </p>
+
+                    <p>
+                        تشمل الحزمة:
+                        <br>* 20 قالب تصميم قابل للتعديل.
+                        <br>* ملفات بصيغة PNG + PDF.
+                        <br>* عناصر جاهزة للسوشيال ميديا (Instagram – Facebook – Stories).
+                        <br>* تصميمات مناسبة للطباعة والاستخدام الرقمي.
+                    </p>
+                    <a href="#" class="main-btn btn btn-primary main__btn mt-4">اشتري الان </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h3 class="text-white mb-3">ملفات  مقترحة :</h3>
+        <div class="owl-carousel owl-theme owl-carousel__product files_design">
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product">
+                    <div class="product__img" data-images="[&quot;./content/assets/images/files/files_design.png&quot;,
+                            &quot;./content/assets/images/files/files_design2.png&quot;,
+                            &quot;./content/assets/images/files/files_design3.png&quot;]">
+
+                        <img class="img-fluid" src="./content/assets/images/files/files_design.png" alt="" style="opacity: 1;">
+
+                        <div class="product__labels">
+                            <span class="product__label product__label--red">مجانى</span>
+                        </div>
+                    </div>
+
+                    <div class="product__actions">
+                        <div class="d-flex gap-1">
+                            <div class="product__wish" title="إضافة للمفضله">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <button class="main__btn small">أضف للسلة</button>
+                    </div>
+
+                    <a href="./previewPayedCourse.html" class="product__title">
+                        كورس التصميم على الفوتوشوب من الصفر
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </main>
+
 <!-- End Main -->
 <!-- Footer -->
 <footer class="footer">
@@ -151,6 +412,36 @@
 <!-- Base Scripts Link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
+<script src="./content/script/copyLink.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="./content/script/owl-init.js"></script>
+<script src="./content/script/videoPopup.js"></script>
+<script src="./content/script/lightboxImage.js"></script>
 <script src="./content/script/general.js"></script>
+
+<script>
+    var thumbsSlider = new Swiper('.thumbsSlider', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    var mainSlider = new Swiper('.mainSlider', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: thumbsSlider,
+        },
+    });
+</script>
+
+
 </body>
 </html>
