@@ -1,0 +1,78 @@
+@media screen and (max-width: 992px) {
+  .products-section
+  {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  #partners-section .big-purple {
+    color: #6a1b9a;
+    font-size: 30px;
+  }
+  #partners-section h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #partners-section .title-purple {
+    color: #6a1b9a;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  #partners-section .owl-carousel
+  {
+    margin: 0 ;
+  }
+  .filter-box select ,
+  .filter-box input
+  {
+    margin-bottom: 15px;
+  }
+  .dark-table .download_invoice
+  {
+    border-radius: 12px;
+  }
+  .cart-wrapper .cart-box
+  {
+    padding: 0;
+  }
+  .cart-wrapper .total-box {
+    background: #1c1b1f;
+    padding: 6px;
+    border-radius: 20px;
+  }
+  .timeline .timeline-item .timeline-content {
+    background: #252525;
+    padding: 12px 9px;
+    border-radius: 9px;
+    margin-left: 0;
+    font-weight: bold;
+    transition: .3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .1);
+    color: #fff;
+  }
+  .timeline .timeline-item .timeline-content h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .open-video
+  {
+    display: block;
+    width: fit-content;
+    color: #fff;
+    background: linear-gradient(124deg, #7525a1, #b864ce);
+    border-radius: 10rem;
+    padding: 9px 17px;
+    transition: background .3s
+    ease-in-out;
+    font-size: 13px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+  }
+  .files_details .price {
+    color: #6a1b9a !important;
+    margin-top: 18px;
+    font-size: 23px;
+  }
+}

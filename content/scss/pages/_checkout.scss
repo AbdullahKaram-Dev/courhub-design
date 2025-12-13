@@ -198,3 +198,9 @@
   padding: 7px 0px;
 }
 
+@media screen and (max-width: 992px) {
+  .cart__item__img
+  {
+    width: 100% !important;
+  }
+}
