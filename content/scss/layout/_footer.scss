@@ -114,7 +114,6 @@
 
   &__copyright {
     margin-top: 15px;
-    text-align: center;
     a {
       color: $red-color;
     }
@@ -138,4 +137,8 @@
 
 .certificate-section__features {
   background-color: #6a1b9a36 !important;
+}
+.footer__copyright
+{
+  text-align: right !important;
 }
