@@ -10,6 +10,7 @@
     <!-- Additional CSS Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./content/css/main.css" />
@@ -1062,10 +1063,19 @@
                   <div class="package-modal__summary__items">
                     <div class="package-modal__summary__item">
                       <label for="customPackageName"> إسم الباقة</label>
-                      <div class="form-group">
                         <input type="text" id="customPackageName" class="form-control" placeholder="أدخل اسم الباقة" />
-                      </div>
                     </div>
+
+                    <div class="package-modal__summary__item">
+                      <label for="customPackageName"> اختر المدرب</label>
+                        <select class="select2 form-control">
+                          <option selected disabled> حدد المدرب المطلوب</option>
+                          <option> د. محمد أحمد</option>
+                          <option>م. أحمد فايز</option>
+                          <option>أ. يوسف إبراهيم</option>
+                        </select>
+                    </div>
+
                     <div class="package-modal__summary__item">
                       <span>دورات الباقة</span>
                       <div class="background">2</div>
@@ -1299,5 +1309,15 @@
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $('#customPackageModal').on('shown.bs.modal', function () {
+        $(this).find('.select2').select2({
+          dropdownParent: $('#customPackageModal'),
+          width: '100%'
+        });
+      });
+    </script>
+
   </body>
 </html>
