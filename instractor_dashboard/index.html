@@ -31,9 +31,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Main css -->
     <link rel="stylesheet" href="content/css/main.css">
-</head> 
+</head>
 <body>
-    
+
 <!--==================== Preloader Start ====================-->
   <div class="preloader">
     <div class="loader"></div>
@@ -83,6 +83,13 @@
                             <a href="create-course.html" class="sidebar-submenu__link"> إنشاء دورة جديدة</a>
                         </li>
                     </ul>
+                </li>
+
+                <li class="sidebar-menu__item">
+                    <a href="setting.html" class="sidebar-menu__link">
+                        <span class="icon"><i class="ph ph-gear"></i></span>
+                        <span class="text">اعدادات الحساب</span>
+                    </a>
                 </li>
 
 
@@ -380,7 +387,7 @@
             </div>
         </div>
     </div>
-    
+
         <!-- Jquery js -->
     <script src="content/js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap Bundle Js -->
@@ -404,7 +411,7 @@
     <script src="content/js/jquery-jvectormap-2.0.5.min.js"></script>
     <!-- jvectormap world Js -->
     <script src="content/js/jquery-jvectormap-world-mill-en.js"></script>
-    
+
     <!-- main js -->
     <script src="content/js/main.js"></script>
 
@@ -459,26 +466,26 @@
                     lines: {
                         show: false
                     }
-                },   
+                },
                 yaxis: {
                     lines: {
                         show: false
                     }
-                },  
+                },
                 row: {
                     colors: undefined,
                     opacity: 0.5
-                },  
+                },
                 column: {
                     colors: undefined,
                     opacity: 0.5
-                },  
+                },
                 padding: {
                     top: 0,
                     right: 0,
                     bottom: 0,
                     left: 0
-                },  
+                },
             },
             fill: {
                 type: 'gradient',
@@ -638,7 +645,7 @@
         // ========================== Export Js Start ==============================
         document.addEventListener('DOMContentLoaded', function() {
             const exportOptions = document.getElementById('exportOptions');
-            
+
             if (exportOptions) {
                 exportOptions.addEventListener('change', function() {
                     const format = this.value;
@@ -776,9 +783,9 @@
             displayCalendar();
         });
         // ============================= Calendar Js End =================================
-        
+
     </script>
-    
-    
+
+
     </body>
 </html>

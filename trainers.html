@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./content/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>CourHub | المدربين</title>
     <meta name="robots" content="noindex, nofollow">
   </head>
@@ -98,9 +99,23 @@
     <!-- Main -->
     <main>
       <div class="container">
-        <div class="main-breadcrumb mt-4">
+        <div class="main-breadcrumb mt-4 mb-3">
           <h1>المدربين </h1>
           <p>يمكنك من هنا الإطلاع على جميع المدربين لدينا </p>
+        </div>
+        <div class="filter-box ">
+          <div class="row mt-2">
+            <div class="col-md-2">
+              <select class="form-control select2">
+                <option>موشن جرافيك </option>
+                <option> تصميم مواقع </option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="main-btn btn btn-primary main__btn  "> بحث</button>
+            </div>
+          </div>
+
         </div>
         <div class="container">
           <div class="row g-4 speakers-row mt-5 mb-4">
@@ -113,6 +128,7 @@
                   <p>جرافيك ديزياينر</p>
                 </div>
               </div>
+
             </div>
 
             <!-- CARD 2 -->
@@ -257,5 +273,14 @@
         }
       });
     </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.select2').select2();
+        });
+      </script>
+
+
   </body>
 </html>

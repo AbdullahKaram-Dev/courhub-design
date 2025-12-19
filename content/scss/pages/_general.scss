@@ -251,3 +251,7 @@ $text-muted: #b2b2b2;
 {
   background-color: #41b141 !important;
 }
+.form-check-input:checked {
+  background-color: #6a1b9a;
+  border-color: #6a1b9a;
+}

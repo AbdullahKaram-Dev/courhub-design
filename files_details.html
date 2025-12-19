@@ -90,6 +90,36 @@
 </header>
 <!-- End Navbar -->
 <main>
+    <div class="modal fade main-modal copy-modal" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h6 class="main-modal__title">مشاركه</h6>
+                <div class="modal-body">
+                    <div class="form-group mb-4">
+                        <input class="form-control" id="copyInput" type="text" readonly value="https://www.sonicourses.com/bundle_details/8/باقة-الموشن-جرافيك" />
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button onclick="copyLink()" class="main__btn">نسخ الرابط</button>
+                        <div class="copy-modal__list">
+                            <span>شارك في</span>
+                            <a href="" target="_blank" class="copy-modal__icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" target="_blank" class="copy-modal__icon">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="" target="_blank" class="copy-modal__icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container py-5">
         <div class="row align-items-start">
             <div class="col-md-4 mb-4">
@@ -133,21 +163,48 @@
                 <div class="files_details">
                     <h3 class="fw-bold mb-2">حزمة تصميم جرافيك احترافية</h3>
                     <p class="text-muted mb-1">مجموعة جاهزة لتسهيل أعمالك الإبداعية</p>
-                    <h4 class="fw-bold text-dark mb-4 price">EGP 149.00</h4>
-
+                    <h4 class="fw-bold text-dark mb-4 price">EGP 149.00 - <span class="badge badge-success">مجانى</span></h4>
+                    <div class="mb-4">
                     <p>
                         بعد شرائك لهذه الحزمة، ستحصل مباشرة على ملف قابل للتحميل يحتوي على مجموعة من العناصر
                         الجرافيكية عالية الجودة، المناسبة للمصممين، وأصحاب الأعمال، وصناع المحتوى.
                     </p>
 
-                    <p>
+                    <p >
                         تشمل الحزمة:
                         <br>* 20 قالب تصميم قابل للتعديل.
                         <br>* ملفات بصيغة PNG + PDF.
                         <br>* عناصر جاهزة للسوشيال ميديا (Instagram – Facebook – Stories).
                         <br>* تصميمات مناسبة للطباعة والاستخدام الرقمي.
                     </p>
-                    <a href="#" class="main-btn btn btn-primary main__btn mt-4">اشتري الان </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-stretch gap-2 flex-wrap mb-2">
+                                <button class="main__btn__priced justify-content-center">
+                                    <span class="old">100.00$</span>
+                                    <span class="current">499.99$</span>
+                                    <span class="min-w-max-content">
+                            إشترك الآن
+                              </span>
+                                </button>
+                                <div class="d-flex flex-grow-1 flex-shrink-0 gap-2">
+                                    <button class="icon__btn flex-grow-1 h-100 py-3 ">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
+                                    <button class="icon__btn flex-grow-1 h-100 py-3" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                        <i class="fa-solid fa-share"></i>
+                                    </button>
+                                    <button class="icon__btn flex-grow-1 h-100 py-3 ">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 

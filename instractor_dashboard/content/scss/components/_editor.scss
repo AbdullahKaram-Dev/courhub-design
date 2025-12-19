@@ -36,7 +36,18 @@
             &:nth-child(2) {
                 margin-left: auto;
             }
+            background-color: #eee !important;
         }
     }
+}
+.editor .ql-toolbar.ql-snow
+{
+    background-color: #eee !important;
+    background-color: #c7c7c7 !important;
+    padding: 10px;
+}
+#editor .ql-editor,
+#editorTwo .ql-editor {
+    min-height: 200px;
 }
 /* ===================== Editor Css End ====================== */

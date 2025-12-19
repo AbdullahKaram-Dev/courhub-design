@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./content/css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <title>CourHub |  المتجر الرقمي</title>
     <meta name="robots" content="noindex, nofollow">
 </head>
@@ -96,13 +97,13 @@
         <div class="filter-box mt-3">
             <div class="row mt-2">
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control select2">
                         <option>موشن جرافيك </option>
                         <option> تصميم مواقع </option>
                     </select>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control">
+                    <select class="form-control select2">
                         <option>مجانى</option>
                         <option> مدفوع </option>
                     </select>
@@ -118,7 +119,7 @@
             <div class="col">
                 <a href="files_details.html" class="product-link">
                     <div class="product">
-                        <div class="product__img"
+                        <div class="product__img mb-3"
                              data-images='["./content/assets/images/files/files_design.png",
                 "./content/assets/images/files/files_design2.png",
                 "./content/assets/images/files/files_design3.png"]'>
@@ -129,16 +130,6 @@
                                 <span class="product__label product__label--red">مجانى</span>
                             </div>
                         </div>
-
-                        <div class="product__actions">
-                            <div class="d-flex gap-1">
-                                <div class="product__wish" title="إضافة للمفضله">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <button class="main__btn small">أضف للسلة</button>
-                        </div>
-
                         <div class="product__title">
                             كورس التصميم على الفوتوشوب من الصفر
                         </div>
@@ -148,7 +139,7 @@
             <div class="col">
                 <a href="files_details.html" class="product-link">
                     <div class="product">
-                        <div class="product__img"
+                        <div class="product__img mb-3"
                              data-images='["./content/assets/images/files/files_design.png",
                 "./content/assets/images/files/files_design2.png",
                 "./content/assets/images/files/files_design3.png"]'>
@@ -159,16 +150,6 @@
                                 <span class="product__label product__label--red">مجانى</span>
                             </div>
                         </div>
-
-                        <div class="product__actions">
-                            <div class="d-flex gap-1">
-                                <div class="product__wish" title="إضافة للمفضله">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <button class="main__btn small">أضف للسلة</button>
-                        </div>
-
                         <div class="product__title">
                             كورس التصميم على الفوتوشوب من الصفر
                         </div>
@@ -178,7 +159,7 @@
             <div class="col">
                 <a href="files_details.html" class="product-link">
                     <div class="product">
-                        <div class="product__img"
+                        <div class="product__img mb-3"
                              data-images='["./content/assets/images/files/files_design.png",
                 "./content/assets/images/files/files_design2.png",
                 "./content/assets/images/files/files_design3.png"]'>
@@ -189,16 +170,6 @@
                                 <span class="product__label product__label--red">مجانى</span>
                             </div>
                         </div>
-
-                        <div class="product__actions">
-                            <div class="d-flex gap-1">
-                                <div class="product__wish" title="إضافة للمفضله">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <button class="main__btn small">أضف للسلة</button>
-                        </div>
-
                         <div class="product__title">
                             كورس التصميم على الفوتوشوب من الصفر
                         </div>
@@ -208,7 +179,7 @@
             <div class="col">
                 <a href="files_details.html" class="product-link">
                     <div class="product">
-                        <div class="product__img"
+                        <div class="product__img mb-3"
                              data-images='["./content/assets/images/files/files_design.png",
                 "./content/assets/images/files/files_design2.png",
                 "./content/assets/images/files/files_design3.png"]'>
@@ -219,22 +190,14 @@
                                 <span class="product__label product__label--red">مجانى</span>
                             </div>
                         </div>
-
-                        <div class="product__actions">
-                            <div class="d-flex gap-1">
-                                <div class="product__wish" title="إضافة للمفضله">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <button class="main__btn small">أضف للسلة</button>
-                        </div>
-
                         <div class="product__title">
                             كورس التصميم على الفوتوشوب من الصفر
                         </div>
                     </div>
                 </a>
             </div>
+
+
 
 
         </div>
@@ -305,6 +268,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
 <script src="./content/script/general.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2();
+    });
+</script>
 <script>
     document.querySelectorAll('.product__img').forEach(box => {
         let images;
