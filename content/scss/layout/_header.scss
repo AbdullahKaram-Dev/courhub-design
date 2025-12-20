@@ -490,7 +490,15 @@ html {
   }
 
 }
-
+.header-profile .nav-link{
+  border: 0 !important;
+  &:hover {
+    background: none;
+  }
+}
+.header .navbar .navbar-nav .nav-item.header-profile:hover>.nav-link {
+  background: none !important;
+}
 @media screen and (max-width: 992px) {
   .bottom-nav {
     display: block !important;

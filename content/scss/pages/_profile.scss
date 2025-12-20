@@ -199,7 +199,6 @@
 
   .product .main__btn {
     white-space: nowrap;
-    background: linear-gradient(315deg, #691b9a, #6a1b9a);
     @include responsive(max, 1300) {
       padding-inline: 12px;
     }
