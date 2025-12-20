@@ -47,11 +47,11 @@
   }
 
   .desc {
-    width: 80%;
     margin-left: auto;
     font-size: 16px;
     line-height: 1.9;
     opacity: .9;
+
   }
 
   .contact-form {
@@ -93,7 +93,7 @@
   .logos img {
     max-height: 45px;
     opacity: 0.9;
-    max-height: 30px;
+    max-height: auto;
     opacity: .9;
     margin-top: 20px;
   }

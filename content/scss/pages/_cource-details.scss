@@ -121,13 +121,6 @@
       font-weight: 700;
     }
 
-    .benefits-list {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 25px;
-    }
-
     .benefit-item {
       border-radius: 14px;
       display: flex;
@@ -308,6 +301,9 @@
   {
     border-radius: 15px;
     border: 3px solid #6a1b9a70;
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
   }
   .skills
   {
@@ -317,6 +313,55 @@
       line-height: 33px;
     }
   }
+
+  .card-overly
+  {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+    transition: transform .4s ease;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    img {
+      border-radius: 15px;
+      border: 3px solid rgba(106, 27, 154, .4392156863);
+      width: 100%;
+      max-height: 185px;
+      object-fit: cover;
+      background-position: center;
+    }
+    h4
+    {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    &::after
+    {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgb(106, 27, 153), rgba(0, 0, 0, 0));
+      opacity: 1;
+      transition: .4s ease;
+    }
+    .overlay-content_img
+    {
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      transform: translateY(20px);
+      transition: .4s ease;
+      z-index: 3;
+    }
+  }
+
+
+
+
 }
 @media screen and (max-width: 992px){
   .box1 .course-data__content, .box4 .course-data__content {

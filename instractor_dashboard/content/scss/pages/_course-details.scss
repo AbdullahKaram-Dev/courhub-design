@@ -44,6 +44,21 @@
             }
       }
   }
+  .card-overly
+  {
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+    border: 2px solid #6a1b9a;
+    transform: translateY(60px);
+    transition: transform .4s ease;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+  }
+
+
 /* Player Css End */
 
 /* ==================== Course Details Css End ========================== */

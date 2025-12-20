@@ -15,14 +15,20 @@
   .social {
     width: 40px;
     height: 40px;
-    border: 1px solid #4f1572;
-    color: #fff;
-    border-radius: 50%;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    transition: all .3s ease-in-out;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    background-color: #6a1b9a;
+    align-items: center;
+    font-size: 18px;
+    &:hover {
+      background-color: #7b2ca6;
+      color: #fff;
+      cursor: pointer;
+    }
+
   }
   .form-check-input:checked {
     background-color: #6a1b9a;
@@ -157,3 +163,28 @@
     padding-bottom: 30px;
   }
 }
+
+
+.input-group > .intl-tel-input.allow-dropdown {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+  z-index: 4;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .iti-flag {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+  }
+}
+
+
+

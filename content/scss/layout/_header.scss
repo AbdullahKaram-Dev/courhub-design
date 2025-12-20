@@ -79,9 +79,15 @@ html {
   {
     background: linear-gradient(124deg, #7525a1, #b864ce) !important;
     border: 0;
-    border-radius: 15px;
+    border-radius: 6px;
     font-size: 15px;
   }
+  .trainer_login
+  {
+    background: none !important;
+    background-color: rgb(48 48 48) !important;
+  }
+
   .navbar {
     gap: 12px;
     .navbar-brand
@@ -100,15 +106,20 @@ html {
 
       .nav-item {
         font-size: 15px;
+        padding: 0 3px;
+
+        .nav-link {
+          padding: 2px 5px;
+          color: $white-color;
+          border-bottom: 1px solid transparent;
+        }
 
         &:hover > .nav-link,
         &.active > .nav-link {
-          color: $red-color;
-        }
-
-        .nav-link {
-          color: $white-color;
-          border-bottom: 1px solid transparent;
+          color: #fff;
+          border-radius: 8px;
+          border: 1px solid rgba(0, 0, 0, 0);
+          background: linear-gradient(#000, #000) padding-box, linear-gradient(90deg, #fbfcfb, #7728a3) border-box;
         }
 
         &.dropdown {
@@ -326,7 +337,7 @@ html {
     .navbar-nav {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 5px;
       flex-grow: 1;
       justify-content: center;
       align-items: center;
@@ -354,16 +365,16 @@ html {
   }
 
   .social-btn {
-    width: 75%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
     background: #fff;
     color: #000;
     padding: 11px;
     border-radius: 6px;
-    font-size: 17px;
+    font-size: 14px;
     border: none;
     margin: 0 auto;
 
@@ -477,6 +488,7 @@ html {
   {
     color: #c971ff;
   }
+
 }
 
 @media screen and (max-width: 992px) {

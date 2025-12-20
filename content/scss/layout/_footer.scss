@@ -92,7 +92,7 @@
     &__item {
       width: 25px;
       height: 25px;
-      border-radius: 50%;
+      border-radius: 6px;
       background-color: $white-color;
       color: $black-color;
       transition: all 0.3s ease-in-out;
@@ -113,7 +113,6 @@
   }
 
   &__copyright {
-    margin-top: 15px;
     a {
       color: $red-color;
     }
@@ -129,9 +128,10 @@
   color: #fff;
   font-size: 23px;
   font-weight: bold;
+
   img
   {
-    width:100% !important;
+    width: 180px !important;
   }
 }
 
