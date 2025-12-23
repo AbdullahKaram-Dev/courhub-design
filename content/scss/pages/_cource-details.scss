@@ -137,7 +137,7 @@
 .course-data {
   border-radius: 1rem;
   margin-top: 1rem;
-  .nav-pills
+  .custom
   {
     background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
     border-radius: 10px 10px 0 0;
@@ -302,7 +302,7 @@
     border-radius: 15px;
     border: 3px solid #6a1b9a70;
     width: 100%;
-    max-height: 180px;
+    max-height: 200px;
     object-fit: cover;
   }
   .skills
@@ -324,11 +324,18 @@
     transition: transform .4s ease;
     animation-duration: .9s;
     animation-fill-mode: forwards;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+
     img {
       border-radius: 15px;
       border: 3px solid rgba(106, 27, 154, .4392156863);
       width: 100%;
-      max-height: 185px;
+      height: 100%;            /* لازم */
+      object-fit: cover;       /* لازم */
+      object-position: top center;
       object-fit: cover;
       background-position: center;
     }
@@ -359,10 +366,12 @@
     }
   }
 
-
-
-
 }
+.all_courses_link:hover
+{
+  color: #691b9a !important;
+}
+
 @media screen and (max-width: 992px){
   .box1 .course-data__content, .box4 .course-data__content {
     padding: 5px !important;
