@@ -9889,5 +9889,64 @@ body , html
 {
   border: 0 !important;
 }
+.main_profile_dropdown
+{
+  background-color: #000;
+}
+.main_profile_dropdown h4 {
+  color: #fff !important;
+  font-size: 18px;
+}
+.main_profile_dropdown .card-body {
+  padding: 10px;
+}
+.main_profile_dropdown .card-body img
+{
+  height: 35px !important;
+  width: 35px !important;
+}
+.dashboard-main-wrapper h4
+{
+  font-size: 17px;
+}
+.modal .btn-close
+{
+  filter: invert(1) !important;
+}
+.modal .modal-body select
+{
+  min-height: 50px !important;
+}
+.modal .modal-body input[type="file"]
+{
+  min-height: 50px !important;
+}
+#sectionsList
+{
+  border: 0 ;
+}
+#sectionsList li{
+  background-color: #4b4b4b;
+  color: #fff;
+  border: 0;
+}
+.custom_nav
+{
+  border-color: #262626;
+  gap: 5px;
+}
+.custom_nav .nav-link
+{
+  background-color: #262626 !important;  ;
+  color: #fff;
+}
+
+.custom_nav .nav-link.active
+{
+  background: linear-gradient(124deg, #7525a1, #b864ce) !important;
+  color: #fff;
+  border: 0;
+}
+
 /* Email Css End */
 /*# sourceMappingURL=main.css.map */

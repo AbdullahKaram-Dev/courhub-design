@@ -313,8 +313,15 @@
                                 </div>
 
                                 <div class="col-md-4">
-                                    <label class="mb-10">وصف الدورة التفصيلي <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" rows="4" name="details" placeholder="اكتب وصف مفصل للدورة"></textarea>
+                                    <label class="mb-10">
+                                        وصف الدورة التفصيلي <span class="text-danger">*</span>
+                                    </label>
+
+                                    <!-- Quill Editor -->
+                                    <div id="courseDescription" style="height: 150px;"></div>
+
+                                    <!-- Hidden input to submit data -->
+                                    <input type="hidden" name="details" id="courseDescriptionInput">
                                 </div>
 
                                 <div class="col-12 d-flex gap-3 mt-15">
@@ -426,9 +433,13 @@
                             <input type="text" class="form-control" name="section_name" placeholder="أدخل اسم القسم">
                         </div>
 
-                        <div class="mb-3 form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="sectionActive" name="section_active" checked>
-                            <label class="form-check-label" for="sectionActive">نشط</label>
+                        <div class="col-md-2">
+                            <label class="mb-10 d-block">
+                                نشط <span class="text-danger">*</span>
+                            </label>
+
+                            <div class="toggle-btn" id="toggleActive"></div>
+                            <input type="hidden" name="is_active" id="is_active" value="0">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -476,15 +487,24 @@
                                 <input type="text" class="form-control" name="video_url" placeholder="أدخل رابط الفيديو أو رفع فيديو">
                             </div>
 
-                            <div class="col-md-6 form-check form-switch mt-3">
-                                <input class="form-check-input" type="checkbox" id="lessonActive" name="lesson_active" checked>
-                                <label class="form-check-label" for="lessonActive">نشط</label>
+                            <div class="col-md-2">
+                                <label class="mb-10 d-block">
+                                    مجاني <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="toggle-btn" id="toggleFree"></div>
+                                <input type="hidden" name="is_free" id="is_free" value="0">
                             </div>
 
-                            <div class="col-md-6 form-check form-switch mt-3">
-                                <input class="form-check-input" type="checkbox" id="lessonFree" name="lesson_free">
-                                <label class="form-check-label" for="lessonFree">مجاني</label>
+                            <div class="col-md-2">
+                                <label class="mb-10 d-block">
+                                    نشط <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="toggle-btn" id="toggleActive"></div>
+                                <input type="hidden" name="is_active" id="is_active" value="0">
                             </div>
+
 
                         </div>
                     </div>
@@ -573,7 +593,6 @@
 <script>
     var quill = new Quill('#courseDescription', {
         theme: 'snow',
-        placeholder: 'اكتب الوصف الكامل للدورة...',
         modules: {
             toolbar: [
                 [{ 'header': [1, 2, false] }],

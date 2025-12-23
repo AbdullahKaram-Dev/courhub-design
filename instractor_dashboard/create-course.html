@@ -286,7 +286,7 @@
 
                             <div class="col-md-4">
                                 <label class="mb-10">وصف الدورة التدريبية <span class="text-danger">*</span></label>
-                                <textarea class="form-control" rows="4" name="outline" placeholder="اكتب وصف مختصر للدورة"></textarea>
+                                <textarea class="form-control" rows="4" name="outline" ></textarea>
                             </div>
 
                             <div class="col-md-4">
@@ -295,8 +295,15 @@
                             </div>
 
                             <div class="col-md-4">
-                                <label class="mb-10">وصف الدورة التفصيلي <span class="text-danger">*</span></label>
-                                <textarea class="form-control" rows="4" name="details" placeholder="اكتب وصف مفصل للدورة"></textarea>
+                                <label class="mb-10">
+                                    وصف الدورة التفصيلي <span class="text-danger">*</span>
+                                </label>
+
+                                <!-- Quill Editor -->
+                                <div id="courseDescription" style="height: 150px;"></div>
+
+                                <!-- Hidden input to submit data -->
+                                <input type="hidden" name="details" id="courseDescriptionInput">
                             </div>
 
                             <div class="col-12 d-flex gap-3 mt-15">
@@ -343,23 +350,27 @@
 
             <!-- main js -->
             <script src="content/js/main.js"></script>
-            <script>
-                var quill = new Quill('#courseDescription', {
-                    theme: 'snow',
-                    placeholder: 'اكتب الوصف الكامل للدورة...',
-                    modules: {
-                        toolbar: [
-                            [{ 'header': [1, 2, false] }],
-                            ['bold', 'italic', 'underline'],
-                            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-                            ['link'],
-                            ['clean']
-                        ]
-                    }
-                });
+                <script>
+                    var quill = new Quill('#courseDescription', {
+                        theme: 'snow',
+                        modules: {
+                            toolbar: [
+                                [{ header: [1, 2, false] }],
+                                ['bold', 'italic', 'underline'],
+                                [{ list: 'ordered' }, { list: 'bullet' }],
+                                ['link'],
+                                ['clean']
+                            ]
+                        }
+                    });
 
-            </script>
-            <script>
+                    // قبل إرسال الفورم
+                    document.querySelector('form').addEventListener('submit', function () {
+                        document.getElementById('courseDescriptionInput').value = quill.root.innerHTML;
+                    });
+                </script>
+
+                <script>
                 document.addEventListener("DOMContentLoaded", function () {
 
                     document.querySelectorAll('.toggle-btn').forEach(function (btn) {
