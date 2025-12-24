@@ -99,10 +99,10 @@
           <button class="filter-icon reset" title="الغاء">
             <i class="fa-solid fa-rotate-left"></i>
           </button>
-          <button class="filter-icon" data-bs-toggle="offcanvas" data-bs-target="#filterSidebar" aria-controls="filterSidebar">
-            <i class="fa-solid fa-filter"></i>
-          </button>
         </div>
+
+
+
 
         <!-- <div class="empty-state">
                 <div class="empty-state__content">
@@ -113,337 +113,424 @@
                   <img src="./content/assets/images/icons/magnifying-glass.png" alt="" height="100" />
                 </div>
               </div> -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/test.jpeg" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
+
+        <div class="d-lg-none mb-3 text-center">
+          <button class="btn btn-outline-primary main__btn m-auto"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#filterOffcanvas">
+            <i class="fa-solid fa-sliders"></i> فلترة
+          </button>
+        </div>
+         <div class="row">
+           <div class="col-lg-2 d-none d-lg-block  mt-4">
+             <div class="filter-box ">
+               <h6>نوع البرنامج</h6>
+               <ul class="list-unstyled">
+                 <li>جميع البرامج</li>
+                 <li>دورات</li>
+                 <li>تخصصات</li>
+               </ul>
+
+               <h6 class="mt-3">الفئات</h6>
+               <ul class="list-unstyled">
+                 <li>الأعمال والريادة</li>
+                 <li>التكنولوجيا</li>
+                 <li>اللغات</li>
+                 <li>التصميم</li>
+               </ul>
+             </div>
+           </div>
+            <div class="col-lg-10">
+              <div class="filter-box ">
+                <div class="row mt-2 align-items-center">
+                  <div class="col-md-3 d-flex align-items-center">
+                    <label class="me-2 mb-0" style="min-width: 90px;">فلترة حسب :</label>
+                    <select class="form-control select2 w-100">
+                      <option>جميع المستويات</option>
+                      <option>سهل</option>
+                    </select>
                   </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
+
+                  <div class="col-md-3 d-flex align-items-center">
+                    <label class="me-2 mb-0" style="min-width: 90px;">ترتيب حسب :</label>
+                    <select class="form-control select2 w-100">
+                      <option>الاكثر طلبا</option>
+                      <option>الأحدث</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-2 d-flex align-items-center">
+                    <button type="button" class="btn btn-primary main__btn w-100">بحث</button>
                   </div>
                 </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
+
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-3 gy-4">
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
                   </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-11.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-12.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__img">
+                    <img class="img-fluid" src="./content/assets/images/courses/course-13.png" alt="" />
+                    <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                  </div>
+                  <div class="product__actions">
+                    <div class="d-flex gap-2">
+                      <div class="product__wish" title="إضافة للمفضله">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="product__addToCart" title="إضافة للسلة">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <div class="product__rate">
+                        <i class="fa-regular fa-star"></i>
+                        4.5
+                      </div>
+                      <div class="product__users">
+                        <i class="fa-regular fa-user"></i>
+                        15
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="product">
+                  <div class="product__loadMore">
+                    <span>المزيد</span>
+                    <i class="fa-solid fa-arrow-down"></i>
                   </div>
                 </div>
               </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
             </div>
           </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-11.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-12.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__img">
-                <img class="img-fluid" src="./content/assets/images/courses/course-13.png" alt="" />
-                <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-              </div>
-              <div class="product__actions">
-                <div class="d-flex gap-2">
-                  <div class="product__wish" title="إضافة للمفضله">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                  <div class="product__addToCart" title="إضافة للسلة">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </div>
-                </div>
-                <div class="product__info">
-                  <div class="product__rate">
-                    <i class="fa-regular fa-star"></i>
-                    4.5
-                  </div>
-                  <div class="product__users">
-                    <i class="fa-regular fa-user"></i>
-                    15
-                  </div>
-                </div>
-              </div>
-              <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="product">
-              <div class="product__loadMore">
-                <span>المزيد</span>
-                <i class="fa-solid fa-arrow-down"></i>
-              </div>
-            </div>
+
+         </div>
+
+      </div>
+      </div>
+
+      <!-- Offcanvas Filter (Mobile) -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="filterOffcanvas">
+        <div class="offcanvas-header">
+          <h5>فلترة</h5>
+          <button class="btn-close" data-bs-dismiss="offcanvas" style="filter: invert(1);"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="filter-box">
+            <h6>نوع البرنامج</h6>
+            <ul class="list-unstyled">
+              <li>جميع البرامج</li>
+              <li>دورات</li>
+              <li>تخصصات</li>
+            </ul>
+
+            <h6 class="mt-3">الفئات</h6>
+            <ul class="list-unstyled">
+              <li>الأعمال والريادة</li>
+              <li>التكنولوجيا</li>
+              <li>اللغات</li>
+              <li>التصميم</li>
+            </ul>
           </div>
         </div>
       </div>
-
       <!-- Filteration Sidebar -->
       <div class="offcanvas offcanvas-start" tabindex="-1" id="filterSidebar" aria-labelledby="filterSidebarLabel">
         <div class="offcanvas-header">
@@ -627,6 +714,16 @@
           </form>
         </div>
       </div>
+
+      <section class="banner mt-4 mb-4">
+        <div class="container">
+          <div class="responsive-picture">
+            <source media="(max-width: 767px)" sizes="100vw" srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3OTgsInB1ciI6ImJsb2JfaWQifX0=--e0cdef0372d45e650bd6ae03f46d36f2109d4b8c/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(698%20x%20344%20px)%20(3).gif">
+            <source media="(min-width: 768px)" sizes="50vw" srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif">
+            <img src="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif" alt="Course Banner" class="responsive-img">
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End Main -->
     <!-- Footer -->
