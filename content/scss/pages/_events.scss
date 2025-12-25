@@ -446,6 +446,8 @@
 .meetup-wrapper  .tab-content>.active {
   display: block;
   padding: 10px;
+  min-height: 456px;
+
 }
 
 .event-address
@@ -527,7 +529,7 @@
   border-radius: 0.375rem;
   padding: 0.75rem 0;
   letter-spacing: 1px;
-  border-radius: 45px;
+  border-radius: 6px;
 
   &[disabled] {
     opacity: 1;
@@ -696,6 +698,10 @@ $box-radius: 15px;
 .ticket-price
 {
   color: #fff !important;
+}
+.custom_speaker
+{
+  opacity: 1 !important;
 }
 @media screen and (max-width: 992px) {
   .event-box
