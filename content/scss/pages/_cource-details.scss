@@ -369,7 +369,41 @@
 }
 .all_courses_link:hover
 {
-  color: #691b9a !important;
+  color: #09c009 !important;
+}
+.course-data__tabs
+{
+  background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%);
+  border-radius: 10px 10px 0 0;
+}
+.main__btn__priced {
+  /* width: fit-content; */
+  color: #fff;
+  background: #6a1b9a;
+  border-radius: 10px;
+  /* padding: 1px 8px; */
+  transition: background .3s ease-in-out;
+  /* font-size: 1rem; */
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 41px !important;
+}
+.icon__btn {
+  background: #09080c;
+  color: #fff;
+  border-radius: 50%;
+  width: 37px;
+  height: 45px;
+  border-radius: 6px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .3s ease-in-out;
+  padding: 11px !important;
 }
 
 @media screen and (max-width: 992px){
