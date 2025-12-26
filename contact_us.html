@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"/>
+
+
     <link rel="stylesheet" href="./content/css/main.css" />
     <title>CourHub |  مركز المساعدة</title>
     <meta name="robots" content="noindex, nofollow">
@@ -187,10 +192,7 @@
 
                                 <div class="col-md-6 mb-4 position-relative floating-input">
                                     <i class="fa fa-phone form-icon"></i>
-                                    <div class="input-group input-group-sm">
-                                      <input id="mobile" type="tel" name="mobile" class="form-control" autofocus required   style="width:500px;">
-                                     </div>
-                                    <label> رقم الجوال</label>
+                                    <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name" style=" width: 100%;">
                                 </div>
 
                                 <div class="col-12 mb-4 position-relative floating-input textarea_in">
@@ -287,6 +289,38 @@
 <!-- Base Scripts Link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+
 <script src="./content/script/general.js"></script>
+<script>
+    $("#mobile_code").intlTelInput({
+        initialCountry: "eg",
+        separateDialCode: true,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js",
+
+        onlyCountries: [
+            "eg",
+            "sa", // السعودية
+            "ae", // الإمارات
+            "kw", // الكويت
+            "qa", // قطر
+            "bh", // البحرين
+            "om", // عمان
+            "jo", // الأردن
+            "lb", // لبنان
+            "sy", // سوريا
+            "iq", // العراق
+            "ye", // اليمن
+            "sd", // السودان
+            "ma", // المغرب
+            "dz", // الجزائر
+            "tn", // تونس
+            "ly", // ليبيا
+            "ps"  // فلسطين
+        ]
+    });
+</script>
+
 </body>
 </html>

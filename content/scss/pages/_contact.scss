@@ -1,3 +1,5 @@
+
+
 #partners-section {
   h1
   {
@@ -137,4 +139,18 @@
 
   }
 
+}
+
+.iti__country-list {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+#mobile_code::placeholder
+{
+  display: none !important;
+}
+#mobile_code::placeholder {
+  color: #252526; /* Change this to your desired color */
+  opacity: 1;   /* Ensures color shows up in all browsers */
 }
