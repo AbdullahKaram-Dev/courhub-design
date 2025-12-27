@@ -450,6 +450,35 @@
             </div>
         </div>
     </div>
+    <!-- جاري التحميل -->
+    <div class="modal fade"
+         id="loadingModal"
+         tabindex="-1"
+         aria-hidden="true"
+         data-bs-backdrop="static"
+         data-bs-keyboard="false">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+
+                <h5 class="mb-3">جاري التحميل...</h5>
+
+                <div class="progress mb-3" style="height: 22px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                         id="uploadProgress"
+                         style="width: 0%">
+                        0%
+                    </div>
+                </div>
+
+                <small class="text-muted">برجاء الانتظار، لا تغلق الصفحة</small>
+
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- اضافه الدرس -->
 
     <div class="modal fade" id="addLessonModal" tabindex="-1" aria-labelledby="addLessonLabel" aria-hidden="true">
@@ -465,7 +494,7 @@
 
                             <div class="col-md-6">
                                 <label>اختر القسم <span class="text-danger">*</span></label>
-                                <select class="form-select" name="section_id">
+                                <select class="form-select" name="section_id"  style="appearance: auto;padding: 1px 13px;">
                                     <option selected disabled>اختر القسم</option>
                                     <option value="1">قسم 1</option>
                                     <option value="2">قسم 2</option>
@@ -504,6 +533,46 @@
                                 <div class="toggle-btn" id="toggleActive"></div>
                                 <input type="hidden" name="is_active" id="is_active" value="0">
                             </div>
+
+                            <div class="col-12">
+                                <label class="mb-2">وصف الدرس والروابط</label>
+
+                                <div id="lessonRepeater">
+                                    <div class="row g-2 align-items-center repeater-item mb-2">
+                                        <div class="col-md-5">
+                                            <input type="text"
+                                                   class="form-control"
+                                                   name="descriptions[0][text]"
+                                                   placeholder="الوصف">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <input type="url"
+                                                   class="form-control"
+                                                   name="descriptions[0][url]"
+                                                   placeholder="الرابط">
+                                        </div>
+
+                                        <div class="col-md-1 text-end">
+                                            <button type="button"
+                                                    class="btn btn-danger btn-sm remove-row"
+                                                    style="    background-color: transparent;border: 0;    color: #f00 !important;
+}"
+                                                    disabled>
+                                                ✕
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button"
+                                        class="btn  btn-sm mt-2 main__btn"
+                                        id="addRow">
+                                    + إضافة صف
+                                </button>
+                            </div>
+
+
 
 
                         </div>
@@ -681,7 +750,50 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function () {
 
+        let index = 1;
+
+        // إضافة صف جديد
+        $('#addRow').on('click', function () {
+            let row = `
+                <div class="row g-2 align-items-center repeater-item mb-2">
+                    <div class="col-md-5">
+                        <input type="text"
+                               class="form-control"
+                               name="descriptions[${index}][text]"
+                               placeholder="الوصف">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="url"
+                               class="form-control"
+                               name="descriptions[${index}][url]"
+                               placeholder="الرابط">
+                    </div>
+
+                    <div class="col-md-1 text-end">
+                        <button type="button"
+                                class="btn btn-danger btn-sm remove-row"                  style="    background-color: transparent;border: 0;    color: #f00 !important;
+}">
+                            ✕
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            $('#lessonRepeater').append(row);
+            index++;
+        });
+
+        // حذف صف
+        $(document).on('click', '.remove-row', function () {
+            $(this).closest('.repeater-item').remove();
+        });
+
+    });
+</script>
 
 </body>
 </html>
