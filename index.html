@@ -72,7 +72,7 @@
               </div>
             </form>
 
-            <form class="register_inputs ">
+            <form class="register_inputs " style="display:none">
 
               <div class="row">
                 <div class="col-6">
@@ -185,91 +185,100 @@
     <!-- Start Navbar -->
     <header class="header">
       <div class="container">
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="./index.html">
-            <img src="content/assets/images/logo.png" style="height: 30px">
+            <img src="content/assets/images/logo.png" style="height: 30px" alt="Logo">
           </a>
-          <div class="overlay"></div>
-          <ul class="navbar-nav collapsed-mobile">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">الرئيسية</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./allCourses.html">الدورات</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./allPackges.html">الدبلومات</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">ورش العمل </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="files.html">المتجر الرقمى </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="trainers.html">المدربين</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact_us.html">تواصل معنا</a>
-            </li>
-            <li class="nav-item d-none">
-              <a class="nav-link" href="profile.html">دوراتى</a>
-            </li>
-
-          </ul>
-          <ul class="header__actions navbar-nav flex-grow-0">
-
-            <li class="nav-item d-none">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
-                <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
-                <span class="notification">1</span>
-              </a>
-            </li>
-
-            <li class="nav-item d-none">
-              <a class="nav-link" href="./favoriteCourses.html">
-                <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
-                <span class="notification">1</span>
-              </a>
-            </li>
-
-            <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-              سجل مجانا
-            </button>
-            <button class="btn btn-primary login_btn trainer_login" data-bs-toggle="modal" data-bs-target="#loginModal" >
-              سجل ك مدرب
-            </button>
-
-
-            <li class="nav-item dropdown header-profile">
-
-              <a class="nav-link" href="javascript:void(0);">
-                <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="" />
-              </a>
-              <div class="dropdown__menu">
-                <div class="dropdown__menu__item dropdown__menu__item--profile">
-                  <a href="./profile.html" class="user__wrapper">
-                    <img src="./content/assets/images/instructor.jpg" alt="" />
-                    <div class="instructor">
-                      <h6 class="name">Fahmy Mansour</h6>
-                      <p class="email">Test@gmail.com</p>
-                    </div>
-                  </a>
-                </div>
-                <a class="dropdown__menu__item" href="./helpCenter.html">مركز المساعدة</a>
-                <a class="dropdown__menu__item" href="./login.html">الخروج</a>
-              </div>
-            </li>
-            <!-- <button class="main__btn gray">
-              <a href="./login.html"> تسجيل الدخول </a>
-            </button> -->
-          </ul>
+    
+          <!-- Hamburger icon -->
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./allCourses.html">الدورات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./allPackges.html">الدبلومات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">ورش العمل</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="files.html">المتجر الرقمى</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trainers.html">المدربين</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">تواصل معنا</a>
+              </li>
+              <li class="nav-item d-none">
+                <a class="nav-link" href="profile.html">دوراتى</a>
+              </li>
+            </ul>
+            </div>
+    
+            <!-- Header actions -->
+            <ul class="navbar-nav flex-grow-0 align-items-center">
+              <li class="nav-item d-none">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                  <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
+                  <span class="notification">1</span>
+                </a>
+              </li>
+    
+              <li class="nav-item d-none">
+                <a class="nav-link" href="./favoriteCourses.html">
+                  <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
+                  <span class="notification">1</span>
+                </a>
+              </li>
+    
+              <li class="nav-item me-2">
+                <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  سجل مجانا
+                </button>
+              </li>
+              <li class="nav-item me-2">
+                <button class="btn btn-primary login_btn trainer_login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  سجل ك مدرب
+                </button>
+              </li>
+    
+              <!-- Profile dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg" alt="User" style="width:35px; height:35px;">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center " href="./profile.html">
+                      <img src="./content/assets/images/instructor.jpg" class="rounded-circle me-2" alt="User" style="width:40px; height:40px;">
+                      <div>
+                        <h6 class="mb-0">Fahmy Mansour</h6>
+                        <small>Test@gmail.com</small>
+                      </div>
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./helpCenter.html">مركز المساعدة</a></li>
+                  <li><a class="dropdown-item" href="./login.html">الخروج</a></li>
+                </ul>
+              </li>
+            </ul>
         </nav>
       </div>
     </header>
+    
+
     <!-- End Navbar -->
     <!-- header style end -->
     <div id="preloader">
@@ -1204,6 +1213,9 @@
               <a class="footer__social__item" href="https://www.instagram.com/">
                 <i class="fa-brands fa-instagram"></i>
               </a>
+              <a class="footer__social__item" href="https://www.instagram.com/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
             </div>
 
           </div>
@@ -1274,27 +1286,33 @@
         });
       });
     </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const loginModal = document.getElementById("loginModal");
-      const trainerBtn = document.querySelector(".trainer_login");
-      const freeBtn = document.querySelector(".login_btn:not(.trainer_login)");
-
-      const registerForm = loginModal.querySelector(".register_inputs");
-      const loginForm = loginModal.querySelector(".login_inputs");
-
-      trainerBtn.addEventListener("click", function() {
-        registerForm.style.display = "block";
-        loginForm.style.display = "none";
-      });
-
-      freeBtn.addEventListener("click", function() {
-        registerForm.style.display = "block";
-        loginForm.style.display = "none";
-      });
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  
+    const loginForm    = document.querySelector(".login_inputs");
+    const registerForm = document.querySelector(".register_inputs");
+    const switchToReg  = document.querySelector(".switch-to-register");
+    const switchToLog  = document.querySelector(".switch-to-login");
+    const backLogin    = document.getElementById("backLogin");
+  
+  
+    switchToReg.addEventListener("click", function (e) {
+      e.preventDefault();
+      loginForm.style.display = "none";
+      registerForm.style.display = "block";
+      backLogin.classList.remove("d-none");
     });
 
+    switchToLog.addEventListener("click", function (e) {
+      e.preventDefault();
+      registerForm.style.display = "none";
+      loginForm.style.display = "block";
+      backLogin.classList.add("d-none");
+    });
+  
+  });
   </script>
+  
 
   </body>
 </html>

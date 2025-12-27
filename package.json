@@ -6,7 +6,6 @@
   "scripts": {
     "build:website": "sass content/scss/main.scss content/css/main.css --style=compressed --source-map",
     "watch:website": "sass --watch content/scss/main.scss:content/css/main.css --style=compressed --source-map",
-
     "build:instructor": "sass instractor_dashboard/content/scss/main.scss instractor_dashboard/content/css/main.css --style=compressed --source-map",
     "watch:instructor": "sass --watch instractor_dashboard/content/scss/main.scss:instractor_dashboard/content/css/main.css --style=compressed --source-map"
   },
@@ -14,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.94.1"
+    "sass": "^1.97.1"
   }
 }
