@@ -336,4 +336,39 @@ $text-muted: #b2b2b2;
       align-items: center;
       min-height: auto !important;
   }
+  .breaf_text ,
+  .footer__copyright
+  {
+    text-align: center !important;
+  }
+  .footer
+  {
+    margin-bottom: 75px;
+  }
+  .footer .footer__social
+  {
+    margin-top: 20px;
+  }
+  .product__loadMore
+  {
+    border-radius: 4px;
+  }
+  .certificate-section .rts-btn
+  {
+    margin: 0 auto;
+  }
+  .certificate-section__feature {
+
+    margin-bottom: 10px;
+  }
+  .main-breadcrumb h1
+  {
+    font-size: 20px;
+  }
+  .custom_img
+  {
+    height: 50px;
+    width: 50px !important;
+    margin-bottom: 10px;
+  }
 }

@@ -1,1318 +1,1425 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Soni Courses" />
-    <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css" integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" />
-    <!-- Additional CSS Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Welcome to Soni Courses"/>
+    <link rel="shortcut icon" href="./content/assets/images/main_logo.png" type="image/png"/>
 
-    <link rel="stylesheet" href="./content/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.rtl.min.css"
+          integrity="sha512-VNBisELNHh6+nfDjsFXDA6WgXEZm8cfTEcMtfOZdx0XTRoRbr/6Eqb2BjqxF4sNFzdvGIt+WqxKgn0DSfh2kcA=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <!--  CSS  -->
+
+    <link rel="stylesheet" href="./content/css/main.css"/>
     <title>CourHub</title>
     <meta name="robots" content="noindex, nofollow">
-  </head>
 
-  <body>
-    <div class="loading-overlay d-none">
-      <img src="./content/assets/images/logo_gif.gif" alt="Loading" class="loading-overlay__image" />
+</head>
+
+<body>
+<div class="loading-overlay d-none">
+    <img src="./content/assets/images/logo_gif.gif" alt="Loading" class="loading-overlay__image"/>
+</div>
+
+<!-- start banner -->
+<div class="alert-banner d-none">
+    <div class="alert-banner__text me-4">خصومات كبري علي كل الدبلومات والدورات لفتره محدوده <a href="#">اشترك الان</a> 1
+        ايام : 5 ساعات : 20 دقيقة : 20 ثانية
     </div>
-
-    <!-- start banner -->
-    <div class="alert-banner d-none" >
-      <div class="alert-banner__text me-4">خصومات كبري علي كل الدبلومات والدورات لفتره محدوده <a href="#">اشترك الان</a> 1 ايام : 5 ساعات : 20 دقيقة : 20 ثانية</div>
-      <button class="close__btn">
+    <button class="close__btn">
         <i class="fas fa-times"></i>
-      </button>
-    </div>
-    <!-- End banner -->
+    </button>
+</div>
+<!-- End banner -->
 
-    <div class="modal fade" id="loginModal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content login-modal">
 
-          <div class="modal-body">
+            <div class="modal-body">
 
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-            <h2 class="text-center mb-2">مرحباً بك!</h2>
-            <p class="text-center mb-4">تسجيل الدخول للمتابعة</p>
+                <h2 class="text-center mb-2">مرحباً بك!</h2>
+                <p class="text-center mb-4">تسجيل الدخول للمتابعة</p>
 
-            <div class="d-flex gap-3">
-              <button class="social-btn google-btn">
-                <img src="https://www.svgrepo.com/show/355037/google.svg" style="height: 20px" alt="">
-                الدخول بواسطة جوجل
-              </button>
+                <div class="d-flex gap-3">
+                    <button class="social-btn google-btn">
+                        <img src="https://www.svgrepo.com/show/355037/google.svg" style="height: 20px" alt="">
+                        الدخول بواسطة جوجل
+                    </button>
 
-              <button class="social-btn facebook-btn ">
-                <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" style="height: 20px" alt="">
-                الدخول بواسطة فيسبوك
-              </button>
-            </div>
-
-
-
-            <div class="divider">أو</div>
-
-            <form class="login_inputs">
-              <div class="input-group mb-3 custom-input">
-                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="البريد الإلكتروني">
-              </div>
-              <span class="error-text">البريد الإلكتروني مطلوب</span>
-              <div class="input-group mb-3 custom-input password-group">
-                <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control password-input" placeholder="كلمة السر ">
-                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
-              </div>
-            </form>
-
-            <form class="register_inputs " style="display:none">
-
-              <div class="row">
-                <div class="col-6">
-                  <div class="input-group mb-3 custom-input">
-                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="الاسم الأول">
-                  </div>
+                    <button class="social-btn facebook-btn ">
+                        <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" style="height: 20px" alt="">
+                        الدخول بواسطة فيسبوك
+                    </button>
                 </div>
 
-                <div class="col-6">
-                  <div class="input-group mb-3 custom-input">
-                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="الاسم الأخير">
-                  </div>
-                </div>
-              </div>
 
-              <div class="input-group mb-3 custom-input">
-                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="البريد الإلكتروني">
-              </div>
+                <div class="divider">أو</div>
 
-              <div class="input-group mb-3 custom-input password-group">
-                <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control password-input" placeholder="كلمة السر ">
-                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
-              </div>
+                <form class="login_inputs">
+                    <div class="input-group mb-3 custom-input">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                    </div>
+                    <span class="error-text">البريد الإلكتروني مطلوب</span>
+                    <div class="input-group mb-3 custom-input password-group">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control password-input" placeholder="كلمة السر ">
+                        <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
+                    </div>
+                </form>
 
-              <div class="input-group mb-3 custom-input password-group">
-                <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control password-input" placeholder="تأكيد كلمة السر ">
-                <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
-              </div>
+                <form class="register_inputs " style="display:none">
 
-              <div class="mb-3 text-center d-flex gap-3 justify-content-center">
-                <label class="form-label d-block mb-2">التسجيل كـ</label>
-                 <div>
-                   <div class="form-check form-check-inline">
-                     <input class="form-check-input" type="radio" name="register_type" id="user" value="user" checked>
-                     <label class="form-check-label" for="user">
-                       مستخدم
-                     </label>
-                   </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-group mb-3 custom-input">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="الاسم الأول">
+                            </div>
+                        </div>
 
-                   <div class="form-check form-check-inline">
-                     <input class="form-check-input" type="radio" name="register_type" id="trainer" value="trainer">
-                     <label class="form-check-label" for="trainer">
-                       مدرب
-                     </label>
-                   </div>
-                 </div>
-              </div>
-
-
-
-              <div class="form-check mb-3  terms-check">
-                <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                <label class="form-check-label" for="termsCheck">
-                  أوافق على
-                  <a href="/terms-and-conditions" target="_blank" style=" color: #6a1b9a;">الشروط والأحكام</a>
-                  و
-                  <a href="/service-terms" target="_blank" style="color: #6a1b9a;">شروط الخدمة</a>
-                </label>
-              </div>
-            </form>
-
-            <a href="#" class="forget">هل نسيت كلمة المرور؟</a>
-
-            <button type="submit" class="btn login-submit-btn w-100 mt-4">تسجيل الدخول</button>
-            <p class="text-center mt-3 new-account">
-              ليس لديك حساب؟ <a href="#" class="switch-to-register">حساب جديد</a>
-            </p>
-
-            <p class="text-center mt-3 back-to-login d-none" id="backLogin">
-              لديك حساب بالفعل؟ <a href="#" class="switch-to-login">تسجيل الدخول</a>
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Bottom Navigation -->
-    <nav class="bottom-nav d-none bg-dark border-top border-secondary fixed-bottom">
-      <div class="d-flex justify-content-around text-center">
-        <a href="#" class="nav-link text-secondary flex-fill">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 13H14M19 13V20H5V9M5 9H19C19.5523 9 20 8.55228 20 8V5C20 4.44772 19.5523 4 19 4H12M5 9C4.44772 9 4 8.55228 4 8V5C4 4.44772 4.44772 4 5 4H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          <small>الدبلومات</small>
-        </a>
-        <a href="#" class="nav-link text-secondary flex-fill">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 11L24 14.75V29M8 19V24C8 24 11 27 16 27C18.022 27 19.719 26.644 21.021 26.059M1 11L16 3L31 11L16 19L1 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-          <small>الدورات</small>
-        </a>
-        <a href="#" class="nav-link text-secondary active flex-fill">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 22L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M4 22V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 9.5V13.5M20 22V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="currentColor" stroke-width="1.5"></path> </g></svg>
-          <small>الرئيسية</small>
-        </a>
-
-
-        <a href="#" class="nav-link text-secondary flex-fill">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 11.0975V16.0909C3 19.1875 3 20.7358 3.73411 21.4123C4.08422 21.735 4.52615 21.9377 4.99692 21.9915C5.98402 22.1045 7.13675 21.0849 9.44216 19.0458C10.4612 18.1445 10.9708 17.6938 11.5603 17.5751C11.8506 17.5166 12.1494 17.5166 12.4397 17.5751C13.0292 17.6938 13.5388 18.1445 14.5578 19.0458C16.8633 21.0849 18.016 22.1045 19.0031 21.9915C19.4739 21.9377 19.9158 21.735 20.2659 21.4123C21 20.7358 21 19.1875 21 16.0909V11.0975C21 6.80891 21 4.6646 19.682 3.3323C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.3323C3.5108 4.14827 3.19796 5.26881 3.07672 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 6H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-          <small>دوراتي</small>
-        </a>
-
-      </div>
-    </nav>
-
-    <!-- Start Navbar -->
-    <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="./index.html">
-            <img src="content/assets/images/logo.png" style="height: 30px" alt="Logo">
-          </a>
-    
-          <!-- Hamburger icon -->
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
-              <li class="nav-item active">
-                <a class="nav-link" href="./index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./allCourses.html">الدورات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./allPackges.html">الدبلومات</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">ورش العمل</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="files.html">المتجر الرقمى</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="trainers.html">المدربين</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact_us.html">تواصل معنا</a>
-              </li>
-              <li class="nav-item d-none">
-                <a class="nav-link" href="profile.html">دوراتى</a>
-              </li>
-            </ul>
-            </div>
-    
-            <!-- Header actions -->
-            <ul class="navbar-nav flex-grow-0 align-items-center">
-              <li class="nav-item d-none">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
-                  <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg" alt="" />
-                  <span class="notification">1</span>
-                </a>
-              </li>
-    
-              <li class="nav-item d-none">
-                <a class="nav-link" href="./favoriteCourses.html">
-                  <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt="" />
-                  <span class="notification">1</span>
-                </a>
-              </li>
-    
-              <li class="nav-item me-2">
-                <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                  سجل مجانا
-                </button>
-              </li>
-              <li class="nav-item me-2">
-                <button class="btn btn-primary login_btn trainer_login" data-bs-toggle="modal" data-bs-target="#loginModal">
-                  سجل ك مدرب
-                </button>
-              </li>
-    
-              <!-- Profile dropdown -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg" alt="User" style="width:35px; height:35px;">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                  <li>
-                    <a class="dropdown-item d-flex align-items-center " href="./profile.html">
-                      <img src="./content/assets/images/instructor.jpg" class="rounded-circle me-2" alt="User" style="width:40px; height:40px;">
-                      <div>
-                        <h6 class="mb-0">Fahmy Mansour</h6>
-                        <small>Test@gmail.com</small>
-                      </div>
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./helpCenter.html">مركز المساعدة</a></li>
-                  <li><a class="dropdown-item" href="./login.html">الخروج</a></li>
-                </ul>
-              </li>
-            </ul>
-        </nav>
-      </div>
-    </header>
-    
-
-    <!-- End Navbar -->
-    <!-- header style end -->
-    <div id="preloader">
-      <h1>CourHub</h1>
-    </div>
-    <!-- banner area start -->
-    <!-- Main -->
-    <main>
-      <div class="container">
-        <picture class="responsive-picture">
-          <source
-                  media="(max-width: 767px)"
-                  sizes="100vw"
-                  srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3OTgsInB1ciI6ImJsb2JfaWQifX0=--e0cdef0372d45e650bd6ae03f46d36f2109d4b8c/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(698%20x%20344%20px)%20(3).gif">
-          <source
-                  media="(min-width: 768px)"
-                  sizes="50vw"
-                  srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif">
-          <img
-                  src="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif"
-                  alt="Course Banner"
-                  class="responsive-img">
-        </picture>
-      </div>
-      <div class="categories">
-        <div class="container">
-
-          <div class="owl-carousel owl-theme owl-carousel__categories">
-            <a href="allCourses.html" class="item category-link">
-              <div class="cat-box cat-box-red">
-                <i class="fa fa-book"></i>
-              </div>
-              <h4 class="categories__title">موشن جرافيك</h4>
-            </a>
-            <a href="allCourses.html" class="item category-link">
-              <div class="cat-box cat-box-blue">
-                <i class="fa fa-bell"></i>
-              </div>
-              <h4 class="categories__title">تصميم واجهات المستخدم</h4>
-            </a>
-
-            <a href="allCourses.html" class="item category-link">
-              <div class="cat-box cat-box-green">
-                <i class="fa fa-laptop"></i>
-              </div>
-              <h4 class="categories__title">البزنس جرافيك</h4>
-            </a>
-
-            <a href="allCourses.html" class="item category-link">
-              <div class="cat-box cat-box-yellow">
-                <i class="fa fa-language"></i>
-              </div>
-              <h4 class="categories__title">تصميم ثلاثي الأبعاد</h4>
-            </a>
-
-            <a href="allCourses.html" class="item category-link">
-              <div class="cat-box cat-box-purple">
-                <i class="fa fa-laptop"></i>
-              </div>
-              <h4 class="categories__title">تصميم الشعارات</h4>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- New arrivals  -->
-      <div class="products-section">
-        <div class="container">
-          <div class="main__heading">
-            <div class="title-area-center-style">
-              <h2 class="title latest_course_title">الأكثر طلبًا</h2>
-            </div>
-          </div>
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
-                  <div class="product__labels">
-                    <span class="product__label product__label--green">مجاني</span>
-                  </div>
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions mb-3">
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-2.png" alt="" />
-                  <div class="product__labels">
-                    <span class="product__label product__label--red">خصم 50%</span>
-                    <span class="product__label product__label--gray">متقدم</span>
-                  </div>
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-1">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-
-                  <span style="color: #fff"> محمد محمود</span>
-
-
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-
-
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-3.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-4.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- All Courses  -->
-      <div class="products-section">
-        <div class="container">
-
-          <div class="main__heading">
-            <div class="title-area-center-style">
-              <h2 class="title latest_course_title">أحدث الدورات</h2>
-            </div>
-          </div>
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt="" />
-                  <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product__addToCart" title="إضافة للسلة">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      <i class="fa-regular fa-star"></i>
-                      4.5
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <a href="./allCourses.html" class="product__loadMore">
-                  <span>الإطلاع على جميع الدورات</span>
-                  <i class="fa-solid fa-arrow-left-long"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- All Packages  -->
-      <div class="products-section mb-5">
-        <div class="container">
-          <div class="main__heading">
-            <div class="title-area-center-style">
-              <h2 class="title latest_course_title"> الدبلومات</h2>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/package-1.png" alt="" />
-                  <div class="product__labels">
-                    <span class="product__label product__label--green">فعال </span>
-                  </div>
-                  <a href="./packageDetails.html">تفاصيل الباقه</a>
-                </div>
-
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
+                        <div class="col-6">
+                            <div class="input-group mb-3 custom-input">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="الاسم الأخير">
+                            </div>
+                        </div>
                     </div>
 
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                     4 دورات
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/package-2.png" alt="" />
-                  <div class="product__labels">
-                    <span class="product__label product__label--dark">غبر فعال </span>
-                  </div>
-                  <a href="./packageDetails.html">تفاصيل الباقه</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
+                    <div class="input-group mb-3 custom-input">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="البريد الإلكتروني">
                     </div>
 
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      4 دورات
-                    </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
-                    </div>
-                  </div>
-                </div>
-                <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
-
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <div class="product__img">
-                  <img class="img-fluid" src="./content/assets/images/courses/package-3.png" alt="" />
-                  <div class="product__labels">
-                    <span class="product__label product__label--dark">غير فعال</span>
-                  </div>
-                  <a href="./packageDetails.html">تفاصيل الباقه</a>
-                </div>
-                <div class="product__actions">
-                  <div class="d-flex gap-2">
-                    <div class="product__wish" title="إضافة للمفضله">
-                      <i class="fa-regular fa-heart"></i>
+                    <div class="input-group mb-3 custom-input password-group">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control password-input" placeholder="كلمة السر ">
+                        <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
                     </div>
 
-                  </div>
-                  <div class="product__info">
-                    <div class="product__rate">
-                      4 دورات
+                    <div class="input-group mb-3 custom-input password-group">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control password-input" placeholder="تأكيد كلمة السر ">
+                        <span class="input-group-text toggle-password"><i class="fa fa-eye"></i></span>
                     </div>
-                    <div class="product__users">
-                      <i class="fa-regular fa-user"></i>
-                      15
+
+                    <div class="mb-3 text-center d-flex gap-3 justify-content-center">
+                        <label class="form-label d-block mb-2">التسجيل كـ</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="register_type" id="user" value="user"
+                                       checked>
+                                <label class="form-check-label" for="user">
+                                    مستخدم
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="register_type" id="trainer"
+                                       value="trainer">
+                                <label class="form-check-label" for="trainer">
+                                    مدرب
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
 
-              </div>
-            </div>
-            <div class="col">
-              <div class="product">
-                <a href="./allPackges.html" class="product__package-btn">
-                  <span>الإطلاع على جميع الدبلومات</span>
-                  <i class="fa-solid fa-arrow-left-long"></i>
-                </a>
-                <button class="product__package-btn dark" data-bs-toggle="modal" data-bs-target="#customPackageModal">
-                  <span>إنشيء باقتك الخاصة</span>
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Students Testimonials  -->
+                    <div class="form-check mb-3  terms-check">
+                        <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                        <label class="form-check-label" for="termsCheck">
+                            أوافق على
+                            <a href="/terms-and-conditions" target="_blank" style=" color: #6a1b9a;">الشروط والأحكام</a>
+                            و
+                            <a href="/service-terms" target="_blank" style="color: #6a1b9a;">شروط الخدمة</a>
+                        </label>
+                    </div>
+                </form>
 
-      <!-- certificate -->
-      <div class="container">
-        <div class="certificate-section">
-          <div class="row g-3 mb-5 justify-content-between">
-            <div class="col-12 col-lg-4 col-xl-4">
-              <div class="certificate-section__image">
-                <img class="img-fluid d-block mx-auto" src="./content/assets/images/certificate.png" alt="certificate" />
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 col-xl-4 ">
-                <div class="certificate-section">
-                  <div class="title-area-center-style">
-                    <h2 class="title latest_course_title">احصل على شهادة معتمدة بعد انتهاء الكورس</h2>
-                  </div>
-                    <p class="text-muted fs-5">
-                      بمجرد الانتهاء من جميع دروس الكورس، هيتم منحك شهادة إتمام رسمية
-                      تقدر تستخدمها في الـ CV أو تعرضها على LinkedIn،
-                      وتعزز بيها فرصك في سوق العمل بشكل احترافي.
-                    </p>
-                    <p class="text-muted fs-5 mt-3">
-                      الشهادة تعتبر نقطة قوة في ملفك المهني،
-                      وبتزود فرص قبولك في أي وظيفة داخل مجال التصميم.
-                    </p>
-                </div>
-                <div class="mt-10">
-                  <a href="#" class="rts-btn btn-primary main__btn">اشترك الأن</a>
-                </div>
-            </div>
+                <a href="#" class="forget">هل نسيت كلمة المرور؟</a>
 
-            <div class="col-12 col-lg-4 col-xl-4">
-              <div class="certificate-section__image">
-                <img class="img-fluid d-block mx-auto" src="./content/assets/images/event.png" alt="certificate" />
-              </div>
-            </div>
-          </div>
-
-          <div class="certificate-section__features">
-            <div class="certificate-section__feature">
-              <img class="certificate-icon" src="./content/assets/images/icons/infinity.png" width="auto" height="auto" alt="certificate" />
-              <div class="d-flex flex-column mr-3">
-                <h4 class="text-white mb-0 h5">وصول مدى الحياة</h4>
-                <p class="text-white font-weight-lighter">للدورات والدبلومات</p>
-              </div>
-            </div>
-            <div class="certificate-section__feature">
-              <img class="certificate-icon" src="./content/assets/images/icons/laptop.png" width="auto" height="auto" alt="certificate" />
-              <div class="d-flex flex-column mr-3">
-                <h4 class="text-white mb-0 h5">دورات بتطبيقات</h4>
-                <p class="text-white font-weight-lighter">عملية متسلسلة</p>
-              </div>
-            </div>
-            <div class="certificate-section__feature">
-              <img class="certificate-icon" src="./content/assets/images/icons/tax-free.png" width="auto" height="auto" alt="certificate" />
-              <div class="d-flex flex-column mr-3">
-                <h4 class="text-white mb-0 h5">دورات وورش</h4>
-                <p class="text-white font-weight-lighter">مجانية</p>
-              </div>
-            </div>
-            <div class="certificate-section__feature">
-              <img class="certificate-icon" src="./content/assets/images/icons/clock.png" width="auto" height="auto" alt="certificate" />
-              <div class="d-flex flex-column mr-3">
-                <h4 class="text-white mb-0 h5">تعلم أون لاين</h4>
-                <p class="text-white font-weight-lighter">بأي وقت</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end certificate -->
-  <!--Contact -->
-      <section id="partners-section" class="py-5 text-center" style="min-height: 338px; background: linear-gradient(to bottom, rgb(20 20 20) 0%, rgb(9 8 12 / 84%) 50%, rgb(0 0 0) 100%), url(content/assets/images/contact2.jpg) no-repeat center center / cover;">
-        <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-12 text-white text-center">
-                <h4 class="fw-bold">كُن شريكنا في النجاح</h4>
-                <h1 class="big-purple fw-bold">
-                  الشركاء <span>والرعاة</span>
-                </h1>
-
-                <p class="desc">
-                  هذا النص هو مثال لنص يمكن استبداله في نفس المساحة المخصصة للنص...
+                <button type="submit" class="btn login-submit-btn w-100 mt-4">تسجيل الدخول</button>
+                <p class="text-center mt-3 new-account">
+                    ليس لديك حساب؟ <a href="#" class="switch-to-register">حساب جديد</a>
                 </p>
 
-              </div>
-            </div>
-              <div class="logos">
-                <div class="row justify-content-center">
-                      <div class="col-md-8">
-                        <div class="owl-carousel brands-slider2">
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                          <div class="logo-box text-center">
-                            <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
-                          </div>
-                        </div>
+                <p class="text-center mt-3 back-to-login d-none" id="backLogin">
+                    لديك حساب بالفعل؟ <a href="#" class="switch-to-login">تسجيل الدخول</a>
+                </p>
 
-                      </div>
-                </div>
-              </div>
             </div>
 
-          </div>
         </div>
-      </section>
-      <!--Contact-->
-      <!--cart modal -->
-      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="cartModalLabel">محتوي السلة</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-              <div class="empty-cart text-center mb-4 d-none">
-                <i class="fa fa-shopping-cart fa-3x mb-3"></i>
-                <h3>سلة المشتريات فارغة</h3>
-                <p>يرجى إضافة بعض الدورات إلى سلة المشتريات للمتابعة</p>
-                <a href="#" class="btn btn-primary mt-3">
-                  <i class="fa fa-arrow-right"></i> مواصلة التسوق
-                </a>
-              </div>
-
-              <div class="row cart-wrapper ">
-                <!-- CART ITEMS -->
-                <div class="col-12 ">
-                  <div class="cart-box thin-scroll">
-
-                    <!-- Item -->
-                    <div class="cart-row d-flex align-items-center mb-3">
-                      <div class="item-img me-3">
-                        <img src="./content/assets/images/courses/course-1.png" class="img-fluid" alt="">
-                      </div>
-                      <div class="item-info me-auto">
-                        <p>دورة</p>
-                        <h6>معدّات التصوير بأنواعها</h6>
-
-                      </div>
-                      <div class="item-price">
-                        <button class="btn btn-danger me-2"><i class="fas fa-trash"></i></button>
-                      </div>
-                    </div>
+    </div>
+</div>
 
 
+<!-- Bottom Navigation -->
+<nav class="bottom-nav d-none bg-dark border-top border-secondary fixed-bottom">
+    <div class="d-flex justify-content-around text-center">
+        <a href="#" class="nav-link text-secondary flex-fill">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M10 13H14M19 13V20H5V9M5 9H19C19.5523 9 20 8.55228 20 8V5C20 4.44772 19.5523 4 19 4H12M5 9C4.44772 9 4 8.55228 4 8V5C4 4.44772 4.44772 4 5 4H7"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <small>الدبلومات</small>
+        </a>
+        <a href="#" class="nav-link text-secondary flex-fill">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M16 11L24 14.75V29M8 19V24C8 24 11 27 16 27C18.022 27 19.719 26.644 21.021 26.059M1 11L16 3L31 11L16 19L1 11Z"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <small>الدورات</small>
+        </a>
+        <a href="#" class="nav-link text-secondary active flex-fill">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M22 22L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M4 22V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M20 9.5V13.5M20 22V17.5" stroke="currentColor" stroke-width="1.5"
+                          stroke-linecap="round"></path>
+                    <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                    <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z"
+                          stroke="currentColor" stroke-width="1.5"></path>
+                </g>
+            </svg>
+            <small>الرئيسية</small>
+        </a>
 
-                    <div class="total-box p-3 border rounded">
-                      <div class="total-row d-flex justify-content-between mb-2">
-                        <div>المجموع</div>
-                        <div class="total-price">5,168.87 ج.م</div>
-                      </div>
-                      <hr>
-                      <div class="total-row d-flex justify-content-between mb-3">
-                        <div>المبلغ الإجمالي</div>
-                        <div class="total-price">5,168.87 ج.م</div>
-                      </div>
 
-                      <a class="btn btn-success w-100" href="./checkOut.html">
-                        إتمام عملية التسجيل <i class="fas fa-credit-card"></i>
-                      </a>
-                    </div>
+        <a href="#" class="nav-link text-secondary flex-fill">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M3 11.0975V16.0909C3 19.1875 3 20.7358 3.73411 21.4123C4.08422 21.735 4.52615 21.9377 4.99692 21.9915C5.98402 22.1045 7.13675 21.0849 9.44216 19.0458C10.4612 18.1445 10.9708 17.6938 11.5603 17.5751C11.8506 17.5166 12.1494 17.5166 12.4397 17.5751C13.0292 17.6938 13.5388 18.1445 14.5578 19.0458C16.8633 21.0849 18.016 22.1045 19.0031 21.9915C19.4739 21.9377 19.9158 21.735 20.2659 21.4123C21 20.7358 21 19.1875 21 16.0909V11.0975C21 6.80891 21 4.6646 19.682 3.3323C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.3323C3.5108 4.14827 3.19796 5.26881 3.07672 7"
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M15 6H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                </g>
+            </svg>
+            <small>دوراتي</small>
+        </a>
 
-                  </div>
-                </div>
+    </div>
+</nav>
 
-                <!-- TOTAL BOX -->
-                <div class="col-12 ">
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Start Custom Package Modal -->
-      <div class="modal thin-scroll main-modal package-modal" id="customPackageModal" tabindex="-1" aria-labelledby="customPackageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-          <div class="modal-content">
-            <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times"></i>
-            </button>
-            <h6 class="main-modal__title">إنشيء باقتك الخاصة</h6>
-            <div class="modal-body">
-              <form action="">
-                <div class="package-modal__summary">
-                  <div class="package-modal__summary__items">
-                    <div class="package-modal__summary__item">
-                      <label for="customPackageName"> إسم الباقة</label>
-                        <input type="text" id="customPackageName" class="form-control" placeholder="أدخل اسم الباقة" />
-                    </div>
-
-                    <div class="package-modal__summary__item">
-                      <label for="customPackageName"> اختر المدرب</label>
-                        <select class="select2 form-control">
-                          <option selected disabled> حدد المدرب المطلوب</option>
-                          <option> د. محمد أحمد</option>
-                          <option>م. أحمد فايز</option>
-                          <option>أ. يوسف إبراهيم</option>
-                        </select>
-                    </div>
-
-                    <div class="package-modal__summary__item">
-                      <span>دورات الباقة</span>
-                      <div class="background">2</div>
-                    </div>
-                    <div class="package-modal__summary__item">
-                      <span>السعر :</span>
-                      <div class="background">
-                        <span class="old"> EGP 55555</span>
-                        <span class="current"> EGP 55555</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <h5 class="text-white mb-3">إختر دورات الباقة : <small style="font-size: 12px">(يجب أختيار دورتين على الأقل)</small></h5>
-
-                <div class="package-modal__selector">
-                  <div class="thin-scroll mb-3">
-                    <div class="row row-cols-1 row-cols-lg-2 g-3 w-100">
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                      <div class="col d-flex align-items-center gap-2">
-                        <div class="custom-checkbox">
-                          <input type="checkbox" />
-                        </div>
-                        <img class="product-img" src="./content/assets/images/courses/course-1.png" width="79" height="70" alt="" />
-                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر الصفر الصفر الصفر</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="main__btn">المزيد</button>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-end gap-2 mt-2">
-                  <button class="main__btn green">حفظ و إضافة للسلة</button>
-                  <button class="main__btn">حفظ</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Custom Package Modal -->
-
-      <!-- Start video Modal -->
-      <div class="modal fade main-modal" id="videoProjectsModal" tabindex="-1" aria-labelledby="videoProjectsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times"></i>
-            </button>
-            <h6 class="main-modal__title"></h6>
-            <div class="modal-body">
-              <div class="video-frame"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End video Modal -->
-    </main>
-    <!-- End Main -->
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row align-items-center gy-4 gy-lg-0 my-3">
-          <div class="col-12 col-lg-3">
-            <a class="footer__logo mb-2" href="./index.html">
-              <img src="content/assets/images/logo.png" >
+<!-- Start Navbar -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="content/assets/images/logo.png" style="height: 30px" alt="Logo">
             </a>
-            <p class="breaf_text">Your Hub for Smart Learning</p>
-          </div>
-          <div class="col-12 col-lg-6 text-center">
-            <ul class="footer__links ">
-              <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
-              <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
-              <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
-              <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+
+            <!-- Hamburger icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 links">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./allCourses.html">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./allPackges.html">الدبلومات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">ورش العمل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="files.html">المتجر الرقمى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">المدربين</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a class="nav-link" href="profile.html">دوراتى</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header actions -->
+            <ul class="header__actions navbar-nav flex-grow-0">
+                <li class="nav-item d-none">
+                    <a class="nav-link no_border" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <img class="header__actions__icon" src="./content/assets/images/icons/shopping-cart.svg"
+                             alt=""/>
+                        <span class="notification">1</span>
+                    </a>
+
+                </li>
+
+                <li class="nav-item d-none">
+                    <a class="nav-link no_border" href="./favoriteCourses.html">
+                        <img class="header__actions__icon" src="./content/assets/images/icons/heart.png" alt=""/>
+                        <span class="notification">1</span>
+                    </a>
+                </li>
+
+                <li class="nav-item me-2">
+                    <button class="btn btn-primary login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        سجل مجانا
+                    </button>
+                </li>
+                <li class="nav-item me-2">
+                    <button class="btn btn-primary login_btn trainer_login" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                        سجل ك مدرب
+                    </button>
+                </li>
+
+                <!-- Profile dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg"
+                             alt="User" style="width:35px; height:35px;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center " href="./profile.html">
+                                <img src="./content/assets/images/instructor.jpg" class="rounded-circle me-2" alt="User"
+                                     style="width:40px; height:40px;">
+                                <div>
+                                    <h6 class="mb-0">Fahmy Mansour</h6>
+                                    <small>Test@gmail.com</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./helpCenter.html">مركز المساعدة</a></li>
+                        <li><a class="dropdown-item" href="./login.html">الخروج</a></li>
+                    </ul>
+                </li>
             </ul>
-            <div class="payment-methods">
-              <ul>
-                <li><img src="./content/assets/images/icons/checkout/visa-master-card.png"> </li>
-                <li><img src="./content/assets/images/icons/checkout/fawry.png"> </li>
-                <li><img src="./content/assets/images/icons/checkout/paypal.png"> </li>
-              </ul>
-            </div>
+        </nav>
+    </div>
+</header>
 
 
-          </div>
-          <div class="col-12 col-lg-3 footer__contact">
-            <div class="footer__contact__item ">
-              <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
-              <i class="fas fa-mobile-alt ms-2"></i>
+<!-- End Navbar -->
+<!-- header style end -->
+<div id="preloader">
+    <h1>CourHub</h1>
+</div>
+<!-- banner area start -->
+<!-- Main -->
+<main>
+    <div class="container">
+        <picture class="responsive-picture">
+            <source
+                    media="(max-width: 767px)"
+                    sizes="100vw"
+                    srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3OTgsInB1ciI6ImJsb2JfaWQifX0=--e0cdef0372d45e650bd6ae03f46d36f2109d4b8c/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(698%20x%20344%20px)%20(3).gif">
+            <source
+                    media="(min-width: 768px)"
+                    sizes="50vw"
+                    srcset="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif">
+            <img
+                    src="https://api2.dawrat.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTU3NjMsInB1ciI6ImJsb2JfaWQifX0=--73ca3acfc920df41df4938a30de64c6618c65e43/%D8%AC%D8%B1%D8%A8%D8%AA%20%D8%AA%D8%B6%D8%B9%20%D9%83%D9%84%D9%85%D8%A9%20%D8%B3%D8%B1%20%D9%84%D8%B5%D9%81%D9%83%D8%9F%20(3).gif"
+                    alt="Course Banner"
+                    class="responsive-img">
+        </picture>
+    </div>
+    <div class="categories">
+        <div class="container">
+
+            <div class="owl-carousel owl-theme owl-carousel__categories">
+                <a href="allCourses.html" class="item category-link">
+                    <div class="cat-box cat-box-red">
+                        <i class="fa fa-book"></i>
+                    </div>
+                    <h4 class="categories__title">موشن جرافيك</h4>
+                </a>
+                <a href="allCourses.html" class="item category-link">
+                    <div class="cat-box cat-box-blue">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <h4 class="categories__title">تصميم واجهات المستخدم</h4>
+                </a>
+
+                <a href="allCourses.html" class="item category-link">
+                    <div class="cat-box cat-box-green">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+                    <h4 class="categories__title">البزنس جرافيك</h4>
+                </a>
+
+                <a href="allCourses.html" class="item category-link">
+                    <div class="cat-box cat-box-yellow">
+                        <i class="fa fa-language"></i>
+                    </div>
+                    <h4 class="categories__title">تصميم ثلاثي الأبعاد</h4>
+                </a>
+
+                <a href="allCourses.html" class="item category-link">
+                    <div class="cat-box cat-box-purple">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+                    <h4 class="categories__title">تصميم الشعارات</h4>
+                </a>
             </div>
-            <div class="footer__contact__item" style="margin-bottom: 15px">
-              <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
-              <i class="far fa-envelope ms-1"></i>
+        </div>
+    </div>
+
+    <!-- New arrivals  -->
+    <div class="products-section">
+        <div class="container">
+            <div class="main__heading">
+                <div class="title-area-center-style">
+                    <h2 class="title latest_course_title">الأكثر طلبًا</h2>
+                </div>
             </div>
 
-          </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt=""/>
+                            <div class="product__labels">
+                                <span class="product__label product__label--green">مجاني</span>
+                            </div>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions mb-3">
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-2.png" alt=""/>
+                            <div class="product__labels">
+                                <span class="product__label product__label--red">خصم 50%</span>
+                                <span class="product__label product__label--gray">متقدم</span>
+                            </div>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-1">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+
+                            <span style="color: #fff"> محمد محمود</span>
+
+
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-3.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-4.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Courses  -->
+    <div class="products-section">
+        <div class="container">
+
+            <div class="main__heading">
+                <div class="title-area-center-style">
+                    <h2 class="title latest_course_title">أحدث الدورات</h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-1.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-5.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-6.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-7.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-8.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-9.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/course-10.png" alt=""/>
+                            <a href="./previewPayedCourse.html">تفاصيل الدورة</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="product__addToCart" title="إضافة للسلة">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./previewPayedCourse.html" class="product__title">كورس التصميم على الفوتوشوب من
+                            الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <a href="./allCourses.html" class="product__loadMore">
+                            <span>الإطلاع على جميع الدورات</span>
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Packages  -->
+    <div class="products-section mb-5">
+        <div class="container">
+            <div class="main__heading">
+                <div class="title-area-center-style">
+                    <h2 class="title latest_course_title"> الدبلومات</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-3 gy-4 my-3">
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/package-1.png" alt=""/>
+                            <div class="product__labels">
+                                <span class="product__label product__label--green">فعال </span>
+                            </div>
+                            <a href="./packageDetails.html">تفاصيل الباقه</a>
+                        </div>
+
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    4 دورات
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/package-2.png" alt=""/>
+                            <div class="product__labels">
+                                <span class="product__label product__label--dark">غبر فعال </span>
+                            </div>
+                            <a href="./packageDetails.html">تفاصيل الباقه</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    4 دورات
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <div class="product__img">
+                            <img class="img-fluid" src="./content/assets/images/courses/package-3.png" alt=""/>
+                            <div class="product__labels">
+                                <span class="product__label product__label--dark">غير فعال</span>
+                            </div>
+                            <a href="./packageDetails.html">تفاصيل الباقه</a>
+                        </div>
+                        <div class="product__actions">
+                            <div class="d-flex gap-2">
+                                <div class="product__wish" title="إضافة للمفضله">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                            </div>
+                            <div class="product__info">
+                                <div class="product__rate">
+                                    4 دورات
+                                </div>
+                                <div class="product__users">
+                                    <i class="fa-regular fa-user"></i>
+                                    15
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./packageDetails.html" class="product__title">دبلومة التصميم على الفوتوشوب من الصفر</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product">
+                        <a href="./allPackges.html" class="product__package-btn">
+                            <span>الإطلاع على جميع الدبلومات</span>
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </a>
+                        <button class="product__package-btn dark" data-bs-toggle="modal"
+                                data-bs-target="#customPackageModal">
+                            <span>إنشيء باقتك الخاصة</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Students Testimonials  -->
+
+    <!-- certificate -->
+    <div class="container">
+        <div class="certificate-section">
+            <div class="row g-3 mb-5 justify-content-between">
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <div class="certificate-section__image">
+                        <img class="img-fluid d-block mx-auto" src="./content/assets/images/certificate.png"
+                             alt="certificate"/>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 ">
+                    <div class="certificate-section">
+                        <div class="title-area-center-style">
+                            <h2 class="title latest_course_title">احصل على شهادة معتمدة بعد انتهاء الكورس</h2>
+                        </div>
+                        <p class="text-muted fs-5">
+                            بمجرد الانتهاء من جميع دروس الكورس، هيتم منحك شهادة إتمام رسمية
+                            تقدر تستخدمها في الـ CV أو تعرضها على LinkedIn،
+                            وتعزز بيها فرصك في سوق العمل بشكل احترافي.
+                        </p>
+                        <p class="text-muted fs-5 mt-3">
+                            الشهادة تعتبر نقطة قوة في ملفك المهني،
+                            وبتزود فرص قبولك في أي وظيفة داخل مجال التصميم.
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <a href="#" class="rts-btn btn-primary main__btn">اشترك الأن</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-xl-4">
+                    <div class="certificate-section__image">
+                        <img class="img-fluid d-block mx-auto" src="./content/assets/images/event.png"
+                             alt="certificate"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-section__features">
+                <div class="certificate-section__feature">
+                    <img class="certificate-icon" src="./content/assets/images/icons/infinity.png" width="auto"
+                         height="auto" alt="certificate"/>
+                    <div class="d-flex flex-column mr-3">
+                        <h4 class="text-white mb-0 h5">وصول مدى الحياة</h4>
+                        <p class="text-white font-weight-lighter">للدورات والدبلومات</p>
+                    </div>
+                </div>
+                <div class="certificate-section__feature">
+                    <img class="certificate-icon" src="./content/assets/images/icons/laptop.png" width="auto"
+                         height="auto" alt="certificate"/>
+                    <div class="d-flex flex-column mr-3">
+                        <h4 class="text-white mb-0 h5">دورات بتطبيقات</h4>
+                        <p class="text-white font-weight-lighter">عملية متسلسلة</p>
+                    </div>
+                </div>
+                <div class="certificate-section__feature">
+                    <img class="certificate-icon" src="./content/assets/images/icons/tax-free.png" width="auto"
+                         height="auto" alt="certificate"/>
+                    <div class="d-flex flex-column mr-3">
+                        <h4 class="text-white mb-0 h5">دورات وورش</h4>
+                        <p class="text-white font-weight-lighter">مجانية</p>
+                    </div>
+                </div>
+                <div class="certificate-section__feature">
+                    <img class="certificate-icon" src="./content/assets/images/icons/clock.png" width="auto"
+                         height="auto" alt="certificate"/>
+                    <div class="d-flex flex-column mr-3">
+                        <h4 class="text-white mb-0 h5">تعلم أون لاين</h4>
+                        <p class="text-white font-weight-lighter">بأي وقت</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end certificate -->
+    <!--Contact -->
+    <section id="partners-section" class="py-5 text-center"
+             style="min-height: 338px; background: linear-gradient(to bottom, rgb(20 20 20) 0%, rgb(9 8 12 / 84%) 50%, rgb(0 0 0) 100%), url(content/assets/images/contact2.jpg) no-repeat center center / cover;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-white text-center">
+                    <h4 class="fw-bold">كُن شريكنا في النجاح</h4>
+                    <h1 class="big-purple fw-bold">
+                        الشركاء <span>والرعاة</span>
+                    </h1>
+
+                    <p class="desc">
+                        هذا النص هو مثال لنص يمكن استبداله في نفس المساحة المخصصة للنص...
+                    </p>
+
+                </div>
+            </div>
+            <div class="logos">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="owl-carousel brands-slider2">
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                            <div class="logo-box text-center">
+                                <img src="content/assets/images/logos/1.png" class="img-fluid" alt="Logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <!--cart modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">محتوي السلة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="empty-cart text-center mb-4 d-none">
+                        <i class="fa fa-shopping-cart fa-3x mb-3"></i>
+                        <h3>سلة المشتريات فارغة</h3>
+                        <p>يرجى إضافة بعض الدورات إلى سلة المشتريات للمتابعة</p>
+                        <a href="#" class="btn btn-primary mt-3">
+                            <i class="fa fa-arrow-right"></i> مواصلة التسوق
+                        </a>
+                    </div>
+
+                    <div class="row cart-wrapper ">
+                        <!-- CART ITEMS -->
+                        <div class="col-12 ">
+                            <div class="cart-box thin-scroll">
+
+                                <!-- Item -->
+                                <div class="cart-row d-flex align-items-center mb-3">
+                                    <div class="item-img me-3">
+                                        <img src="./content/assets/images/courses/course-1.png" class="img-fluid"
+                                             alt="">
+                                    </div>
+                                    <div class="item-info me-auto">
+                                        <p>دورة</p>
+                                        <h6>معدّات التصوير بأنواعها</h6>
+
+                                    </div>
+                                    <div class="item-price">
+                                        <button class="btn btn-danger me-2"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+
+
+                                <div class="total-box p-3 border rounded">
+                                    <div class="total-row d-flex justify-content-between mb-2">
+                                        <div>المجموع</div>
+                                        <div class="total-price">5,168.87 ج.م</div>
+                                    </div>
+                                    <hr>
+                                    <div class="total-row d-flex justify-content-between mb-3">
+                                        <div>المبلغ الإجمالي</div>
+                                        <div class="total-price">5,168.87 ج.م</div>
+                                    </div>
+
+                                    <a class="btn btn-success w-100" href="./checkOut.html">
+                                        إتمام عملية التسجيل <i class="fas fa-credit-card"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- TOTAL BOX -->
+                        <div class="col-12 ">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Custom Package Modal -->
+    <div class="modal thin-scroll main-modal package-modal" id="customPackageModal" tabindex="-1"
+         aria-labelledby="customPackageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h6 class="main-modal__title">إنشيء باقتك الخاصة</h6>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="package-modal__summary">
+                            <div class="package-modal__summary__items">
+                                <div class="package-modal__summary__item">
+                                    <label for="customPackageName"> إسم الباقة</label>
+                                    <input type="text" id="customPackageName" class="form-control"
+                                           placeholder="أدخل اسم الباقة"/>
+                                </div>
+
+                                <div class="package-modal__summary__item">
+                                    <label for="customPackageName"> اختر المدرب</label>
+                                    <select class="select2 form-control">
+                                        <option selected disabled> حدد المدرب المطلوب</option>
+                                        <option> د. محمد أحمد</option>
+                                        <option>م. أحمد فايز</option>
+                                        <option>أ. يوسف إبراهيم</option>
+                                    </select>
+                                </div>
+
+                                <div class="package-modal__summary__item">
+                                    <span>دورات الباقة</span>
+                                    <div class="background">2</div>
+                                </div>
+                                <div class="package-modal__summary__item">
+                                    <span>السعر :</span>
+                                    <div class="background">
+                                        <span class="old"> EGP 55555</span>
+                                        <span class="current"> EGP 55555</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="text-white mb-3">إختر دورات الباقة : <small style="font-size: 12px">(يجب أختيار
+                            دورتين على الأقل)</small></h5>
+
+                        <div class="package-modal__selector">
+                            <div class="thin-scroll mb-3">
+                                <div class="row row-cols-1 row-cols-lg-2 g-3 w-100">
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                    <div class="col d-flex align-items-center gap-2">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox"/>
+                                        </div>
+                                        <img class="product-img" src="./content/assets/images/courses/course-1.png"
+                                             width="79" height="70" alt=""/>
+                                        <h6 class="product-title">كورس التصميم على الفوتوشوب من الصفر الصفر الصفر الصفر
+                                            الصفر الصفر الصفر</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="main__btn">المزيد</button>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-end gap-2 mt-2">
+                            <button class="main__btn green">حفظ و إضافة للسلة</button>
+                            <button class="main__btn">حفظ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Custom Package Modal -->
+
+    <!-- Start video Modal -->
+    <div class="modal fade main-modal" id="videoProjectsModal" tabindex="-1" aria-labelledby="videoProjectsModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <button class="close__btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h6 class="main-modal__title"></h6>
+                <div class="modal-body">
+                    <div class="video-frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End video Modal -->
+</main>
+<!-- End Main -->
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center gy-4 gy-lg-0 my-3">
+            <div class="col-12 col-lg-3">
+                <a class="footer__logo mb-2" href="./index.html">
+                    <img src="content/assets/images/logo.png">
+                </a>
+                <p class="breaf_text">Your Hub for Smart Learning</p>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <ul class="footer__links ">
+                    <li><a class="nav-link active" href="./index.html">الرئيسية</a></li>
+                    <li><a class="nav-link" href="./helpCenter.html">مركز المساعدة</a></li>
+                    <li><a class="nav-link" href="./usagePolicy.html">سياسه الاستخدام</a></li>
+                    <li><a class="nav-link" href="./termsConditions.html">الشروط و الأحكام</a></li>
+                </ul>
+                <div class="payment-methods">
+                    <ul>
+                        <li><img src="./content/assets/images/icons/checkout/visa-master-card.png"></li>
+                        <li><img src="./content/assets/images/icons/checkout/fawry.png"></li>
+                        <li><img src="./content/assets/images/icons/checkout/paypal.png"></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-3 footer__contact">
+                <div class="footer__contact__item ">
+                    <a href="tel://+966570151516" style="direction: ltr">+966570151516</a>
+                    <i class="fas fa-mobile-alt ms-2"></i>
+                </div>
+                <div class="footer__contact__item" style="margin-bottom: 15px">
+                    <a href="mailto://support@sonicourses.com">Info@courhub.com</a>
+                    <i class="far fa-envelope ms-1"></i>
+                </div>
+
+            </div>
         </div>
         <hr>
         <div class="row">
-          <div class="col-12 col-lg-3">
-            <p class="footer__copyright">
-              جميع الحقوق محفوظة لـ
-              <a href="https://www.sonicourses.com/home" style="color: #0a5aec"> &#169; CoursHub</a>
-            </p>
+            <div class="col-12 col-lg-3">
+                <p class="footer__copyright">
+                    جميع الحقوق محفوظة لـ
+                    <a href="https://www.sonicourses.com/home" style="color: #0a5aec"> &#169; CoursHub</a>
+                </p>
 
-          </div>
-          <div class="col-12 col-lg-6 text-center">
-            <p>كورهب | إحدي مشاريع شركة <a href="Soudar.com">سودار - Soudar</a> للتقنية</p>
-          </div>
-          <div class="col-12 col-lg-3">
-            <div class="footer__social">
-              <a class="footer__social__item" href="https://www.facebook.com/">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a class="footer__social__item" href="https://www.youtube.com/">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-              <a class="footer__social__item" href="https://twitter.com/">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a class="footer__social__item" href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a class="footer__social__item" href="https://www.instagram.com/">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
             </div>
+            <div class="col-12 col-lg-6 text-center">
+                <p>كورهب | إحدي مشاريع شركة <a href="Soudar.com">سودار - Soudar</a> للتقنية</p>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="footer__social">
+                    <a class="footer__social__item" href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="footer__social__item" href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="footer__social__item" href="https://twitter.com/">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="footer__social__item" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="footer__social__item" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
 
-          </div>
+            </div>
         </div>
 
-      </div>
-    </footer>
-    <!-- end Footer -->
+    </div>
+</footer>
+<!-- end Footer -->
 
-    <a href="" class="floating-whatsapp">
-      <img src="./content/assets/images/icons/floating-whatsapp.gif" alt="whatsapp" title="contact us on whatsapp" width="50" height="50" />
-    </a>
+<a href="" class="floating-whatsapp">
+    <img src="./content/assets/images/icons/floating-whatsapp.gif" alt="whatsapp" title="contact us on whatsapp"
+         width="50" height="50"/>
+</a>
 
-    <!-- Base Scripts Link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous"></script>
-    <!-- Additional Scripts Link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-    <script src="./content/script/owl-init.js"></script>
-    <script src="./content/script/general.js"></script>
-    <script src="./content/script/videoPopup.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $('.brands-slider').owlCarousel({
-          loop: true,
-          margin: 20,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          nav: false,
-          dots: false,
-          rtl: true,
-          responsive: {
-            0: { items: 3 },
-            480: { items: 2 },
-            768: { items: 3 },
-            992: { items: 4 }
-          }
-        });
-      });
-
-      $(document).ready(function(){
-        $('.brands-slider2').owlCarousel({
-          loop: true,
-          margin: 30,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          nav: false,
-          dots: false,
-          rtl: false,
-          responsive: {
-            0: { items: 3 },
-            480: { items: 2 },
-            768: { items: 3 },
-            992: { items: 6 }
-          }
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
-      $('#customPackageModal').on('shown.bs.modal', function () {
-        $(this).find('.select2').select2({
-          dropdownParent: $('#customPackageModal'),
-          width: '100%'
-        });
-      });
-    </script>
+<!-- Base Scripts Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous"></script>
+<!-- js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="./content/script/owl-init.js"></script>
+<!-- js -->
+<script src="./content/script/general.js"></script>
+<script src="./content/script/videoPopup.js"></script>
+<!-- js -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-  
-    const loginForm    = document.querySelector(".login_inputs");
-    const registerForm = document.querySelector(".register_inputs");
-    const switchToReg  = document.querySelector(".switch-to-register");
-    const switchToLog  = document.querySelector(".switch-to-login");
-    const backLogin    = document.getElementById("backLogin");
-  
-  
-    switchToReg.addEventListener("click", function (e) {
-      e.preventDefault();
-      loginForm.style.display = "none";
-      registerForm.style.display = "block";
-      backLogin.classList.remove("d-none");
+    $(document).ready(function () {
+        $('.brands-slider').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: false,
+            rtl: true,
+            responsive: {
+                0: {items: 3},
+                480: {items: 2},
+                768: {items: 3},
+                992: {items: 4}
+            }
+        });
     });
 
-    switchToLog.addEventListener("click", function (e) {
-      e.preventDefault();
-      registerForm.style.display = "none";
-      loginForm.style.display = "block";
-      backLogin.classList.add("d-none");
+    $(document).ready(function () {
+        $('.brands-slider2').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            nav: false,
+            dots: false,
+            rtl: false,
+            responsive: {
+                0: {items: 3},
+                480: {items: 2},
+                768: {items: 3},
+                992: {items: 6}
+            }
+        });
     });
-  
-  });
-  </script>
-  
+</script>
+<script>
+    $('#customPackageModal').on('shown.bs.modal', function () {
+        $(this).find('.select2').select2({
+            dropdownParent: $('#customPackageModal'),
+            width: '100%'
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.querySelector(".login_inputs");
+        const registerForm = document.querySelector(".register_inputs");
+        const switchToReg = document.querySelector(".switch-to-register");
+        const switchToLog = document.querySelector(".switch-to-login");
+        const backLogin = document.getElementById("backLogin");
 
-  </body>
+
+        switchToReg.addEventListener("click", function (e) {
+            e.preventDefault();
+            loginForm.style.display = "none";
+            registerForm.style.display = "block";
+            backLogin.classList.remove("d-none");
+        });
+
+        switchToLog.addEventListener("click", function (e) {
+            e.preventDefault();
+            registerForm.style.display = "none";
+            loginForm.style.display = "block";
+            backLogin.classList.add("d-none");
+        });
+
+    });
+</script>
+<!-- js -->
+</body>
 </html>
