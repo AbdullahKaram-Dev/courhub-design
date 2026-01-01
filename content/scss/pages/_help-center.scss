@@ -31,3 +31,131 @@
   margin: 0 auto;
   border-bottom: 0;
 }
+
+.help-tabs .nav-link {
+  border-radius: 6px;
+  /* padding: 7px 22px; */
+  color: #6c757d;
+  font-weight: 500;
+  background: none !important;
+  background-color: #303030 !important;
+  font-size: 14px;
+  color: #fff;
+  border: 0 ;
+}
+.help-tabs .nav-link.active {
+  background: linear-gradient(124deg, #7525a1, #b864ce) !important;
+  border: 0;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #fff;
+}
+
+
+.accordion-button
+{
+  border-radius: 6px;
+}
+
+.help-accordion .accordion-button {
+  font-weight: 500;
+}
+
+.help-accordion .accordion-button::after {
+  content: '+';
+  background-image: none;
+  font-size: 20px;
+}
+
+.help-accordion .accordion-button:not(.collapsed)::after {
+  content: '-';
+}
+
+.timeline {
+  position: relative;
+  padding-right: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #1f1b4e;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: 20px;
+}
+
+.timeline-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+}
+.help-tabs
+{
+  border: 0 !important;
+}
+.help-accordion .accordion-item {
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%) !important;
+  border-radius: 10px 10px 0 0;
+}
+.help-accordion .accordion-button
+{
+  color: #fff;
+  background: linear-gradient(358deg, rgba(44, 40, 40, 0) -10.1%, #393434 94.9%) !important;
+  box-shadow: none !important;
+}
+.accordion-body
+{
+  background-color: #1c1b1f !important;
+}
+.help-accordion .accordion-button {
+  direction: rtl;
+  text-align: right;
+}
+
+.help-accordion .accordion-button::after {
+  margin-left: 0;        /* إلغاء المسافة الافتراضية */
+  margin-right: auto;    /* دفع الأيقونة لليمين */
+}
+.help-accordion .accordion-button {
+  padding-right: 3rem;
+  padding-left: 1.25rem;
+}
+
+.help-accordion .accordion-button::after {
+  position: absolute;
+  right: 1rem;
+  left: auto;
+}
+.help-accordion .accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 22px;
+  font-weight: bold;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.help-accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(0); /* + تتحول لـ × أو − حسب الذوق */
+}

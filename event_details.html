@@ -102,7 +102,7 @@
           <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button"
              data-bs-toggle="dropdown"
              aria-expanded="false">
-            <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg"
+            <img class="header__actions__user " src="./content/assets/images/instructor.jpg"
                  alt="User" style="width:35px; height:35px;">
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
@@ -472,11 +472,13 @@
                     </div>
                     <div class="col-md-6 text-start d-flex gap-10 ticket_price">
                       <p class="text-muted small mb-0">التذاكر:</p>
+
                       <div class="input-group input-group-sm quantity-input">
-                        <button class="btn btn-outline-secondary" type="button" aria-label="تقليل">-</button>
-                        <input type="text" class="form-control text-center" value="0" readonly>
-                        <button class="btn btn-outline-secondary" type="button" aria-label="زيادة">+</button>
+                        <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                        <input type="text" class="form-control text-center quantity-value" value="0" readonly>
+                        <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
                       </div>
+
                     </div>
                   </div>
 
@@ -795,7 +797,7 @@
 <script src="./content/script/lightboxImage.js"></script>
     <script>
       // اضبط تاريخ النهاية
-      let countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+      let countdownDate = new Date("Dec 31, 2026 23:59:59").getTime();
 
       function updateCountdown() {
         let now = new Date().getTime();
@@ -821,6 +823,25 @@
       let interval = setInterval(updateCountdown, 1000);
       updateCountdown();
 
+      </script>
+    <script>
+      document.addEventListener('click', function (e) {
+
+        if (e.target.classList.contains('btn-plus')) {
+          const input = e.target.closest('.quantity-input').querySelector('.quantity-value');
+          input.value = parseInt(input.value) + 1;
+        }
+
+        if (e.target.classList.contains('btn-minus')) {
+          const input = e.target.closest('.quantity-input').querySelector('.quantity-value');
+          let value = parseInt(input.value);
+          if (value > 0) {
+            input.value = value - 1;
+          }
+        }
+
+      });
     </script>
+
   </body>
 </html>

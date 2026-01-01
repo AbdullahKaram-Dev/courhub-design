@@ -142,9 +142,11 @@
 }
 
 .iti__country-list {
-  background-color: #000 !important;
+  background-color: #0f0f0f !important;
   color: #fff !important;
   border: 0 !important;
+  text-align: right;
+  border-radius: 12px;
 }
 #mobile_code::placeholder
 {

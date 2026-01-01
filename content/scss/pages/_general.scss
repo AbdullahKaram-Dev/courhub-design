@@ -309,6 +309,17 @@ $text-muted: #b2b2b2;
 {
   display: none !important;
 }
+
+.login_btn:hover ,
+.trainer_login:hover ,
+.main__btn__priced:hover
+{
+  background: none !important;
+  background-color: #41b141 !important ; 
+  color: #fff !important;
+  border-color: #41b141;
+}
+
 @media screen and (max-width: 992px) {
       .links {
         display: block  !important;

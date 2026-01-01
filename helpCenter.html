@@ -98,7 +98,7 @@
           <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button"
              data-bs-toggle="dropdown"
              aria-expanded="false">
-            <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg"
+            <img class="header__actions__user " src="./content/assets/images/instructor.jpg"
                  alt="User" style="width:35px; height:35px;">
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
@@ -128,9 +128,77 @@
 <main>
   <div class="container">
     <div class="help-center">
-      <div class="main-breadcrumb mt-3">
+      <div class="main-breadcrumb mt-3 mb-4">
         <h1>مركز المساعده</h1>
       </div>
+
+      <!-- Tabs -->
+      <ul class="nav nav-tabs help-tabs mb-4 gap-1" id="helpTabs" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#general">
+            عام
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#videos">
+            الفيديوهات التوضيحية
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content mb-5">
+        <!-- ================= TAB 1 : GENERAL ================= -->
+        <div class="tab-pane fade show active" id="general">
+
+          <div class="accordion help-accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  كيف أنضم إلى موهبة؟
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  عند تسجيلك في موقع موهبة ستظهر لك قائمة بجميع الخدمات المتاحة حسب فئتك العمرية،
+                  ولكل خدمة شروط خاصة بها.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  هل علي التسجيل للاستفادة من خدمات موقع موهبة؟
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  نعم، يجب التسجيل للاستفادة الكاملة من جميع الخدمات.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  كيف يمكنني متابعة الأخبار والفعاليات؟
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  يمكنك متابعة آخر الأخبار والفعاليات من خلال حسابك الشخصي.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= TAB 2 : VIDEOS ================= -->
+        <div class="tab-pane fade" id="videos">
       <div class="timeline">
 
         <div class="timeline-item" data-video="<iframe width='560' height='315' src='https://www.youtube.com/embed/4i7c8g5lA5U?si=F0ZSB4Pqm9hY9w9k' allowfullscreen></iframe>" data-title="طريقه التسجيل بالموقع 1">
@@ -165,56 +233,9 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item" data-video="<iframe width='560' height='315' src='https://www.youtube.com/embed/4i7c8g5lA5U?si=F0ZSB4Pqm9hY9w9k' allowfullscreen></iframe>" data-title="طريقه التسجيل بالموقع 1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content d-flex justify-content-between align-items-center">
-            <div class="timeline-text">
-              <h3 class="timeline-title">طريقه التسجيل بالموقع</h3>
-              <p class="timeline-desc">تفاصيل بسيطة عن الشرح الخاص بطريقة التسجيل بالموقع.</p>
-            </div>
-
-            <div>
-              <button class="btn btn-primary login_btn main__btn center open-video">
-                مشاهدة <i class="fa fa-play ms-1"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item" data-video="<iframe width='560' height='315' src='https://www.youtube.com/embed/4i7c8g5lA5U?si=F0ZSB4Pqm9hY9w9k' allowfullscreen></iframe>" data-title="طريقه التسجيل بالموقع 1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content d-flex justify-content-between align-items-center">
-            <div class="timeline-text">
-              <h3 class="timeline-title">طريقه التسجيل بالموقع</h3>
-              <p class="timeline-desc">تفاصيل بسيطة عن الشرح الخاص بطريقة التسجيل بالموقع.</p>
-            </div>
-
-            <div>
-              <button class="btn btn-primary login_btn main__btn center open-video">
-                مشاهدة <i class="fa fa-play ms-1"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item" data-video="<iframe width='560' height='315' src='https://www.youtube.com/embed/4i7c8g5lA5U?si=F0ZSB4Pqm9hY9w9k' allowfullscreen></iframe>" data-title="طريقه التسجيل بالموقع 1">
-
-          <div class="timeline-dot"></div>
-          <div class="timeline-content d-flex justify-content-between align-items-center">
-            <div class="timeline-text">
-              <h3 class="timeline-title">طريقه التسجيل بالموقع</h3>
-              <p class="timeline-desc">تفاصيل بسيطة عن الشرح الخاص بطريقة التسجيل بالموقع.</p>
-            </div>
-
-            <div>
-              <button class="btn btn-primary login_btn main__btn center open-video">
-                مشاهدة <i class="fa fa-play ms-1"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
 
       </div>
-
+        </div>
     </div>
   </div>
   <!--Modal -->

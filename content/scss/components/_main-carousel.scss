@@ -141,6 +141,11 @@
     &.cat-box-green { background: rgba(40, 167, 69, 0.2); color: #28a745; }
     &.cat-box-yellow { background: rgba(255, 193, 7, 0.2); color: #ffc107; }
     &.cat-box-purple { background: rgba(111, 66, 193, 0.2); color: #6f42c1; }
+
+    &:hover
+    {
+      filter: grayscale(0.5);
+    }
   }
 
   .categories__title {

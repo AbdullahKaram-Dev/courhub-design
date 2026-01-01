@@ -102,7 +102,7 @@
             <a class="nav-link dropdown-toggle no_border" href="#" id="profileDropdown" role="button"
                data-bs-toggle="dropdown"
                aria-expanded="false">
-              <img class="header__actions__user rounded-circle" src="./content/assets/images/instructor.jpg"
+              <img class="header__actions__user " src="./content/assets/images/instructor.jpg"
                    alt="User" style="width:35px; height:35px;">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
@@ -135,88 +135,118 @@
         <div class="course-details">
           <div class="row g-3">
             <div class="col-12 col-lg-4">
-              <div class="course-details-intro container py-4">
-
+              <div class="course-details-intro container py-4" style="padding-right: 0 ;     padding-top: 8px !important;">
                 <!-- العنوان -->
-                <h1 class="course-title"> دبلومة تعلم الفوتوشوب</h1>
+                <h1 class="course-title">كورس تعلم برنامج الفوتوشوب من الصفر</h1>
 
-                <!-- معلومات الدبلومة -->
-                <div class="course-meta d-flex align-items-center gap-3 mt-2">
-                <span class="meta-item">
-                  <i class="fa fa-signal"></i> مبتدئ
-                </span>
-                              <span class="meta-item">
-                  <i class="fa fa-clock"></i> 2س 16د
-                </span>
-                              <span class="meta-item">
-                  <i class="fa fa-book"></i> 14 درس
-                </span>
+                <!-- معلومات الكورس -->
+                <div class="course-meta d-flex align-items-center gap-1 mt-2">
+                  <span class="meta-item">
+                    <i class="fa fa-signal"></i> مبتدئ
+                  </span>
+                  <span class="meta-item">
+                    <i class="fa fa-clock"></i> 2س 16د
+                  </span>
+                  <span class="meta-item">
+                    <i class="fa fa-book"></i> 14 درس
+               </span>
+                  <span class="meta-item">
+                    <i class="fa fa-user"></i> 2000 متدرب
+               </span>
                 </div>
 
                 <!-- المدرب -->
                 <div class="instructor-box d-flex align-items-center  mt-4">
-                  <img src="./content/assets/images/instructor.jpg" class="instructor-img" alt="">
-                  <div>
-                    <h5 class="instructor-title mb-1">تقديم حميدة رحيمي</h5>
-                    <span class="instructor-role">المدرب</span>
-                  </div>
+                  <div class="d-flex align-content-center justify-content-between gap-5" style="width: 100%">
 
+                    <div class="d-flex gap-2">
+                      <img src="./content/assets/images/instructor.jpg" class="instructor-img" alt="">
+                      <div>
+                        <h5 class="instructor-title mb-1">تقديم حميدة رحيمي</h5>
+                        <span class="instructor-role">المدرب</span>
+                      </div>
+                    </div>
+
+                    <div class="text-center d-flex gap-2">
+                      <button class="icon__btn h-100 py-3" data-bs-toggle="modal" data-bs-target="#shareModal">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <button class="icon__btn h-100 py-3 ">
+                        <i class="fa-solid fa-heart"></i>
+                      </button>
+                    </div>
+
+                  </div>
                 </div>
+
               </div>
 
-              <!-- فوائد الدبلومة -->
-              <div class="course-benefits container mt-2 mb-3">
-                <h4 class="benefits-title text-center">سجل بهذه الدبلومة واحصل على</h4>
+              <!-- فوائد الدورة -->
+              <div class="course-benefits container mt-2 mb-4">
+                <h4 class="benefits-title text-center">سجل بهذه الدورة واحصل على</h4>
 
                 <div class="benefits-list mt-4">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="benefit-item mb-2">
+                        <img src="./content/assets/images/icons/infinte.svg">
+                        مشاهدة غير محدودة
+                      </div>
 
-                  <div class="benefit-item">
-                    <img src="./content/assets/images/icons/infinte.svg">
-                    مشاهدة غير محدودة للدبلومة
+                      <div class="benefit-item mb-2">
+                        <img src="./content/assets/images/icons/certificate.svg">
+                        شهـــــادة إتمام الدورة
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="benefit-item mb-2">
+                        <img src="./content/assets/images/icons/tv.svg">
+                        الوصول مدى الحياة
+                      </div>
+                      <div class="benefit-item mb-2">
+                        <img src="./content/assets/images/icons/new-file.png">
+                        تحديثات مستمـــــــرة
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="benefit-item">
-                    <img src="./content/assets/images/icons/certificate.svg">
-                    شهادة إتمام الدبلومة
-                  </div>
 
-                  <div class="benefit-item">
-                    <img src="./content/assets/images/icons/tv.svg">
-                    الوصول مدى الحياة للدبلومات
-                  </div>
+
 
                 </div>
               </div>
 
 
-              <div class="d-flex align-items-stretch gap-2 flex-wrap mb-2">
-                <button class="main__btn__priced flex-grow-1 py-3 d-flex gap-1 flex-wrap justify-content-center">
-                  <span class="old">100000.00$</span>
-                  <span class="current">49999.99$</span>
+              <div class="d-flex align-items-stretch gap-2 flex-nowrap mb-2">
+                <button class="main__btn__priced py-3 d-flex align-items-center justify-content-center">
                   <span class="min-w-max-content">
-                    إشترك الآن
-                  </span>
+                      اشترك ب
+                   </span>
+                  <span class="current">274.11 ريال.</span>
+                  <span class="old">274.11 ريال.</span>
                 </button>
-                <!-- <button class="main__btn">التحاق بالدوره</button> -->
-                <!-- if he already buy it  -->
-                <!-- <button class="main__btn green">بدء الدبلومة</button> -->
-                <div class="d-flex flex-grow-1 flex-shrink-0 gap-2">
-                  <button class="icon__btn flex-grow-1 h-100 py-3 active">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </button>
-                  <button class="icon__btn flex-grow-1 h-100 py-3" data-bs-toggle="modal" data-bs-target="#shareModal">
-                    <i class="fa-solid fa-share"></i>
-                  </button>
-                </div>
+
+                <button class="icon__btn h-100 py-3 active">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
               </div>
+
+              <!-- <button class="main__btn">التحاق بالدوره</button> -->
+              <!-- if he already buy it  -->
+              <!-- <button class="main__btn green">بدء الدورة</button> -->
+
+
+
+
             </div>
             <div class="col-12 col-lg-8">
               <div class="video-frame course-iframe">
-                 <img src="content/assets/images/Coursera.jpg">
+                <img src="content/assets/images/Coursera.jpg" style="border-radius: 17px">
               </div>
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-8">
 
