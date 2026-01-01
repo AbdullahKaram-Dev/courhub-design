@@ -309,6 +309,11 @@ $text-muted: #b2b2b2;
 {
   display: none !important;
 }
+.custom_search::-webkit-input-placeholder { color: #fff; } /* Chrome/Edge/Safari */
+.custom_search::-moz-placeholder { color: #fff; } /* Firefox 19+ */
+.custom_search:-ms-input-placeholder { color: #fff; } /* IE 10+ */
+.custom_search::-ms-input-placeholder { color: #fff; } /* IE 11+ */
+.custom_search::placeholder { color: #fff; } /* Modern browsers */
 
 .login_btn:hover ,
 .trainer_login:hover ,
