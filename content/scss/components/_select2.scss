@@ -18,7 +18,7 @@
   height: 39px !important;
   user-select: none;
   -webkit-user-select: none;
-  border-radius: 17px !important;
+  border-radius: 6px !important;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
@@ -51,7 +51,7 @@
   color: white !important;
 }
 .select2-container--default .select2-results__option--selected {
-  background-color: #262626;
+  background-color: #6a1b9a;
   color: #fff !important;
 }
 .select2-results__option--selectable {
@@ -63,4 +63,7 @@
   border: 1px solid #aaa;
   color: #fff;
   font-size: 14px;
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: #6a1b9a !important;
 }
