@@ -128,30 +128,99 @@
     <!-- Main -->
     <main>
       <div class="container">
-        <div class="main-breadcrumb mt-4 mb-3">
-          <h1>المدربين </h1>
-          <p>يمكنك من هنا الإطلاع على جميع المدربين لدينا </p>
-        </div>
-        <div class="filter-box ">
-          <div class="row mt-2">
-            <div class="col-8 col-md-2">
-              <select class="form-control select2">
-                <option>موشن جرافيك</option>
-                <option>تصميم مواقع</option>
-              </select>
-            </div>
-            <div class="col-3 col-md-2">
-              <button type="button" class="btn btn-primary  main__btn">
-                بحث
-              </button>
-            </div>
+        <div class="d-flex align-items-center justify-content-between mt-3 gap-2">
+          <div class="main-breadcrumb flex-grow-1">
+            <h1>المدربين</h1>
+            <p>يمكنك من هنا الإطلاع على جميع المدربين  بالموقع</p>
           </div>
 
         </div>
-        <div class="container">
+ <!-- <div class="empty-state">
+                <div class="empty-state__content">
+                  <div class="empty-state__content__text">
+                    <h5 class="text-white my-3">المفضلة فارغة</h5>
+                    <a class="main__btn" href="./allCourses.html">الإطلاع على الدورات</a>
+                  </div>
+                  <img src="./content/assets/images/icons/magnifying-glass.png" alt="" height="100" />
+                </div>
+              </div> -->
+
+              <div class="d-lg-none mb-3 text-center">
+                <button class="btn btn-outline-primary main__btn m-auto"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#filterOffcanvas">
+                  <i class="fa-solid fa-sliders"></i> فلترة
+                </button>
+              </div>
+               <div class="row">
+                 <div class="col-lg-2 d-none d-lg-block  mt-4">
+                   <div class="filter-box ">
+                     <h6> الأقسام</h6>
+                     <ul class="list-unstyled">
+                       <li>الدورات</li>
+                       <li>الدبلومات</li>
+                       <li>ورش العمل </li>
+                       <li> المتجر الرقمى </li>
+                       <li>  الإستشارات </li>
+                       <li>  المدربين </li>
+                     </ul>
+      
+                     <h6 class="mt-3">الفئات</h6>
+                     <ul class="list-unstyled">
+                       <li>الأعمال والريادة</li>
+                       <li>التكنولوجيا</li>
+                       <li>اللغات</li>
+                       <li>التصميم</li>
+                     </ul>
+                   </div>
+                 </div>
+                  <div class="col-lg-10">
+                    <div class="filter-box p-3" style="padding-right: 0 !important; padding-left: 0 !important;">
+                      <div class="row g-3 align-items-center">
+      
+                        <!-- فلترة حسب -->
+                        <div class="col-12 col-md-3 d-flex align-items-center">
+                          <label class="me-2 mb-0" style="min-width: 90px;">فلترة حسب :</label>
+                          <select class="form-select select2" style="direction: rtl; text-align: left;">
+                            <option>جميع الأقسام</option>
+                            <option>موشن جرافيك</option>
+                            <option>التصميم</option>
+                            <option>برمجة</option>
+                          </select>
+                        </div>
+      
+                        <!-- ترتيب حسب -->
+                        <div class="col-12 col-md-3 d-flex align-items-center">
+                          <label class="me-2 mb-0" style="min-width: 90px;">ترتيب حسب :</label>
+                          <select class="form-select select2" style="direction: rtl; text-align: left;">
+                            <option>جميع التخصصات</option>
+                            <option>الديزين</option>
+                            <option>الموشن</option>
+                          </select>
+                        </div>
+      
+                        <!-- زر الغاء -->
+                        <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                          <button class="btn btn-success main__btn" title="الغاء">
+                            <i class="fa-solid fa-rotate-left"></i>
+                          </button>
+                        </div>
+      
+                        <!-- البحث -->
+                        <div class="col-12 col-md-5">
+                          <div class="d-flex flex-column flex-md-row gap-2">
+                            <input type="text" class="form-control custom_search" placeholder="ابحث هنا...">
+                            <button class="btn btn-primary main__btn">
+                              بحث
+                            </button>
+                          </div>
+                        </div>
+      
+                      </div>
+                    </div>
           <div class="row g-4 speakers-row mt-2 ">
             <!-- CARD 1 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/1.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -163,7 +232,7 @@
             </div>
 
             <!-- CARD 2 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/2.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -174,7 +243,7 @@
             </div>
 
             <!-- CARD 3 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/1.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -185,7 +254,7 @@
             </div>
 
             <!-- CARD 4 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/2.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -196,7 +265,7 @@
             </div>
 
             <!-- CARD 5 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/1.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -206,7 +275,7 @@
               </div>
             </div>
             <!-- CARD 5 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/1.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
@@ -216,7 +285,7 @@
               </div>
             </div>
             <!-- CARD 5 -->
-            <div class="col-lg-2-4">
+            <div class="col-lg-2">
               <div class="speaker-card overlay-card">
                 <img src="content/assets/images/trainers/1.jpg" class="img-fluid" alt="">
                 <div class="overlay-content">
