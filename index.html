@@ -313,36 +313,25 @@
                 </li>
 
                 <!-- Profile dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle no_border"
-                       href="#"
-                       id="profileDropdown"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-
-                        <img src="./content/assets/images/instructor.jpg"
-                             alt="User"
-                             style="width:35px; height:35px; border-radius:50%;">
+                <li class="nav-item dropdown header-profile">
+                    <a class="nav-link" href="javascript:void(0);">
+                      <img class="header__actions__user" src="./content/assets/images/instructor.jpg" alt="">
                     </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="./profile.html">
-                                <img src="./content/assets/images/instructor.jpg"
-                                     class="rounded-circle me-2"
-                                     style="width:40px; height:40px;">
-                                <div>
-                                    <h6 class="mb-0">Fahmy Mansour</h6>
-                                    <small>Test@gmail.com</small>
-                                </div>
-                            </a>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./helpCenter.html">مركز المساعدة</a></li>
-                        <li><a class="dropdown-item" href="./login.html">الخروج</a></li>
-                    </ul>
-                </li>
+                    <div class="dropdown__menu ">
+                      <div class="dropdown__menu__item dropdown__menu__item--profile">
+                        <a href="./profile.html" class="user__wrapper">
+                          <img src="./content/assets/images/instructor.jpg" alt="">
+                          <div class="instructor">
+                            <h6 class="name">Fahmy Maher</h6>
+                            <p class="email">fahmy@gmail.com</p>
+                          </div>
+                        </a>
+                      </div>
+                      <a class="dropdown__menu__item" href="./helpCenter.html">مركز المساعدة</a>
+                      <a class="dropdown__menu__item" href="./login.html">الخروج</a>
+                    </div>
+                  </li>
+                
 
             </ul>
         </nav>
@@ -470,7 +459,12 @@
                                 </div>
                             </div>
 
-                            <span style="color: #fff"> محمد محمود</span>
+                            <span> 
+                                <a href="allCourses.html"  style="color: #fff;font-size: 14px;">
+                                    <img src="./content/assets/images/instructor.jpg" height="20" style="border-radius: 4px;"> محمد محمود 
+                                </a>
+
+                            </span>
 
 
                             <div class="product__info">
@@ -1131,9 +1125,9 @@
                                     </select>
                                 </div>
 
-                                <div class="package-modal__summary__item">
+                                <div class="package-modal__summary__item" >
                                     <span>دورات الباقة</span>
-                                    <div class="background">2</div>
+                                    <div class="background" style="background-color: #262626; padding: 5px;border-radius: 6px;">15</div>
                                 </div>
                                 <div class="package-modal__summary__item">
                                     <span>السعر :</span>
@@ -1308,7 +1302,12 @@
 
             </div>
             <div class="col-12 col-lg-6 text-center">
-                <p>كورهب | إحدي مشاريع شركة <a href="Soudar.com">سودار - Soudar</a> للتقنية</p>
+                <p>
+                    كورهب | إحدي مشاريع شركة
+                    <a href="https://soudar.com" target="_blank">سودار - Soudar</a>
+                    للتقنية
+                  </p>
+                  
             </div>
             <div class="col-12 col-lg-3">
                 <div class="footer__social">

@@ -410,7 +410,17 @@
   padding: 11px !important;
 }
 
-
+#accordionCourseContent .accordion-item .accordion-body .lesson-item {
+  background-color: #212025 !important;
+}
+#accordionCourseContent .accordion-item .accordion-body .lesson-item.active {
+  background-color: #6a1b9a !important;
+}
+.course-details .icon__btn:hover
+{
+  background-color: #6a1b9a !important;
+  color: #fff !important;
+}
 @media screen and (max-width: 1366px) {
 
   .course-details .course-details-intro .course-title {
